@@ -27,6 +27,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (max-width: 62.5em) {
+    html {
+      font-size: 55%; } }
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -59,52 +62,61 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden; }
 
-.contact {
+.contact__name, .contact__email, .contact__message {
+  background: transparent;
+  flex: 0 0 50%;
+  border: none;
+  outline: none;
+  border-bottom: 0.5px solid #ccc;
+  padding: 2rem 0;
+  width: 80%; }
+  .contact__name:focus, .contact__email:focus, .contact__message:focus {
+    outline: none;
+    border-bottom: 3px solid #718093; }
+  .contact__name::-webkit-input-placeholder, .contact__email::-webkit-input-placeholder, .contact__message::-webkit-input-placeholder {
+    color: #718093;
+    text-transform: capitalize;
+    font-size: 1.6rem; }
+
+.contact__message {
+  background: transparent;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #3A3C49;
+  padding: 8rem 0;
+  resize: none; }
+
+.contact__form {
+  width: 100%;
   padding: 10rem 0; }
-  .contact__name, .contact__email {
-    background: transparent;
-    flex: 0 0 50%;
+  .contact__form-box {
+    display: flex;
+    flex-wrap: wrap; }
+  .contact__form-name {
+    flex: 0 0 50%; }
+  .contact__form-email {
+    flex: 0 0 50%; }
+  .contact__form-message {
+    flex: 0 0 100%; }
+  .contact__form-submit {
+    background-color: transparent;
     border: none;
-    outline: none;
-    border-bottom: 1px solid #3A3C49;
-    padding: 2rem 0; }
-  .contact__message {
-    background: transparent;
-    width: 100%;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid #3A3C49;
-    padding: 8rem 0;
-    resize: none; }
-  .contact__form {
-    width: 100%; }
-    .contact__form-box {
-      display: flex;
-      flex-wrap: wrap; }
-    .contact__form-name {
-      flex: 0 0 50%; }
-    .contact__form-email {
-      flex: 0 0 50%; }
-    .contact__form-message {
-      flex: 0 0 100%; }
-    .contact__form-submit {
-      background-color: transparent;
-      border: none;
-      color: #F36359;
-      font-size: 1.7rem;
-      text-transform: uppercase;
-      display: flex;
-      margin-left: auto;
-      padding: 3.8rem 0;
-      cursor: pointer; }
-      .contact__form-submit::before {
-        content: "";
-        display: block;
-        height: .2rem;
-        width: 3.5rem;
-        background-color: #F36359;
-        align-items: center;
-        margin: 1rem 1rem 0 0; }
+    color: #F36359;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    display: flex;
+    margin-left: auto;
+    padding: 3.8rem 0;
+    cursor: pointer; }
+    .contact__form-submit::before {
+      content: "";
+      display: block;
+      height: .2rem;
+      width: 3.5rem;
+      background-color: #F36359;
+      align-items: center;
+      margin: 1rem 1rem 0 0; }
 
 .profile {
   display: flex;
@@ -151,17 +163,22 @@ body {
     text-transform: capitalize;
     letter-spacing: 2px;
     margin-bottom: 3rem; }
+  .skills .fab,
+  .skills .fas {
+    padding-right: 1rem;
+    font-size: 1.3rem; }
   .skills__text {
     font-size: 1.6rem;
     margin-bottom: 3rem; }
   .skills__list {
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    font-size: 1.3rem; }
   .skills__item {
     list-style-type: none;
     text-transform: capitalize;
     flex: 0 0 50%;
-    margin-bottom: .7rem; }
+    margin-bottom: .9rem; }
   .skills__img-photo {
     width: 100%;
     height: auto;
@@ -225,10 +242,10 @@ body {
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
-    @media only screen and (max-width: 56.25em) {
+    @media only screen and (max-width: 62.5em) {
       .row:not(:last-child) {
         margin-bottom: 6rem; } }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 62.5em) {
     .row {
       max-width: 50rem;
       padding: 0 3rem; } }
@@ -240,11 +257,11 @@ body {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
-      @media only screen and (max-width: 56.25em) {
+      @media only screen and (max-width: 62.5em) {
         .row [class^="col-"]:not(:last-child) {
           margin-right: 0;
           margin-bottom: 6rem; } }
-    @media only screen and (max-width: 56.25em) {
+    @media only screen and (max-width: 62.5em) {
       .row [class^="col-"] {
         width: 100% !important; } }
   .row .col-1-of-2 {

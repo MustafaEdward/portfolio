@@ -12,15 +12,25 @@
 }
 
 .contact {
-    padding: 10rem 0;
     &__name, 
-    &__email {
+    &__email,
+    &__message {
       background: transparent;
       flex: 0 0 50%;
       border: none;
       outline: none;
-      border-bottom: 1px solid $color-black;
+      border-bottom: .5px solid $color-grey-light;
       padding: 2rem 0;
+      width: 80%;
+      &:focus {
+        outline: none;
+        border-bottom: 3px solid $color-grey;
+    }
+    &::-webkit-input-placeholder {
+        color: $color-grey;
+        text-transform: capitalize;
+        font-size: 1.6rem;
+    }
     }
     &__message {
       background: transparent;
@@ -33,6 +43,7 @@
     }
     &__form {
       width: 100%;
+      padding: 10rem 0;
       &-box {
        display: flex;
        flex-wrap: wrap;
