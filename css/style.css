@@ -59,6 +59,53 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden; }
 
+.contact {
+  padding: 10rem 0; }
+  .contact__name, .contact__email {
+    background: transparent;
+    flex: 0 0 50%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #3A3C49;
+    padding: 2rem 0; }
+  .contact__message {
+    background: transparent;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #3A3C49;
+    padding: 8rem 0;
+    resize: none; }
+  .contact__form {
+    width: 100%; }
+    .contact__form-box {
+      display: flex;
+      flex-wrap: wrap; }
+    .contact__form-name {
+      flex: 0 0 50%; }
+    .contact__form-email {
+      flex: 0 0 50%; }
+    .contact__form-message {
+      flex: 0 0 100%; }
+    .contact__form-submit {
+      background-color: transparent;
+      border: none;
+      color: #F36359;
+      font-size: 1.7rem;
+      text-transform: uppercase;
+      display: flex;
+      margin-left: auto;
+      padding: 3.8rem 0;
+      cursor: pointer; }
+      .contact__form-submit::before {
+        content: "";
+        display: block;
+        height: .2rem;
+        width: 3.5rem;
+        background-color: #F36359;
+        align-items: center;
+        margin: 1rem 1rem 0 0; }
+
 .profile {
   display: flex;
   padding: 20rem 0; }
@@ -157,6 +204,21 @@ body {
     height: auto;
     max-width: 100%;
     display: block; }
+
+.footer {
+  background-color: #fff;
+  padding: 1.5rem 0; }
+  .footer__box {
+    display: flex;
+    justify-content: space-between; }
+  .footer__copyright {
+    text-transform: uppercase;
+    font-size: 1.2rem; }
+  .footer__email {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.2rem;
+    display: inline-block; }
 
 .row {
   max-width: 114rem;

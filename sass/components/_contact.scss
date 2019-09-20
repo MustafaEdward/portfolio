@@ -10,3 +10,62 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
+.contact {
+    padding: 10rem 0;
+    &__name, 
+    &__email {
+      background: transparent;
+      flex: 0 0 50%;
+      border: none;
+      outline: none;
+      border-bottom: 1px solid $color-black;
+      padding: 2rem 0;
+    }
+    &__message {
+      background: transparent;
+      width: 100%;
+      border: none;
+      outline: none;
+      border-bottom: 1px solid $color-black;
+      padding: 8rem 0;
+      resize:none
+    }
+    &__form {
+      width: 100%;
+      &-box {
+       display: flex;
+       flex-wrap: wrap;
+      }
+      &-name{
+        flex: 0 0 50%;
+      }
+      &-email {
+        flex: 0 0 50%; 
+      }
+      &-message {
+        flex: 0 0 100%;
+      }
+      &-submit {
+        background-color: transparent;
+        border: none;
+        color: $color-red;
+        font-size: 1.7rem;
+        text-transform: uppercase;
+        display: flex;
+        margin-left: auto;
+        padding: 3.8rem 0;  
+        cursor: pointer;
+        &::before {
+            content: "";
+            display: block;
+            height: .2rem;
+            width: 3.5rem;
+            background-color: $color-red;
+            align-items: center;
+            margin: 1rem 1rem 0 0;
+        }
+      }
+    }
+    
+}

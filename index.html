@@ -98,8 +98,34 @@
           </main>
           <!-- contact section -->
           <div class="container">
-              
+              <div class="contact"
+                 
+                  <form class="contact__form">
+                    <div class="contact__form-box">
+                       <div class="contact__form-name">
+                           <label for="name" class="visuallyHidden">name</label>
+                           <input type="text" name="name" id="name" class="contact__name" placeholder="name">
+                       </div>
+                       <div class="contact__form-email">
+                            <label for="email" class="visuallyHidden">email</label>
+                            <input type="text" name="email" id="email" class="contact__email" placeholder="email" required>
+                       </div>
+                       <div class="contact__form-message">
+                            <label for="message" class="visuallyHidden">email</label>
+                            <textarea name="message" id="message" cols="30" rows="10" class="contact__message"  placeholder="message" ></textarea>
+                       </div>
+                           <button type="submit" class="contact__form-submit">submit</button>
+                    </div>
+
+                  </form>
+              </div>
           </div>
+          <footer class="footer clearfix">
+            <div class="container footer__box">
+                <p class="footer__copyright">copyright &#x000A9;2019 Mustafa Alabdullah</p>
+                <a class="footer__email" href="mailto:mustafa.edward24@gmail.com">mustafa.edward24@gmail.com</a>
+            </div>
+          </footer>
         </div>
     </body>
 </html>
