@@ -13,7 +13,6 @@ html {
     box-sizing: border-box;
     font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
 }
-
 body {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
@@ -28,9 +27,7 @@ body {
 .container {
     width: 95rem;
     margin: 0 auto;
-
 }
-
 ::selection {
     background-color: $color-white;
     color: $color-black;

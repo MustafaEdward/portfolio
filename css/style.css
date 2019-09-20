@@ -47,9 +47,21 @@ body {
   background-color: #fff;
   color: #3A3C49; }
 
+.visuallyHidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+
 .profile {
   display: flex;
-  padding: 30rem 0; }
+  padding: 20rem 0; }
   .profile__img-photo {
     width: 100%;
     height: auto;
@@ -64,7 +76,87 @@ body {
     letter-spacing: 2px;
     margin-bottom: 3rem; }
   .profile__text {
-    font-size: 1.6rem; }
+    font-size: 1.6rem;
+    margin-bottom: 3rem; }
+  .profile__link {
+    text-decoration: none;
+    color: #F36359;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    display: flex; }
+    .profile__link::before {
+      content: "";
+      display: block;
+      height: .2rem;
+      width: 3.5rem;
+      background-color: #F36359;
+      align-items: center;
+      margin: 1rem 1rem 0 0; }
+
+.skills {
+  display: flex;
+  padding: 10rem 0; }
+  .skills__box {
+    padding-right: 7rem; }
+  .skills__heading {
+    font-size: 4rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    margin-bottom: 3rem; }
+  .skills__text {
+    font-size: 1.6rem;
+    margin-bottom: 3rem; }
+  .skills__list {
+    display: flex;
+    flex-wrap: wrap; }
+  .skills__item {
+    list-style-type: none;
+    text-transform: capitalize;
+    flex: 0 0 50%;
+    margin-bottom: .7rem; }
+  .skills__img-photo {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block; }
+
+.work {
+  display: flex;
+  padding: 4rem 0; }
+  .work__box {
+    margin: 8rem -15rem 0 0;
+    position: relative;
+    z-index: 111; }
+  .work__heading {
+    font-size: 4rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    margin-bottom: 3rem; }
+  .work__text {
+    font-size: 1.6rem;
+    margin-bottom: 3rem; }
+  .work__link {
+    text-decoration: none;
+    color: #F36359;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    display: flex;
+    margin-bottom: 3rem; }
+    .work__link::before {
+      content: "";
+      display: block;
+      height: .2rem;
+      width: 3.5rem;
+      background-color: #F36359;
+      align-items: center;
+      margin: 1rem 1rem 0 0; }
+  .work__img-photo {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block; }
 
 .row {
   max-width: 114rem;

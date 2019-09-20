@@ -1,16 +1,10 @@
-.profile {
+.work {
     display: flex;
-    padding: 20rem 0;
-    &__img {
-        &-photo {
-            width: 100%;
-            height: auto;
-            max-width: 100%;
-            display: block;
-         }
-    }
-    &__box {
-       margin: 6rem 0 0 -5rem;
+    padding: 4rem 0;
+    &__box { 
+        margin: 8rem -15rem 0 0;
+        position: relative;
+        z-index: 111;
     }
     &__heading {
         font-size: 4rem;
@@ -29,6 +23,7 @@
         font-size: 1.4rem;
         text-transform: uppercase;
         display: flex;
+        margin-bottom: 3rem;
         &::before {
             content: "";
             display: block;
@@ -38,5 +33,13 @@
             align-items: center;
             margin: 1rem 1rem 0 0;
         }
-    } 
+    }
+    &__img {
+        &-photo {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+            display: block;
+        }
+    }
 }

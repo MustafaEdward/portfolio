@@ -1,0 +1,36 @@
+.skills {
+    display: flex;
+    padding: 10rem 0;
+    &__box { 
+        padding-right: 7rem;
+    }
+    &__heading {
+        font-size: 4rem;
+        font-weight: 400;
+        text-transform: capitalize;
+        letter-spacing: 2px;
+        margin-bottom: 3rem;
+    }
+    &__text {
+        font-size: 1.6rem;
+        margin-bottom: 3rem;
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__item {
+      list-style-type: none;
+      text-transform: capitalize;
+      flex: 0 0 50%;
+      margin-bottom: .7rem;
+    }
+    &__img {
+        &-photo {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+            display: block;
+        }
+    }
+}
