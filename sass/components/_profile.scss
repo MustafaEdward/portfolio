@@ -1,7 +1,18 @@
 .profile {
     display: flex;
     padding: 20rem 0;
+      @include respond(tablet) {
+       flex-direction: column;
+       padding: 10rem 4rem;
+      }
+    @include respond(tablet) {
+       padding: 2rem 0;
+      }
+
     &__img {
+      @include respond(tablet) {
+        padding: 0rem 4rem;
+     }
         &-photo {
             width: 100%;
             height: auto;
@@ -11,32 +22,25 @@
     }
     &__box {
        margin: 6rem 0 0 -5rem;
+       @include respond(tablet) {
+        margin: 5rem 0 0 0;
+        text-align: center;
+     }
     }
     &__heading {
-        font-size: 4rem;
-        font-weight: 400;
-        text-transform: capitalize;
-        letter-spacing: 2px;
-        margin-bottom: 3rem;
+      @include heading;     
     }
     &__text {
         font-size: 1.6rem;
         margin-bottom: 3rem;
+        @include respond(tablet) {
+    
+        }
     }
     &__link {
-        text-decoration: none;
-        color: $color-red;
-        font-size: 1.4rem;
-        text-transform: uppercase;
-        display: flex;
-        &::before {
-            content: "";
-            display: block;
-            height: .2rem;
-            width: 3.5rem;
-            background-color: $color-red;
-            align-items: center;
-            margin: 1rem 1rem 0 0;
-        }
-    } 
+      @include link;
+      @include respond(tablet) {
+        justify-content: center;
+     }
+    }
 }

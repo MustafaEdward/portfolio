@@ -10,7 +10,6 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-
 .contact {
     &__name, 
     &__email,
@@ -60,23 +59,10 @@
       &-submit {
         background-color: transparent;
         border: none;
-        color: $color-red;
-        font-size: 1.7rem;
-        text-transform: uppercase;
-        display: flex;
+        @include link;
+        font-size: 1.8rem;
         margin-left: auto;
-        padding: 3.8rem 0;  
-        cursor: pointer;
-        &::before {
-            content: "";
-            display: block;
-            height: .2rem;
-            width: 3.5rem;
-            background-color: $color-red;
-            align-items: center;
-            margin: 1rem 1rem 0 0;
-        }
-      }
-    }
-    
+        margin-top: 3rem;  
+    }  
+}
 }

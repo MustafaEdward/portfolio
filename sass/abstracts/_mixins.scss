@@ -28,6 +28,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
     @if $breakpoint == phone {
         @media only screen and (max-width: 37.5em) { @content };    //600px
     }
+    @if $breakpoint == tablet {
+        @media only screen and (max-width: 53.75em) { @content };    //850px
+    }
     @if $breakpoint == tab-port {
         @media only screen and (max-width: 62.5em) { @content };     //1000px
     }
@@ -43,7 +46,40 @@ ORDER: Base + typography > general layout + grid > page layout > components
         clear: both;
     }
 }
+@mixin heading {
+    font-size: 4rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    margin-bottom: 3rem;
+    @include respond(tablet) {
+      font-size: 2.8rem;
+      margin-bottom: 1.5rem;
+     }
+ 
+}
+@mixin link {
+        text-decoration: none;
+        color: $color-red;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        display: flex;
+        margin: 2rem 0;
+        &::before {
+            content: "";
+            display: block;
+            height: .2rem;
+            width: 3.5rem;
+            background-color: $color-red;
+            align-items: center;
+            margin: 1rem 1rem 0 0;
+        }
+}
 
 //   @include respond(tab-port) {
+       
+//     }
+
+//   @include respond(phone) {
        
 //     }

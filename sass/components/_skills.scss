@@ -1,21 +1,24 @@
 .skills {
     display: flex;
     padding: 10rem 0;
+    @include respond(tablet) {
+        flex-direction: column;
+        padding: 5rem 4rem;
+      }
     &__box { 
         padding-right: 7rem;
+        padding: 0;
     }
     &__heading {
-        font-size: 4rem;
-        font-weight: 400;
-        text-transform: capitalize;
-        letter-spacing: 2px;
-        margin-bottom: 3rem;
+      @include heading;
+      @include respond(tablet) {
+        text-align: center;
+      }
     }
     .fab,
     .fas {
         padding-right: 1rem;
         font-size: 1.3rem;
-
     }
     &__text {
         font-size: 1.6rem;
@@ -27,12 +30,15 @@
         font-size: 1.3rem;
     }
     &__item {
-      list-style-type: none;
-      text-transform: capitalize;
-      flex: 0 0 50%;
-      margin-bottom: .9rem;
+        list-style-type: none;
+        text-transform: capitalize;
+        flex: 0 0 50%;
+        margin-bottom: .9rem;
     }
     &__img {
+        @include respond(tablet) {
+           display: none;
+         }
         &-photo {
             width: 100%;
             height: auto;
@@ -41,3 +47,5 @@
         }
     }
 }
+
+  

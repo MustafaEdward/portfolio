@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
 }
-
 *,
 *::before,
 *::after {
@@ -30,6 +29,10 @@ body {
 .container {
     width: 95rem;
     margin: 0 auto;
+    @include respond(tablet) {
+        width: 100%;
+        padding: 0 5rem;
+    }
 }
 ::selection {
     background-color: $color-white;

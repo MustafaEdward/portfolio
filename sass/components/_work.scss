@@ -1,40 +1,39 @@
 .work {
     display: flex;
     padding: 4rem 0;
+      @include respond(phone) {
+       flex-direction: column;
+    }
     &__box { 
         margin: 8rem -15rem 0 0;
         position: relative;
-        z-index: 111;
+        z-index: 1;
+        @include respond(tablet) {
+           margin: 5rem -15rem 0 0;
+         }
+           @include respond(phone) {
+            text-align: center;
+       
+         }
+     
     }
     &__heading {
-        font-size: 4rem;
-        font-weight: 400;
-        text-transform: capitalize;
-        letter-spacing: 2px;
-        margin-bottom: 3rem;
+      @include heading;       
     }
     &__text {
         font-size: 1.6rem;
         margin-bottom: 3rem;
     }
     &__link {
-        text-decoration: none;
-        color: $color-red;
-        font-size: 1.4rem;
-        text-transform: uppercase;
-        display: flex;
-        margin-bottom: 3rem;
-        &::before {
-            content: "";
-            display: block;
-            height: .2rem;
-            width: 3.5rem;
-            background-color: $color-red;
-            align-items: center;
-            margin: 1rem 1rem 0 0;
+      @include link;
+        @include respond(phone) {
+          justify-content: center;
         }
     }
     &__img {
+        @include respond(phone) {
+            padding: 0rem 4rem;
+         }
         &-photo {
             width: 100%;
             height: auto;
