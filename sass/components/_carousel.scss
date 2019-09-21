@@ -29,9 +29,6 @@
   }
   .flickity-page-dots {
     bottom: 3rem;
-    @include respond(tablet) {
-       bottom: 10rem;       
-    }
     
     .dot{
       width: 3rem;

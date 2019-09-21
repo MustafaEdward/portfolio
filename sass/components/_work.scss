@@ -23,12 +23,10 @@
     &__text {
         font-size: 1.6rem;
         margin-bottom: 3rem;
+        text-align: left;
     }
     &__link {
       @include link;
-        @include respond(phone) {
-          justify-content: center;
-        }
     }
     &__img {
         @include respond(phone) {

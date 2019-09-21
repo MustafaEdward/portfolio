@@ -24,7 +24,7 @@
        margin: 6rem 0 0 -5rem;
        @include respond(tablet) {
         margin: 5rem 0 0 0;
-        text-align: center;
+        text-align: left;
      }
     }
     &__heading {

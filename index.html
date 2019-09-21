@@ -14,20 +14,34 @@
     </head>
     <body>
             <header class="header">
-              <div class="container">
-                <div class="navigation">
-                    <img src="img/logo.png" alt="Mustafa logo" class="logo">
-                    <nav>
-                        <ul class="navigation__list">
-                            <li class="navigation__item"><a href="#" class="navigation__link">home</a></li>
-                            <li class="navigation__item"><a href="#" class="navigation__link">about me</a></li>
-                            <li class="navigation__item"><a href="#" class="navigation__link">work</a></li>
-                            <li class="navigation__item"><a href="#" class="navigation__link">contact</a></li>
-                        </ul>
-                    </nav>
+                   
+                <div class="header__box">
+                    <ul class="header__list">
+                        <li class="header__item"><a href="#" class="header__link"><i class="fab fa-twitter"></i></a></li>
+                        <li class="header__item"><a href="#" class="header__link"><i class="fab fa-github"></i></a></li>
+                        <li class="header__item"><a href="#" class="header__link"><i class="fab fa-linkedin"></i></a></li>
+                        <li class="header__item"><a href="#" class="header__link"><i class="fab fa-medium-m"></i></a></li>
+                    </ul>
+                    <h1 class="header__heading">Mustafa Alabdullah</h1>
+                    <p class="header__title">web developer</p>
+                    <p class="header__energy">big div energy</p>
                 </div>
+                <canvas id="zodiac">
+                    </canvas>
             </header>
            <main>
+                <div class="container">
+                        <div class="navigation">
+                            <img src="img/logo.png" alt="Mustafa logo" class="logo">
+                            <nav>
+                                <ul class="navigation__list">
+                                    <li class="navigation__item"><a href="#" class="navigation__link">home</a></li>
+                                    <li class="navigation__item"><a href="#" class="navigation__link">about me</a></li>
+                                    <li class="navigation__item"><a href="#" class="navigation__link">work</a></li>
+                                    <li class="navigation__item"><a href="#" class="navigation__link">contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
                 <canvas id="canvas"></canvas>
                <!-- profile section -->
                 <figure class="profile container">
@@ -180,9 +194,5 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="./javascript/carousel.js"></script>
-
-
-  
-   
-
+    <script src="./javascript/particles.js"></script>
 </html>
