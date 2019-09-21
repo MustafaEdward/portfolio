@@ -158,9 +158,6 @@ body {
     font-size: 3rem; }
   .hero-slider .flickity-page-dots {
     bottom: 3rem; }
-    @media only screen and (max-width: 53.75em) {
-      .hero-slider .flickity-page-dots {
-        bottom: 10rem; } }
     .hero-slider .flickity-page-dots .dot {
       width: 3rem;
       height: .4rem;
