@@ -65,6 +65,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
         text-transform: uppercase;
         display: flex;
         margin: 2rem 0;
+        cursor: pointer;
         &::before {
             content: "";
             display: block;

@@ -11,6 +11,8 @@
     overflow: hidden;
 }
 .contact {
+  background: $color-white;
+  margin-top: 8rem;
     &__name, 
     &__email,
     &__message {

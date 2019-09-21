@@ -33,9 +33,7 @@
     &__text {
         font-size: 1.6rem;
         margin-bottom: 3rem;
-        @include respond(tablet) {
-    
-        }
+       
     }
     &__link {
       @include link;
