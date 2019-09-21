@@ -13,6 +13,11 @@
 .contact {
   background: $color-white;
   margin-top: 8rem;
+    &__heading {
+      @include heading;
+      text-align: center;
+      padding-top: 5rem;
+    }
     &__name, 
     &__email,
     &__message {
