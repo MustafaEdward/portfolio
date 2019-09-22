@@ -14,9 +14,7 @@
          }
            @include respond(phone) {
             text-align: center;
-       
          }
-     
     }
     &__heading {
       @include heading;       
@@ -30,6 +28,7 @@
       @include link;
     }
     &__img {
+      opacity: .6;
         @include respond(phone) {
             padding: 0rem 4rem;
          }
@@ -38,6 +37,7 @@
             height: auto;
             max-width: 100%;
             display: block;
+            opacity: .7;
         }
     }
 }

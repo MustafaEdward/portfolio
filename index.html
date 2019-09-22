@@ -9,8 +9,9 @@
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
         <script src="https://kit.fontawesome.com/b8ce70bdd1.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-        <title>Mustafa Alabdullah</title>
+        <title>Web developer | Mustafa Alabdullah</title>
     </head>
     <body>
             <header class="header" id="home">
@@ -45,18 +46,26 @@
              <div class="container">
                <!-- profile section -->
                 <figure class="profile container js--profile" id="profile">
-                    <div class="profile__img">
+                    <div class="profile__img" 
+                    data-aos="fade-up"
+                    data-aos-duration="1500">
                         <img src="./img/profile.jpeg" alt="profile picture" class="profile__img-photo">
                     </div>
-                    <figcaption class="profile__box container ">
+                    <figcaption class="profile__box container " 
+                    data-aos="fade-left"
+                    data-aos-offset="250"
+                    data-aos-duration="1000">
                         <h3 class="profile__heading">my mission</h3>
                         <p class="profile__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <a href="#" class="profile__link">get in touch</a>
+                        <a href="#contact" class="profile__link">get in touch</a>
                     </figcaption>
                 </figure>
                 <!-- skills section -->
                 <figure class="skills container" id="skills">
-                    <figcaption class="skills__box container">
+                    <figcaption class="skills__box container"    
+                                data-aos="fade-right"
+                                data-aos-offset="250"
+                                data-aos-duration="1000">
                         <h3 class="skills__heading">What I do</h3>
                         <p class="skills__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quam ipsa quo beatae asperiores fugiat dolor ullam explicabo perspiciatis voluptate?</p>
                         <ul class="skills__list">
@@ -74,42 +83,59 @@
                             <li class="skills__item"><i class="fas fa-clipboard-check"></i>quality assurance</li>
                         </ul>
                     </figcaption>
-                    <div class="skills__img">
+                    <div class="skills__img"
+                        data-aos="fade-up"
+                        data-aos-duration="1500">
                          <img src="./img/computer.jpeg" alt="computer" class="skills__img-photo">
                     </div>
                 </figure>
                 <!-- work section -->
                  <figure class="work container" id="work">
-                    <figcaption class="work__box container">
+                    <figcaption class="work__box container"  
+                                data-aos="fade-right"
+                                data-aos-offset="250"
+                                data-aos-duration="1000">
                         <h3 class="work__heading">PSD conversion</h3>
-                        <p class="work__text">I executed the designer's vision on the web, and built a good experience for users regardless of the device on which they are viewing the site</p>
-                        <a href="#" class="work__link">view live</a>
-                        <a href="#" class="work__link">github</a>
+                        <p class="work__text">Executed the designer's vision on the web, and built a good experience for users regardless of the device on which they are viewing the site</p>
+                        <a href="https://mustafaedward.github.io/mustafa-alabdullah-project-2/" class="work__link" target="_blank">view live</a>
+                        <a href="https://github.com/MustafaEdward/mustafa-alabdullah-project-2" class="work__link" target="_blank">github</a>
                     </figcaption>
-                    <div class="work__img">
-                        <img src="./img/under-the-sea.jpg" alt="work picture" class="work__img-photo">
+                    <div class="work__img"
+                        data-aos="fade-up"
+                        data-aos-duration="1500">
+                        <img src="./img/sea .jpg" alt="work picture" class="work__img-photo">
                     </div>
                 </figure>
                 <figure class="work container">
-                    <figcaption class="work__box container">
+                    <figcaption class="work__box container"
+                                data-aos="fade-right"
+                                data-aos-offset="250"
+                                data-aos-duration="1000">
                         <h3 class="work__heading">safi jokes</h3>
                         <p class="work__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <a href="#" class="work__link">view live</a>
-                        <a href="#" class="work__link">github</a>
+                        <a href="https://mustafaedward.github.io/Mustafa-project-5/" class="work__link" target="_blank">view live</a>
+                        <a href="https://github.com/MustafaEdward/Mustafa-project-5" class="work__link" target="_blank">github</a>
                     </figcaption>
-                    <div class="work__img">
-                        <img src="./img/under-the-sea.jpg" alt="jokes app" class="work__img-photo">
+                    <div class="work__img" 
+                         data-aos="fade-up"
+                         data-aos-duration="1500">
+                        <img src="./img/joke.jpg" alt="jokes app" class="work__img-photo">
                     </div>
                 </figure>
                 <figure class="work container">
-                    <figcaption class="work__box container">
+                    <figcaption class="work__box container" 
+                                data-aos="fade-right"
+                                data-aos-offset="250"
+                                data-aos-duration="1000">
                         <h3 class="work__heading">budgie app</h3>
                         <p class="work__text">Users are able to input their upcoming pay date(s) and pay amount and the app calculate and display a daily budget.App will track if they are under/over their daily spending limit and change their average daily budget accordingly</p>
-                        <a href="#" class="work__link">view live</a>
-                        <a href="#" class="work__link">github</a>
+                        <a href="https://budgie-app.firebaseapp.com/" class="work__link" target="_blank">view live</a>
+                        <a href="https://github.com/MustafaEdward/BudgieApp" class="work__link" target="_blank">github</a>
                     </figcaption>
-                    <div class="work__img">
-                        <img src="./img/under-the-sea.jpg"" alt="budget app" class="work__img-photo">
+                    <div class="work__img" 
+                         data-aos="fade-up"
+                         data-aos-duration="1500">
+                        <img src="./img/budget.jpg" alt="budget app" class="work__img-photo">
                     </div>
                 </figure>
           </main>
@@ -124,7 +150,7 @@
                       <p class="person">Edward lovern - hackeryou instructor</p>                  
                   </div>
                   <div class="mask carousel-img">
-                      <img class="mask__img" src="./img/profile.jpeg" alt="">
+                      <img class="mask__img" src="./img/test-3.jpg" alt="">
                   </div>
                 </div>
             </div>
@@ -139,7 +165,7 @@
                       <p class="person">Edward lovern - hackeryou instructor</p>
                   </div>
                   <div class="mask carousel-img">
-                      <img class="mask__img" src="./img/profile.jpeg" alt="">
+                      <img class="mask__img" src="./img/test-2.jpg" alt="">
                   </div>
                 </div>
             </div>
@@ -153,7 +179,7 @@
                         <p class="person">Edward lovern - hackeryou instructor</p>                    
                     </div>
                     <div class="mask carousel-img">
-                        <img class="mask__img" src="./img/profile.jpeg" alt="">
+                        <img class="mask__img" src="./img/test-1.jpg" alt="">
                     </div>
                   </div>
               </div>
@@ -195,8 +221,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./javascript/carousel.js"></script>
     <script src="./javascript/particles.js"></script>
     <script src="./javascript/nav.js"></script>
+    <script src="./javascript/scroll.js"></script>
 
 </html>

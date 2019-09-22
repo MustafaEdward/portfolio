@@ -372,7 +372,9 @@ Masking
     display: block; }
   .profile__box {
     margin: 6rem 0 0 -5rem;
-    text-align: left; }
+    text-align: left;
+    position: relative;
+    z-index: 2; }
     @media only screen and (max-width: 53.75em) {
       .profile__box {
         margin: 3rem 0 0 0;
@@ -513,14 +515,17 @@ Masking
       background-color: #F36359;
       align-items: center;
       margin: 1rem 1rem 0 0; }
-  @media only screen and (max-width: 32em) {
-    .work__img {
-      padding: 0rem 4rem; } }
-  .work__img-photo {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-    display: block; }
+  .work__img {
+    opacity: .6; }
+    @media only screen and (max-width: 32em) {
+      .work__img {
+        padding: 0rem 4rem; } }
+    .work__img-photo {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+      display: block;
+      opacity: .7; }
 
 .footer {
   background-color: #fff;
@@ -552,6 +557,9 @@ Masking
     width: 20rem;
     display: flex;
     justify-content: space-between; }
+    @media only screen and (max-width: 53.75em) {
+      .header__list {
+        width: 13rem; } }
   .header__item {
     list-style: none; }
   .header__link {
@@ -573,7 +581,7 @@ Masking
         font-size: 4rem; } }
     @media only screen and (max-width: 32em) {
       .header__heading {
-        font-size: 3rem; } }
+        font-size: 2.1rem; } }
   .header__title {
     font-size: 4rem;
     text-transform: capitalize; }
@@ -582,7 +590,7 @@ Masking
         font-size: 2.5rem; } }
     @media only screen and (max-width: 32em) {
       .header__title {
-        font-size: 1.8rem; } }
+        font-size: 1.6rem; } }
   .header__energy {
     text-decoration: none;
     color: #F36359;
@@ -592,7 +600,8 @@ Masking
     margin: 2rem 0;
     cursor: pointer;
     color: #3A3C49;
-    cursor: initial; }
+    cursor: initial;
+    text-transform: capitalize; }
     .header__energy::before {
       content: "";
       display: block;
@@ -603,6 +612,9 @@ Masking
       margin: 1rem 1rem 0 0; }
     .header__energy::before {
       background-color: #3A3C49; }
+    @media only screen and (max-width: 32em) {
+      .header__energy {
+        font-size: 1.3rem; } }
 
 #zodiac {
   width: 100%;
