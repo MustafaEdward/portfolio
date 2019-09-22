@@ -2,9 +2,6 @@
     background-color: $color-white;
     overflow: hidden;
     height: 100vh;
-    @include respond(phone) {
-        height: 80vh;
-      }
     &__box {
      @include absLeft;  
     }
