@@ -17,6 +17,10 @@
         color: $color-black;
         font-size: 3rem;
         cursor: pointer;
+        transition: color .3s;
+        &:hover {
+          color: $color-red;
+        }
 
         @include respond(tablet) {
             font-size: 1.5rem;
@@ -46,6 +50,7 @@
     &__energy {
         @include link;
         color: $color-black;
+        cursor: initial;
         &::before {
             background-color: $color-black;
         }
@@ -57,4 +62,55 @@
     position: relative;
  }
 
+////////////////////////////
+//Scroll down 
+///////////////////////////
+.scroll-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-black;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: opacity .3s;
+  }
+  .scroll-link:hover {
+    opacity: .5;
+  }
+ #scroll-section {
+    position: absolute;
+    left: 50%;
+    bottom: 6%;
+ }
 
+.scroll-link {
+    padding-top: 60px;
+  }
+  .scroll-dot{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 30px;
+    height: 50px;
+    margin-left: -15px;
+    border: 2px solid $color-black;
+    border-radius: 50px;
+    box-sizing: border-box;
+    &::before {
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      content: '';
+      width: 6px;
+      height: 6px;
+      margin-left: -3px;
+      background-color: $color-black;
+      border-radius: 100%;
+      -webkit-animation: sdb10 2s infinite;
+      animation: sdb10 2s infinite;
+      box-sizing: border-box;
+    }
+  }
+  
+
+  

@@ -38,8 +38,5 @@
     }
     &__link {
       @include link;
-      @include respond(tablet) {
-        justify-content: center;
-     }
     }
 }
