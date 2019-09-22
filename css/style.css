@@ -152,7 +152,7 @@ body {
       .hero-slider .carousel-cell .slide-content .caption {
         font-size: 1.6rem;
         margin: 1rem 3rem 3rem 0; }
-        @media only screen and (max-width: 37.5em) {
+        @media only screen and (max-width: 32em) {
           .hero-slider .carousel-cell .slide-content .caption {
             font-size: 1.3rem; } }
   .hero-slider .carousel-icon {
@@ -177,7 +177,7 @@ body {
   text-transform: uppercase;
   display: flex;
   margin: 2rem 0; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 32em) {
     .person {
       font-size: .6rem; } }
   .person::before {
@@ -188,7 +188,7 @@ body {
     background-color: #F36359;
     align-items: center;
     margin: .7rem 1rem 0 0; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 32em) {
       .person::before {
         margin: .5rem 1rem 0 0; } }
 
@@ -418,14 +418,14 @@ Masking
   .skills__text {
     font-size: 1.6rem;
     margin-bottom: 3rem; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 32em) {
       .skills__text {
         font-size: 1.2rem; } }
   .skills__list {
     display: flex;
     flex-wrap: wrap;
     font-size: 1.3rem; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 32em) {
       .skills__list {
         font-size: .8rem; } }
   .skills__item {
@@ -447,7 +447,7 @@ Masking
 .work {
   display: flex;
   padding: 4rem 0 8rem; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 32em) {
     .work {
       flex-direction: column;
       padding: 2rem 0; } }
@@ -458,7 +458,7 @@ Masking
     @media only screen and (max-width: 53.75em) {
       .work__box {
         margin: 5rem -15rem 0 0; } }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 32em) {
       .work__box {
         text-align: center; } }
   .work__heading {
@@ -492,7 +492,7 @@ Masking
       background-color: #F36359;
       align-items: center;
       margin: 1rem 1rem 0 0; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 32em) {
     .work__img {
       padding: 0rem 4rem; } }
   .work__img-photo {
@@ -508,7 +508,7 @@ Masking
     display: flex;
     justify-content: space-between;
     font-size: 1.2rem; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 32em) {
       .footer__box {
         font-size: .5rem; } }
   .footer__copyright {
@@ -522,7 +522,7 @@ Masking
   background-color: #fff;
   overflow: hidden;
   height: 100vh; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 32em) {
     .header {
       height: 80vh; } }
   .header__box {
@@ -550,7 +550,7 @@ Masking
     @media only screen and (max-width: 53.75em) {
       .header__heading {
         font-size: 4rem; } }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 32em) {
       .header__heading {
         font-size: 3rem; } }
   .header__title {
@@ -559,7 +559,7 @@ Masking
     @media only screen and (max-width: 53.75em) {
       .header__title {
         font-size: 2.5rem; } }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 32em) {
       .header__title {
         font-size: 1.8rem; } }
   .header__energy {
@@ -588,23 +588,42 @@ Masking
   position: relative; }
 
 .logo {
-  width: 15rem; }
+  width: 10rem;
+  height: auto; }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 2px 2px #efefef;
+  z-index: 9999; }
+
+.nav-none {
+  display: none; }
 
 .navigation {
   display: flex;
   justify-content: space-between; }
-  @media only screen and (max-width: 53.75em) {
-    .navigation {
-      display: none; } }
   .navigation__list {
     display: flex;
     align-items: center;
-    margin: 3rem; }
+    margin: 2rem; }
+    @media only screen and (max-width: 32em) {
+      .navigation__list {
+        margin: .4rem; } }
   .navigation__item {
     list-style-type: none;
     font-size: 1.2rem; }
     .navigation__item:not(:last-child) {
       margin-right: 3.5rem; }
+      @media only screen and (max-width: 32em) {
+        .navigation__item:not(:last-child) {
+          margin-right: 1rem; } }
+    @media only screen and (max-width: 32em) {
+      .navigation__item {
+        font-size: .9rem; } }
   .navigation__link {
     text-decoration: none;
     color: #3A3C49;

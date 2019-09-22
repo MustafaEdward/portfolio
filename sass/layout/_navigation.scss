@@ -1,23 +1,48 @@
 .logo {
-    width: 15rem;
+    width: 10rem;
+    height: auto;
 }
+
+///////////////////////////////////////////////////
+//Main nav
+//////////////////////////////////////////////////
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px $color-grey-light-1;
+    z-index: 9999;
+}
+.nav-none {
+    display: none;
+}
+
 .navigation {
     display: flex;
     justify-content: space-between;
-    @include respond(tablet) {
-        display: none;
-       }
+   
     &__list {
        display: flex;
        align-items: center;
-       margin: 3rem;
+       margin: 2rem;
+       @include respond(phone) {
+        margin: .4rem;
+      }
     }
     &__item {
        list-style-type: none;
        font-size: 1.2rem;
        &:not(:last-child) {
            margin-right: 3.5rem;
+           @include respond(phone) {
+            margin-right: 1rem;
+          }
        }
+       @include respond(phone) {
+        font-size: .9rem;
+      }
     }
     &__link {
        text-decoration: none;
@@ -29,3 +54,8 @@
        }
     }
 }
+
+///////////////////////////////////////////////////
+//Sticky nav
+//////////////////////////////////////////////////
+
