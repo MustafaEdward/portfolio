@@ -126,6 +126,78 @@ body {
   background-color: #fff;
   color: #3A3C49; }
 
+.demo a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #3A3C49;
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s; }
+
+.demo a:hover {
+  opacity: .5; }
+
+#section10 {
+  position: absolute;
+  left: 50%;
+  bottom: 20%; }
+  @media only screen and (max-width: 32em) {
+    #section10 {
+      bottom: 30%; } }
+
+#section10 a {
+  padding-top: 60px; }
+
+#section10 a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 30px;
+  height: 50px;
+  margin-left: -15px;
+  border: 2px solid #3A3C49;
+  border-radius: 50px;
+  box-sizing: border-box; }
+
+#section10 a span::before {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  content: '';
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: #3A3C49;
+  border-radius: 100%;
+  -webkit-animation: sdb10 2s infinite;
+  animation: sdb10 2s infinite;
+  box-sizing: border-box; }
+
+@-webkit-keyframes sdb10 {
+  0% {
+    -webkit-transform: translate(0, 0);
+    opacity: 0; }
+  40% {
+    opacity: 1; }
+  80% {
+    -webkit-transform: translate(0, 20px);
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+@keyframes sdb10 {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0; }
+  40% {
+    opacity: 1; }
+  80% {
+    transform: translate(0, 20px);
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
 .hero-slider {
   height: 70vh;
   overflow: hidden; }
@@ -334,7 +406,7 @@ Masking
   @media only screen and (max-width: 53.75em) {
     .profile {
       flex-direction: column;
-      padding: 10rem 4rem; } }
+      margin: 5rem 0 5rem 0; } }
   @media only screen and (max-width: 53.75em) {
     .profile {
       padding: 2rem 0; } }
@@ -393,7 +465,7 @@ Masking
   @media only screen and (max-width: 53.75em) {
     .skills {
       flex-direction: column;
-      padding: 5rem 4rem; } }
+      padding: 2rem 4rem; } }
   .skills__box {
     padding-right: 7rem;
     padding: 0; }

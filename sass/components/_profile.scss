@@ -1,9 +1,9 @@
 .profile {
     display: flex;
-    margin: 5rem 0 15rem 0;
+     margin: 5rem 0 15rem 0;
       @include respond(tablet) {
        flex-direction: column;
-       padding: 10rem 4rem;
+       margin: 5rem 0 5rem 0;
       }
     @include respond(tablet) {
        padding: 2rem 0;
