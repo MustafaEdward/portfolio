@@ -54,6 +54,9 @@ body {
      position: absolute;
      left: 50%;
      bottom: 20%;
+     @include respond(phone) {
+        bottom: 30%;
+    }
  }
 
 #section10 a {

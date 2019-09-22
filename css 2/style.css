@@ -142,6 +142,9 @@ body {
   position: absolute;
   left: 50%;
   bottom: 20%; }
+  @media only screen and (max-width: 32em) {
+    #section10 {
+      bottom: 30%; } }
 
 #section10 a {
   padding-top: 60px; }
