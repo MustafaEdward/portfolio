@@ -17,6 +17,10 @@
       @include heading;
       text-align: center;
       padding-top: 5rem;
+      @include respond(tablet) {
+       text-align: left;
+       padding: 2rem 2rem 0;
+      }
     }
     &__name, 
     &__email,
@@ -70,6 +74,15 @@
         font-size: 1.8rem;
         margin-left: auto;
         margin-top: 3rem;  
-    }  
+          &:active,
+          &:focus {
+              outline: none;
+              box-shadow: 0 .5rem 1rem rgba($color-red,.1); //added for accessibility
+          }
+        }
+     }  
 }
-}
+
+
+
+

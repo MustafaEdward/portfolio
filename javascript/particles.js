@@ -9,7 +9,6 @@ var Zodiac = (function () {
             parallax: .2,
             density: 5000,
             proximity: 50,
-            //dotColor: '#aaa',
             dotRadius: [1, 5],
             lineColor: '#aaa',
             lineWidth: 1,

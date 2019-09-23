@@ -1,6 +1,6 @@
 .profile {
-    display: flex;
-     margin: 5rem 0 15rem 0;
+   display: flex;
+   margin: 5rem 0 15rem 0;
       @include respond(tablet) {
        flex-direction: column;
        margin: 5rem 0 5rem 0;
@@ -8,7 +8,6 @@
     @include respond(tablet) {
        padding: 2rem 0;
       }
-
     &__img {
       @include respond(tablet) {
         padding: 0rem 4rem;
@@ -18,7 +17,7 @@
             height: auto;
             max-width: 100%;
             display: block;
-         }
+        }
     }
     &__box {
        margin: 6rem 0 0 -5rem;
@@ -28,17 +27,16 @@
        @include respond(tablet) {
         margin: 3rem 0 0 0;
         text-align: left;
-     }
+       }
     }
     &__heading {
       @include heading;     
-    }
+       }  
     &__text {
         font-size: 1.6rem;
-        margin-bottom: 3rem;
-       
+        margin-bottom: 3rem;  
     }
     &__link {
-      @include link;
-    }
+        @include link;
+       }
 }

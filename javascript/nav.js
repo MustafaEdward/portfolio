@@ -1,9 +1,4 @@
-// var waypoints = $('#handler-first').waypoint(function(direction) {
-//     notify(this.element.id + ' hit 25% from top of window') 
-//   }, {
-//     offset: '25%'
-//   })
-
+///////////Waypoint library
 $(document).ready(function(){
     $('.js--profile').waypoint(function(direction){
         if(direction == "down") {
@@ -18,18 +13,8 @@ $(document).ready(function(){
         offset: '100px'
       })
 
-})
-
-
-
-//////////////////// test 
+});
 // Trigger CSS animations on scroll.
-// Detailed explanation can be found at http://www.bram.us/2013/11/20/scroll-animations/
-
-// Looking for a version that also reverses the animation when
-// elements scroll below the fold again?
-// --> Check https://codepen.io/bramus/pen/vKpjNP
-
 jQuery(function($) {
   
     // Function which adds the 'animated' class to any '.animatable' in view
@@ -81,4 +66,15 @@ $(document).ready(function(){
 	        // window.location.hash = target;
 	    });
 	});
+});
+
+////////////////// animation on scroll
+AOS.init();
+
+////////////////// scroll to top
+const btn = $('#btn');
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '2000');
 });

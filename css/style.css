@@ -197,6 +197,7 @@ body {
 
 .person {
   color: #F36359;
+  font-weight: normal;
   font-size: 1rem;
   text-transform: uppercase;
   display: flex;
@@ -295,6 +296,10 @@ Masking
       .contact__heading {
         font-size: 2.8rem;
         margin-bottom: 1.5rem; } }
+    @media only screen and (max-width: 53.75em) {
+      .contact__heading {
+        text-align: left;
+        padding: 2rem 2rem 0; } }
   .contact__name, .contact__email, .contact__message {
     background: transparent;
     flex: 0 0 50%;
@@ -351,6 +356,9 @@ Masking
         background-color: #F36359;
         align-items: center;
         margin: 1rem 1rem 0 0; }
+      .contact__form-submit:active, .contact__form-submit:focus {
+        outline: none;
+        box-shadow: 0 0.5rem 1rem rgba(243, 99, 89, 0.1); }
 
 .profile {
   display: flex;
@@ -416,7 +424,7 @@ Masking
   @media only screen and (max-width: 53.75em) {
     .skills {
       flex-direction: column;
-      padding: 2rem 4rem; } }
+      padding: 6rem 4rem 4rem; } }
   .skills__box {
     padding-right: 7rem;
     padding: 0; }
@@ -515,17 +523,15 @@ Masking
       background-color: #F36359;
       align-items: center;
       margin: 1rem 1rem 0 0; }
-  .work__img {
-    opacity: .6; }
-    @media only screen and (max-width: 32em) {
-      .work__img {
-        padding: 0rem 4rem; } }
-    .work__img-photo {
-      width: 100%;
-      height: auto;
-      max-width: 100%;
-      display: block;
-      opacity: .7; }
+  @media only screen and (max-width: 32em) {
+    .work__img {
+      padding: 0rem 4rem; } }
+  .work__img-photo {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    opacity: .5; }
 
 .footer {
   background-color: #fff;

@@ -10,14 +10,13 @@
         <script src="https://kit.fontawesome.com/b8ce70bdd1.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
         <title>Web developer | Mustafa Alabdullah</title>
     </head>
     <body>
             <header class="header" id="home">
-                   <nav class="nav-none">
+                   <nav class="nav-none" role="navigation">
                         <div class="navigation container">
-                            <img src="img/logo.png" alt="Mustafa logo" class="logo">
+                            <img src="img/logo.png" alt="logo" class="logo">
                             <ul class="navigation__list">
                                 <li class="navigation__item"><a href="#home" class="navigation__link">home</a></li>
                                 <li class="navigation__item"><a href="#skills" class="navigation__link">skills</a></li>
@@ -29,20 +28,20 @@
                     <canvas id="zodiac"></canvas>
                     <div class="header__box">
                         <ul class="header__list">
-                            <li class="header__item"><a target="_blank" href="https://twitter.com/EdwardMustafaCA" class="header__link"><i class="fab fa-twitter"></i></a></li>
-                            <li class="header__item"><a target="_blank" href="https://github.com/MustafaEdward" class="header__link"><i class="fab fa-github"></i></a></li>
-                            <li class="header__item"><a target="_blank" href="https://www.linkedin.com/in/mustafahkhalaf/" class="header__link"><i class="fab fa-linkedin"></i></a></li>
-                            <li class="header__item"><a target="_blank" href="https://medium.com/@mustafa.edward24" class="header__link"><i class="fab fa-medium-m"></i></a></li>
+                            <li class="header__item"><a aria-label="twitter"  target="_blank" href="https://twitter.com/EdwardMustafaCA" class="header__link"><i class="fab fa-twitter"></i></a></li>
+                            <li class="header__item"><a aria-label="github" target="_blank" href="https://github.com/MustafaEdward" class="header__link"><i class="fab fa-github"></i></a></li>
+                            <li class="header__item"><a aria-label="linkedin" target="_blank" href="https://www.linkedin.com/in/mustafahkhalaf/" class="header__link"><i class="fab fa-linkedin"></i></a></li>
+                            <li class="header__item"><a aria-label="medium" target="_blank" href="https://medium.com/@mustafa.edward24" class="header__link"><i class="fab fa-medium-m"></i></a></li>
                         </ul>
                         <h1 class="header__heading">Mustafa Alabdullah</h1>
                         <p class="header__title">web developer</p>
                         <p class="header__energy">big div energy</p>
                     </div>
                     <section id="scroll-section" class="scroll-down">
-                        <a class="scroll-link" href="#profile"><span class="scroll-dot"></span><i class="fas fa-chevron-down"></i></a>
+                        <a aria-label="scroll down" class="scroll-link" href="#profile"><span class="scroll-dot"></span><i class="fas fa-chevron-down"></i></a>
                     </section>
             </header>
-           <main>
+           <main role="main">
              <div class="container">
                <!-- profile section -->
                 <figure class="profile container js--profile" id="profile">
@@ -55,9 +54,9 @@
                     data-aos="fade-left"
                     data-aos-offset="250"
                     data-aos-duration="1000">
-                        <h3 class="profile__heading">my mission</h3>
+                        <h2 class="profile__heading">about me</h2>
                         <p class="profile__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <a href="#contact" class="profile__link">get in touch</a>
+                        <a href="" class="profile__link">resume</a>
                     </figcaption>
                 </figure>
                 <!-- skills section -->
@@ -75,7 +74,7 @@
                             <li class="skills__item"><i class="fas fa-universal-access"></i>web accessibility</li>
                             <li class="skills__item"><i class="fab fa-js-square"></i>javascript</li>
                             <li class="skills__item"><i class="fab fa-react"></i>react</li>
-                            <li class="skills__item"><i class="fas fa-fire"></i>firebase</li>
+                            <li class="skills__item"><i class="fas fa-fire"></i>API, firebase</li>
                             <li class="skills__item"><i class="fas fa-user-friends"></i>user experince</li>
                             <li class="skills__item"><i class="fab fa-github"></i>git and Github</li>
                             <li class="skills__item"><i class="fas fa-handshake"></i>paired programming</li>
@@ -183,8 +182,7 @@
                     </div>
                   </div>
               </div>
-          </div>
-        
+          </div>   
           <!-- contact section -->
           <div class="contact" id="contact">  
               <h3 class="contact__heading">Let's meet for coffee</h3> 
@@ -203,9 +201,9 @@
                             <label for="message" class="visuallyHidden">message</label>
                             <textarea name="message" id="message" cols="30" rows="10" class="contact__message"  placeholder="Message" ></textarea>
                        </div>
-                           <button type="submit" class="contact__form-submit">submit</button>
+                        <button type="submit" class="contact__form-submit">submit</button>
                     </div>
-
+                        <button type="submit" class="contact__form-submit" id="btn">back to top</button>
                   </form>
                 </div>   
           </div>
@@ -225,6 +223,5 @@
     <script src="./javascript/carousel.js"></script>
     <script src="./javascript/particles.js"></script>
     <script src="./javascript/nav.js"></script>
-    <script src="./javascript/scroll.js"></script>
 
 </html>
