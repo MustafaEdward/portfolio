@@ -384,7 +384,6 @@ Masking
       margin: 2rem 0;
       cursor: pointer;
       font-size: 1.8rem;
-      margin-left: auto;
       margin-top: 3rem; }
       .contact__form-submit::before {
         content: "";
@@ -397,6 +396,12 @@ Masking
       .contact__form-submit:active, .contact__form-submit:focus {
         outline: none;
         box-shadow: 0 0.5rem 1rem rgba(243, 99, 89, 0.1); }
+    .contact__form-buttons {
+      display: flex;
+      justify-content: space-between; }
+      @media only screen and (max-width: 53.75em) {
+        .contact__form-buttons {
+          flex-direction: column; } }
 
 .profile {
   display: flex;
@@ -419,7 +424,10 @@ Masking
       width: 100%;
       height: auto;
       max-width: 100%;
-      display: block; }
+      display: block;
+      -webkit-box-shadow: -5px 0px 11px -8px rgba(0, 0, 0, 0.87);
+      -moz-box-shadow: -5px 0px 11px -8px rgba(0, 0, 0, 0.87);
+      box-shadow: -5px 0px 11px -8px rgba(0, 0, 0, 0.87); }
   .profile__box {
     margin: 6rem 0 0 -5rem;
     text-align: left;
@@ -523,7 +531,10 @@ Masking
       width: 100%;
       height: auto;
       max-width: 100%;
-      display: block; }
+      display: block;
+      -webkit-box-shadow: -5px 0px 11px -8px rgba(0, 0, 0, 0.87);
+      -moz-box-shadow: -5px 0px 11px -8px rgba(0, 0, 0, 0.87);
+      box-shadow: -5px 0px 11px -8px rgba(0, 0, 0, 0.87); }
 
 .work {
   display: flex;
@@ -576,7 +587,10 @@ Masking
     width: 100%;
     height: auto;
     max-width: 100%;
-    display: block; }
+    display: block;
+    -webkit-box-shadow: -5px 0px 11px -8px rgba(0, 0, 0, 0.87);
+    -moz-box-shadow: -5px 0px 11px -8px rgba(0, 0, 0, 0.87);
+    box-shadow: -5px 0px 11px -8px rgba(0, 0, 0, 0.87); }
 
 .footer {
   background-color: #fff;

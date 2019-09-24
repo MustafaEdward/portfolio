@@ -115,7 +115,6 @@
         border: none;
         @include link;
         font-size: 1.8rem;
-        margin-left: auto;
         margin-top: 3rem;  
           &:active,
           &:focus {
@@ -123,9 +122,15 @@
               box-shadow: 0 .5rem 1rem rgba($color-red,.1); //added for accessibility
           }
         }
+        &-buttons {
+          display: flex;
+          justify-content: space-between;
+          @include respond(tablet) {
+            flex-direction: column;
+           }
+        }
      }  
 }
-
 
 
 

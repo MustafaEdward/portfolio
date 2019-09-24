@@ -75,4 +75,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
         }
 }
 
-
+@mixin shadow {
+    -webkit-box-shadow: -5px 0px 11px -8px rgba(0,0,0,0.87);
+    -moz-box-shadow: -5px 0px 11px -8px rgba(0,0,0,0.87);
+    box-shadow: -5px 0px 11px -8px rgba(0,0,0,0.87);
+}
