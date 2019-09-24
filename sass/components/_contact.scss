@@ -18,7 +18,7 @@
   align-items: center;
   @include respond(tablet) {
     align-items: flex-start;
-   }
+    }
     &__heading {
       @include heading;
       text-align: center;
@@ -33,15 +33,11 @@
     display: flex;
     justify-content: space-between;
     margin-top: 1rem;
-    @include respond(phone) {
-  
-    }
   }
   &__item {
      list-style: none;
      display: inline-block;
      margin: auto;
-
   }
   &__link {
       color: $color-black;
@@ -51,10 +47,9 @@
       &:hover {
         color: $color-red;
       }
- 
       @include respond(tablet) {
           font-size: 1.5rem;
-        }
+      }
   }
   &__mail {
     text-decoration: none;

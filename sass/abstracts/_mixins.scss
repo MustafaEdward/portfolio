@@ -57,22 +57,22 @@ ORDER: Base + typography > general layout + grid > page layout > components
  
 }
 @mixin link {
-        text-decoration: none;
-        color: $color-red;
-        font-size: 1.4rem;
-        text-transform: uppercase;
-        display: flex;
-        margin: 2rem 0;
-        cursor: pointer;
-        &::before {
-            content: "";
-            display: block;
-            height: .2rem;
-            width: 3.5rem;
-            background-color: $color-red;
-            align-items: center;
-            margin: 1rem 1rem 0 0;
-        }
+    text-decoration: none;
+    color: $color-red;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    display: flex;
+    margin: 2rem 0;
+    cursor: pointer;
+    &::before {
+        content: "";
+        display: block;
+        height: .2rem;
+        width: 3.5rem;
+        background-color: $color-red;
+        align-items: center;
+        margin: 1rem 1rem 0 0;
+    }
 }
 
 @mixin shadow {
