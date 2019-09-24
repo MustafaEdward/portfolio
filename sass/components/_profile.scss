@@ -40,7 +40,14 @@
        }  
     &__text {
         font-size: 1.6rem;
-        margin-bottom: 3rem;  
+        margin-bottom: 3rem; 
+        @include respond(tablet) {
+         width: 80%;
+        }
+        @include respond(phone) {
+         width: 100%;
+        }
+         
     }
     &__link {
         @include link;

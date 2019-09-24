@@ -287,7 +287,13 @@ Masking
 
 .contact {
   background: #fff;
-  margin-top: 8rem; }
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  @media only screen and (max-width: 53.75em) {
+    .contact {
+      align-items: flex-start; } }
   .contact__heading {
     font-size: 4rem;
     font-weight: 400;
@@ -305,6 +311,33 @@ Masking
       .contact__heading {
         text-align: left;
         padding: 5rem 2rem 0; } }
+  .contact__list {
+    width: 20rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem; }
+  .contact__item {
+    list-style: none;
+    display: inline-block;
+    margin: auto; }
+  .contact__link {
+    color: #3A3C49;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: color .3s; }
+    .contact__link:hover {
+      color: #F36359; }
+    @media only screen and (max-width: 53.75em) {
+      .contact__link {
+        font-size: 1.5rem; } }
+  .contact__mail {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.4rem; }
+    @media only screen and (max-width: 53.75em) {
+      .contact__mail {
+        text-align: left;
+        padding: 2rem 2rem 0; } }
   .contact__name, .contact__email, .contact__message {
     background: transparent;
     flex: 0 0 50%;
@@ -413,6 +446,12 @@ Masking
   .profile__text {
     font-size: 1.6rem;
     margin-bottom: 3rem; }
+    @media only screen and (max-width: 53.75em) {
+      .profile__text {
+        width: 80%; } }
+    @media only screen and (max-width: 32em) {
+      .profile__text {
+        width: 100%; } }
   .profile__link {
     text-decoration: none;
     color: #F36359;
@@ -541,46 +580,8 @@ Masking
 
 .footer {
   background-color: #fff;
-  padding: 1.5rem 0; }
-  .footer__box {
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.4rem; }
-    @media only screen and (max-width: 32em) {
-      .footer__box {
-        font-size: .5rem;
-        flex-direction: column;
-        align-items: center; } }
-  .footer__list {
-    width: 13rem;
-    display: flex;
-    justify-content: space-between; }
-    @media only screen and (max-width: 32em) {
-      .footer__list {
-        width: 10rem; } }
-  .footer__item {
-    list-style: none; }
-  .footer__link {
-    color: #3A3C49;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: color .3s; }
-    .footer__link:hover {
-      color: #F36359; }
-    @media only screen and (max-width: 53.75em) {
-      .footer__link {
-        font-size: 1.5rem; } }
-  .footer__copyright {
-    text-transform: uppercase;
-    font-size: 1rem; }
-    @media only screen and (max-width: 32em) {
-      .footer__copyright {
-        order: 1;
-        margin-top: 1rem; } }
-  .footer__email {
-    text-decoration: none;
-    color: inherit;
-    display: inline-block; }
+  padding: 1.5rem 0;
+  text-align: center; }
 
 .header {
   background-color: #fff;
