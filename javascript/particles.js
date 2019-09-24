@@ -7,7 +7,7 @@ var Zodiac = (function () {
             velocity: [[.1, 0.3], [.1, .3]],
             bounce: [true, true],
             parallax: .2,
-            density: 5000,
+            density: 1000,
             proximity: 50,
             dotRadius: [1, 5],
             lineColor: '#aaa',

@@ -1,16 +1,19 @@
 .profile {
    display: flex;
-   margin: 5rem 0 15rem 0;
+   margin: 15rem 0 2rem;
+   padding: 5rem 0;
       @include respond(tablet) {
        flex-direction: column;
-       margin: 5rem 0 5rem 0;
-      }
-    @include respond(tablet) {
+       margin:5rem 0;
        padding: 2rem 0;
       }
     &__img {
-      @include respond(tablet) {
-        padding: 0rem 4rem;
+       flex: 0 0 50%;
+       @include respond(tablet) {
+          width: 50%;
+       }
+       @include respond(phone) {
+        width: 100%;
      }
         &-photo {
             width: 100%;
@@ -24,8 +27,11 @@
        text-align: left;
        position: relative;
        z-index: 2;
+       background-color: $color-primary;
+       padding: 3rem 0 0 7rem;
        @include respond(tablet) {
         margin: 3rem 0 0 0;
+        padding: 3rem 0 0 0;
         text-align: left;
        }
     }

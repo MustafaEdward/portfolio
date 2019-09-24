@@ -47,13 +47,13 @@ ORDER: Base + typography > general layout + grid > page layout > components
     font-size: 4rem;
     font-weight: 400;
     text-transform: capitalize;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     margin-bottom: 3rem;
     text-align: left;
     @include respond(tablet) {
         font-size: 2.8rem;
         margin-bottom: 1.5rem;
-       }
+    }
  
 }
 @mixin link {
