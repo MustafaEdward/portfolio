@@ -1,6 +1,7 @@
 .work {
     display: flex;
     padding: 4rem 0 8rem;
+    line-height: 1.9;
       @include respond(phone) {
        flex-direction: column;
        padding: 2rem 0;
@@ -27,6 +28,7 @@
       @include link;
     }
     &__img {
+      flex: 0 0 55%;
         &-photo {
             width: 100%;
             height: auto;

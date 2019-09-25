@@ -1,6 +1,7 @@
 .skills {
     display: flex;
     padding: 10rem 0;
+    line-height: 1.9;
     @include respond(tablet) {
         flex-direction: column;
       }
