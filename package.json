@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "flickity": "^2.2.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "three": "^0.108.0",
     "waypoint": "^0.2.8"
   }
