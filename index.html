@@ -3,224 +3,147 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Mustafa Alabdullah is a front-end developer based in Toronto, Canada."/>
-        <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+        <meta name="description" content="Mustafa Alabdullah is a UX designer based in Toronto, Canada."/>
+        <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
         <script src="https://kit.fontawesome.com/b8ce70bdd1.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <title>Web developer | Mustafa Alabdullah</title>
+        <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+
+        <title>Mustafa Alabdullah</title>
     </head>
     <body>
             <header class="header" id="home">
+                <div class="container">
                    <nav class="nav-none" role="navigation">
                         <div class="navigation container">
-                            <img src="img/logo.jpg" class="logo">
+                            <p class="navigation__name">Mustafa Alabdullah</p>
                             <ul class="navigation__list">
-                                <li class="navigation__item"><a href="#home" class="navigation__link">home</a></li>
-                                <li class="navigation__item"><a href="#skills" class="navigation__link">skills</a></li>
-                                <li class="navigation__item"><a href="#work" class="navigation__link">work</a></li>
+                                <li class="navigation__item"><a href="#work" class="navigation__link">work<a></li>
                                 <li class="navigation__item"><a href="#contact" class="navigation__link">contact</a></li>
                             </ul>
                         </div>
                     </nav>
-                    <canvas id="zodiac"></canvas>
                     <div class="header__box">
-                        <h1 class="header__heading">Mustafa Alabdullah</h1>
-                        <p class="header__title">front-end developer</p>
-                        <p class="header__energy">big div energy</p>
+                        <p class="header__title rellax" data-rellax-speed="-2">Product Designer</p>
+                        <div class="header__box-img">
+                          <img src="./img/profile.jpeg" alt="profile picture" class="header__box-img_photo thumbnail ">
+                        </div>
                     </div>
-                    <section id="scroll-section" class="scroll-down">
-                        <a aria-label="scroll down" class="scroll-link" href="#profile"><span class="scroll-dot"></span><i class="fas fa-chevron-down"></i></a>
-                    </section>
+                </div>
             </header>
-           <main role="main" class="container">
-               <!-- profile section -->
-                <figure class="profile container js--profile" id="profile">
-                    <div class="profile__img" 
-                    data-aos="fade-up"
-                    data-aos-duration="1500">
-                        <img src="./img/profile.jpg" alt="profile picture" class="profile__img-photo">
+           <main>
+             <div class="container">
+               <div class="profile">
+                    <p class="profile__first-about-me " > 
+                        Hi, I'm Mustafa. I'm a unicorn designer with passion for motion design. Most of the time I design user experince, create high quality prototypes and code.</p>
+               </div>
+            </div>
+            <div class="secondary-title">
+               <p class="more-text">Tell me more</p>
+            </div>
+            <div class="container">
+                     <p class="second-about-me "  > 
+                        Ok, I recently graduated from the Brainstation UX design diploma in Toronto, transitioning from Front-end development. I call myself a UX engineer who can go from doing User research, apply design thinking methodologies to design and create a highly interactive prototype and communicate effectively with developers. 
+                        My goal as a designer is to create digital products that are enjoyable, engaging and centred around users.
+                    </p>
+             </div>
+             <div class="container">
+             <section class="number">
+                    <div class="number__container">
+                        <p class="number__container-one">01</p>
+                        <p class="number__container-two">Design degree</p>
                     </div>
-                    <figcaption class="profile__box" 
-                    data-aos="fade-left"
-                    data-aos-offset="50"
-                    data-aos-duration="1000">
-                        <h2 class="profile__heading">about me</h2>
-                        <p class="profile__text">I am a front-end developer based in Toronto who is passionate about Javascript and React. I enjoy playing with CSS and never get bored of working with UI. I love to see my imagination come to life through interactive, responsive and accessible web applications that solve problems for users. With additional experience working in QA and communications, I care about the quality and purpose of the applications 
-                            I develop. 
-                       </p>
-                    </figcaption>
-                </figure>
-                <!-- skills section -->
-                <figure class="skills container" id="skills">
-                    <figcaption class="skills__box"    
-                                data-aos="fade-right"
-                                data-aos-duration="1200">
-                        <h3 class="skills__heading">What I do</h3>
-                        <p class="skills__text">I  have the ability for creating accessible, intuitive apps. During my time at Juno College of Technology, I've learned all the skills to develop interactive, clean, clear, and concise code.</p>
-                        <ul class="skills__list">
-                            <li class="skills__item"><i class="fab fa-html5"></i>HTML</li>
-                            <li class="skills__item"><i class="fab fa-css3-alt"></i>CSS3</li>
-                            <li class="skills__item"><i class="fas fa-pencil-ruler"></i>responsive design</li>
-                            <li class="skills__item"><i class="fas fa-universal-access"></i>web accessibility</li>
-                            <li class="skills__item"><i class="fab fa-js-square"></i>javascript</li>
-                            <li class="skills__item"><i class="fab fa-react"></i>react</li>
-                            <li class="skills__item"><i class="fas fa-fire"></i>API, firebase</li>
-                            <li class="skills__item"><i class="fas fa-user-friends"></i>user experience</li>
-                            <li class="skills__item"><i class="fab fa-github"></i>git and Github</li>
-                            <li class="skills__item"><i class="fas fa-handshake"></i>paired programming</li>
-                            <li class="skills__item"><i class="fas fa-tasks"></i>project management</li>
-                            <li class="skills__item"><i class="fas fa-clipboard-check"></i>quality assurance</li>
-                        </ul>
-                    </figcaption>
-                    <div class="skills__img"
-                        data-aos="fade-up"
-                        data-aos-duration="1500">
-                         <img src="./img/computer.jpg" alt="white keyboard ,mouse and sunglasses" class="skills__img-photo">
+                    <div class="number__container">
+                        <p class="number__container-one">03</p>
+                        <p class="number__container-two">Years coding</p>
                     </div>
-                </figure>
-                <!-- work section -->
-                 <figure class="work container" id="work">
-                    <figcaption class="work__box container"  
-                                data-aos="fade-right"
-                                data-aos-duration="1200">
-                        <h3 class="work__heading">PSD conversion</h3>
-                        <p class="work__text">Executed the designer's vision on the web, and built a good experience for users regardless of the device on which they are viewing the site.</p>
-                        <a href="https://mustafaedward.github.io/mustafa-alabdullah-project-2/" class="work__link" target="_blank">view live</a>
-                        <a href="https://github.com/MustafaEdward/mustafa-alabdullah-project-2" class="work__link" target="_blank">github</a>
-                    </figcaption>
-                    <div class="work__img"
-                        data-aos="fade-up"
-                        data-aos-duration="1200">
-                        <img src="./img/sea.jpg" alt="laptop on a tabel showing under the sea website on the screen" class="work__img-photo">
+                    <div class="number__container">
+                        <p class="number__container-one">01</p>
+                        <p class="number__container-two">Coding degree</p>
+                    </div>    
+                 </section>
+                 <section class="number">
+                    <div class="number__container">
+                        <p class="number__container-one">01</p>
+                        <p class="number__container-two">Instgram</p>
                     </div>
-                </figure>
-                <figure class="work">
-                    <figcaption class="work__box container"
-                                data-aos="fade-right"
-                                data-aos-duration="1200">
-                        <h3 class="work__heading">safi jokes</h3>
-                        <p class="work__text">Using React , I built an app that lets users view and vote on jokes.</p>
-                        <a href="https://mustafaedward.github.io/Mustafa-project-5/" class="work__link" target="_blank">view live</a>
-                        <a href="https://github.com/MustafaEdward/Mustafa-project-5" class="work__link" target="_blank">github</a>
-                    </figcaption>
-                    <div class="work__img" 
-                         data-aos="fade-up"
-                         data-aos-duration="1500">
-                        <img src="./img/safi.jpg" alt="laptop showing Safi joke app on the screen, yellow cub and white light on the table" class="work__img-photo">
-                    </div>
-                </figure>
-                <figure class="work container">
-                    <figcaption class="work__box container" 
-                                data-aos="fade-right"
-                                data-aos-duration="1200">
-                        <h3 class="work__heading">budgie app</h3>
-                        <p class="work__text">Users are able to input their upcoming pay date(s) and pay amount and the app calculate and display a daily budget.App will track if they are under/over their daily spending limit and change their average daily budget accordingly.</p>
-                        <a href="https://budgie-app.firebaseapp.com/" class="work__link" target="_blank">view live</a>
-                        <a href="https://github.com/MustafaEdward/BudgieApp" class="work__link" target="_blank">github</a>
-                    </figcaption>
-                    <div class="work__img" 
-                         data-aos="fade-up"
-                         data-aos-duration="1500">
-                        <img src="./img/budget.jpg" alt="laptop on woody tabel , budget app on tyhe screen" class="work__img-photo">
-                    </div>
-                </figure>
+                    <div class="number__container">
+                        <p class="number__container-one">05</p>
+                        <p class="number__container-two">Projects done</p>
+                    </div> 
+                    <div class="number__container">
+                        <p class="number__container-one">29</p>
+                        <p class="number__container-two">Years lived</p>
+                    </div>   
+                 </section>
+             </div>
+
+            <section class="experience">
+                <div class="container">
+                    <p class="experience__heading">
+                       A short summary of my career
+                    </p>
+                </div>
+                    <div class="carousel">
+                        <div class="carousel-cell">
+                            <span class="experience-date">2019</span>
+                           <p class="carousel-heading" >Lorem, ipsum dolor.</p> 
+                           <p class="carousel-d" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, quo. Placeat, similique nisi eaque adipisci officiis quisquam qui quam repellat.
+                           </p>
+                        </div>
+                        <div class="carousel-cell">
+                            <span class="experience-date">2019</span>
+                            <p class="carousel-heading" >Lorem, ipsum dolor.</p> 
+                            <p class="carousel-d" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, quo. Placeat, similique nisi eaque adipisci officiis quisquam qui quam repellat.
+                            </p>
+                         </div>
+                         <div class="carousel-cell">
+                            <span class="experience-date">2019</span>
+                            <p class="carousel-heading" >Lorem, ipsum dolor.</p> 
+                            <p class="carousel-d" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, quo. Placeat, similique nisi eaque adipisci officiis quisquam qui quam repellat.
+                            </p>
+                         </div>
+                         <div class="carousel-cell">
+                            <span class="experience-date">2019</span>
+                            <p class="carousel-heading" >Lorem, ipsum dolor.</p> 
+                            <p class="carousel-d" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, quo. Placeat, similique nisi eaque adipisci officiis quisquam qui quam repellat.
+                            </p>
+                         </div>
+                  
+                </div>
+
+            </section>
+
+        
+         
+        
+          
+         
           </main>
-          <div class="hero-slider" data-carousel>
-            <div class="carousel-cell">
-                <div class="slide-content container">
-                  <div class="mask">
-                      <h2 class="title">skills I'm learning</h2>
-                      <p class="learning-title">sketch - The digital design toolkit</p>
-                      <div class="divider"></div>
-                      <div class="carousel-icon"><i class="fas fa-quote-left"></i></div>
-                      <p class="caption"> I'm learning design because it makes it possible for me to assemble the entire system in my mind, how the user interacts with my product and to enjoy my work even more.</p>
-                      <a href="./assets/mustafa-alabdullah-resume.pdf" target="_blank" class="profile__link">resume</a>
-                  </div>
-                  <div class="mask carousel-img">
-                      <img class="mask__img" src="./img/notes.jpg" alt="notes stickers and pens on a white tabel">
-                  </div>
-                </div>
-            </div>
-            <!--carousel section (carousel)-->
-             <div class="carousel-cell">
-                <div class="slide-content container">
-                  <div class="mask">
-                      <h2 class="title">skills I'm learning</h2>
-                      <p class="learning-title">redux</p>
-                      <div class="divider"></div>
-                      <div class="carousel-icon"><i class="fas fa-quote-left"></i></div>
-                      <p class="caption">Currently, I'm learning and working with Redux, the reason I love Redux is that it makes it easy to debug an application,and understand coding errors, network errors and other forms of bugs that might come up during production.</p>
-                      <a href="./assets/mustafa-alabdullah-resume.pdf" target="_blank" class="profile__link">resume</a>
-                  </div>
-                  <div class="mask carousel-img">
-                      <img class="mask__img" src="./img/office.jpg" alt="laptop, monitor and a modern office">
-                  </div>
-                </div>
-            </div>
-            <div class="carousel-cell">
-              <div class="slide-content container">
-                    <div class="mask">
-                        <h2 class="title">skills I'm learning</h2>
-                        <p class="learning-title">User experience - UX</p>
-                        <div class="divider"></div>
-                        <div class="carousel-icon"><i class="fas fa-quote-left"></i></div>
-                        <p class="caption">As a front-end developer, I understand the "computer application" part, I'm learning UX to understand the "human being" part. Also, I can contribute appropriately to my colleagues if I know what the other team members are doing.</p>
-                      <a href="./assets/mustafa-alabdullah-resume.pdf" target="_blank" class="profile__link">resume</a>                                           
-                    </div>
-                    <div class="mask carousel-img">
-                        <img class="mask__img" src="./img/ux.jpg" alt="notebopok, mac laptop, monitor and design sketch of mobile screen on a tabel">
-                    </div>
-                  </div>
-              </div>
-          </div>   
-          <!-- contact section -->
-          <div class="contact" id="contact">  
-              <h3 class="contact__heading">Let's meet for coffee</h3>
-              <a class="contact__mail" target="_blank" href="mailto:mustafa.edward24@gmail.com">mustafa.edward24@gmail.com</a>
-              <ul class="contact__list">
-                <li class="contact__item"><a aria-label="twitter"  target="_blank" href="https://twitter.com/EdwardMustafaCA" class="contact__link"><i class="fab fa-twitter"></i></a></li>
-                <li class="contact__item"><a aria-label="github" target="_blank" href="https://github.com/MustafaEdward" class="contact__link"><i class="fab fa-github"></i></a></li>
-                <li class="contact__item"><a aria-label="linkedin" target="_blank" href="https://www.linkedin.com/in/mustafahkhalaf/" class="contact__link"><i class="fab fa-linkedin"></i></a></li>
-                <li class="contact__item"><a aria-label="medium" target="_blank" href="https://medium.com/@mustafa.edward24" class="contact__link"><i class="fab fa-medium-m"></i></a></li>
-              </ul>
-              <div class="container">           
-                  <form class="contact__form">
-                    <div class="contact__form-box">
-                       <div class="contact__form-name">
-                           <label for="name" class="visuallyHidden">Name</label>
-                           <input type="text" name="name" id="name" class="contact__name" placeholder="Name">
-                       </div>
-                       <div class="contact__form-email">
-                            <label for="email" class="visuallyHidden">Email</label>
-                            <input type="text" name="email" id="email" class="contact__email" placeholder="Email" required>
-                       </div>
-                       <div class="contact__form-message">
-                            <label for="message" class="visuallyHidden">message</label>
-                            <textarea name="message" id="message" cols="30" rows="10" class="contact__message"  placeholder="Message" ></textarea>
-                       </div>
-                        
-                    </div>
-                    <div class="contact__form-buttons">
-                        <button type="submit" class="contact__form-submit">submit</button>
-                        <button type="submit" class="contact__form-submit" id="btn">back to top</button>
-                    </div>
-                  </form>
-                </div>   
-          </div>
-          <!-- Footer -->
-          <footer class="footer clearfix">
-                <p class="footer__copyright">copyright &#x000A9;2019 Mustafa Alabdullah</p>               
-          </footer>
+    
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./javascript/carousel.js"></script>
-    <script src="./javascript/particles.js"></script>
-    <script src="./javascript/nav.js"></script>
+    <script src="node_modules/rellax/rellax.min.js"></script>
+    
+    <script>
+
+        const image = document.getElementsByClassName('thumbnail');
+        new simpleParallax(image, {
+            delay: .6,
+            transition: 'cubic-bezier(0,0,0,1)',
+            maxTransition: 60,
+            scale: 1.2,
+            orientation: "up"
+        });
+
+        var rellax = new Rellax('.rellax');
+    </script>
 
 </html>
