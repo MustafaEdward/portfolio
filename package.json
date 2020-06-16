@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "flickity": "^2.2.1",
+    "hover-effect": "^1.1.0",
     "jquery": "^3.4.1",
     "rellax": "^1.12.1",
     "simple-parallax-js": "^5.5.1",

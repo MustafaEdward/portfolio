@@ -1,40 +1,15 @@
-.work {
-    display: flex;
-    padding: 4rem 0 8rem;
-    line-height: 1.9;
-      @include respond(phone) {
-       flex-direction: column;
-       padding: 2rem 0;
-      }
-    &__box { 
-        margin: 8rem -5rem 0 0;
-        position: relative;
-        z-index: 1;
-        background-color: $color-primary;
-        @include respond(tablet) {
-           margin: 5rem -15rem 0 0;
-        }
-    }
-    &__heading {
-      @include heading;       
-    }
-    &__text {
-        font-size: 1.6rem;
-        margin-bottom: 3rem;
-        text-align: left;
-        padding-right: 3rem;
-    }
-    &__link {
-      @include link;
-    }
-    &__img {
-      flex: 0 0 60%;
-        &-photo {
-            width: 100%;
-            height: auto;
-            max-width: 100%;
-            display: block;
-            @include shadow;
-        }
-    }
+.projects {
+  display: flex;
+  justify-content: space-between;
+
+  &__heading {
+     font-size: 5rem;
+     margin-right: 7rem;
+  }
+  &__copy {
+    font-size: 2rem;
+    opacity: 70%;
+    width: 55%;
+    line-height: 2.7;
+  }
 }

@@ -3,7 +3,7 @@
 
 &__first-about-me {
     font-size: 8rem;
-    margin-top: 15rem;
+    margin-top: 40rem;
 }
 
 }
@@ -12,9 +12,8 @@
   
 }
 .more-text {
-    overflow: hidden;
-    font-size: 20rem;
-    margin: 20rem 0;
+    font-size: 25rem;
+    margin: 25rem 0;
     display: inline-block;
     width: 100%;
     text-align: right;
@@ -30,4 +29,17 @@
     display: block;
     margin: 0 auto;
 
+}
+
+[data-scroll] {
+    transition: all 2s;
+}
+
+[data-scroll="in"] {
+
+    transform: translateY(-140px)
+}
+
+[data-scroll="out"] {
+    transform: translateY(0px)
 }
