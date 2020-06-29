@@ -11,6 +11,9 @@
         <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+
         <title>Mustafa Alabdullah</title>
     </head>
     <body>
@@ -26,7 +29,7 @@
                         </div>
                     </nav>
                     <div class="header__box">
-                        <p class="header__title rellax" data-rellax-speed="-2">Product Designer</p>
+                        <p class="header__title">Product Designer</p>
                         <div class="header__box-img my-div">
                           <img src="./img/profile.png" alt="profile picture" class="header__box-img_photo thumbnail">
                         </div>
@@ -138,6 +141,17 @@
              <section class="salon-video">
 
              </section>
+
+             <div class="cursor"></div>  
+             <div class="cursor-follower"></div>  
+
+             <div id="wrapper">
+                <div class="portfolio-item">
+                    <div class="portfolio-thumb">
+                        <img src="./img/profile.jpeg" alt="" />
+                    </div>
+                </div>
+            </div>
        
 
                
@@ -169,37 +183,12 @@
           <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
           <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
           <script src="./javascript/carousel.js"></script>
-          <script src="node_modules/rellax/rellax.min.js"></script>
           <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
           <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
         
         
   
           <script>
-
-
-                $(document).ready(function(){
-                TweenMax.set(".project-preview", {width:0});
-
-                var t1= new TimeLineLite();
-
-                $(document).on("mouseover", ".number__container", function(evt) {
-                    t1 = new TimeLineLite();
-                    t1.to($(".project-preview"), 1, {
-                    width: "600px",
-                    ease: Exp.easeInOut 
-
-                    }).on("mouseout", ".navigation-item", function(evt) {
-                    t1= new TimeLineLite();
-                    t1.to($(".project-preview"), 0.5, {
-                        width: 0,
-                        ease: Exp.easeInOut 
-                
-                    });
-                    })
-
-                });
-                })
 
 
             const image = document.getElementsByClassName('thumbnail');
@@ -212,10 +201,54 @@
             });
     
         
-            var rellax = new Rellax('.rellax', {
-            });
     
             ScrollOut();
+
+
+            var cursor = $(".cursor"),
+                follower = $(".cursor-follower");
+
+            var posX = 0,
+                posY = 0,
+                mouseX = 0,
+                mouseY = 0;
+
+            TweenMax.to({}, 0.016, {
+                repeat: -1,
+                onRepeat: function() {
+                    posX += (mouseX - posX) / 9;
+                    posY += (mouseY - posY) / 9;
+
+                    TweenMax.set(follower, {
+                        css: {
+                            left: posX - 20,
+                            top: posY - 20
+                        }
+                    });
+
+                    TweenMax.set(cursor, {
+                        css: {
+                            left: mouseX,
+                            top: mouseY
+                        }
+                    });
+                }
+            });
+
+            $(document).on("mousemove", function(e) {
+                mouseX = e.pageX;
+                mouseY = e.pageY;
+            });
+
+            $(".portfolio-item img").on("mouseenter", function() {
+                cursor.addClass("active");
+                follower.addClass("active");
+            });
+
+            $(".portfolio-item img").on("mouseleave", function() {
+                cursor.removeClass("active");
+                follower.removeClass("active");
+            });
 
          
         

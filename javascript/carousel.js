@@ -6,3 +6,5 @@ $('.carousel').flickity({
   pageDots: false,
 });
 
+
+
