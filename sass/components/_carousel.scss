@@ -5,9 +5,11 @@
   overflow: hidden;
   color: #fafafa;
 
+
 }
 .flickity-viewport {
   overflow: visible !important;
+
 }
 
 .carousel-cell {
@@ -30,3 +32,18 @@
   color: #fafafa;
   opacity: 70%;
 }
+
+
+
+//projects carousell 
+
+.project__carousel-cell {
+  width: 100%;
+  height: 130rem;
+  position: relative;
+  z-index: 100;
+  padding: 20rem 0;
+  background-color: #fafafa;
+  
+}
+

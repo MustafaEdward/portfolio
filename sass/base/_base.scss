@@ -11,8 +11,12 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+    min-height: 100%;
+
       @include respond(tab-port) {
+          
        font-size: 55%;
+
     }
 }
 body {
@@ -25,10 +29,11 @@ body {
     min-height: 100vh;
     background: $color-primary;
     text-align: left;
-
+    padding-bottom: 20px !important;
+    min-height: 100%;
 }
 .container {
-    width: 95rem;
+    width: 110rem;
     margin: 0 auto;
     // @include respond(tablet) {
     //     width: 100%;
