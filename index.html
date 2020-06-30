@@ -6,7 +6,7 @@
         <meta name="description" content="Mustafa Alabdullah is a UX designer based in Toronto, Canada."/>
         <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        <link rel="icon" type="image/png" href="./img/favicon.png"/>
         <script src="https://kit.fontawesome.com/b8ce70bdd1.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -18,7 +18,17 @@
 
         <title>Mustafa Alabdullah</title>
     </head>
+   
     <body data-barba="wrapper">
+        <div class="welcome">
+            <div class="container">
+                <p class="navigation__name welcome__nav">Mustafa</p>
+                <p class="welcome__title">
+                    Product Designer
+                </p>
+            </div>
+        </div>
+        <div class="cover">
             <header class="header" id="home" data-barba="container" data-barba-namespace="home">
                 <div class="container">
                    <nav class="nav-none" role="navigation">
@@ -45,8 +55,8 @@
                         Hi, I'm Mustafa. Most of the time I design user experince, create high quality prototypes and code.</p>
                </div>
             </div>
-            <div class="secondary-title">
-               <p class="more-text">Tell me more</p>
+            <div class="secondary-title ">
+               <p class="more-text " id="scroll-to">Tell me more</p>
             </div>
             <div class="container">
                      <p data-scroll class="second-about-me"> 
@@ -225,7 +235,7 @@
           <script src="./javascript/carousel.js"></script>
           <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
           <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-        
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js" integrity="sha256-hBMojZuWKocCflyaG8T19KBq9OlTlK39CTxb8AUWKhY=" crossorigin="anonymous"></script>
         
   
           <script>
@@ -331,6 +341,10 @@ $(document).ready(function() {
         </script>
     <script src="./javascript/hover.js"></script>
     <script src="./javascript/app.js"></script>
+    <script src="./javascript/animation.js"></script>
+
+
+</div>
     </body>
 
 </html>
