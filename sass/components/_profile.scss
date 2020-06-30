@@ -11,13 +11,17 @@
 .secondary-title {
   
 }
-.more-text {
+.more-text, 
+.more-text-interactions {
     font-size: 25rem;
     margin: 25rem 0;
     display: inline-block;
     width: 100%;
     text-align: right;
     overflow: hidden;
+}
+.more-text-interactions {
+    margin-top: 20rem;
 }
 
 .second-about-me{
