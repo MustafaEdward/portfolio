@@ -220,6 +220,10 @@ body {
 [data-scroll="out"] {
   transform: translateY(0px); }
 
+.distortion {
+  width: 70rem;
+  height: 70rem; }
+
 .number {
   margin: 25rem 0;
   display: flex;
