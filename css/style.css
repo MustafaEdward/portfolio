@@ -192,7 +192,8 @@ body {
     margin-top: 40rem; }
 
 .more-text,
-.more-text-interactions {
+.more-text-interactions,
+.more-text-projects {
   font-size: 25rem;
   margin: 25rem 0;
   display: inline-block;
@@ -477,7 +478,9 @@ body {
     color: #fff;
     padding-top: 7rem; }
 
-.more-text {
+.more-text,
+.more-text-projects,
+.more-text-interactions {
   position: relative;
   left: 20rem; }
 
