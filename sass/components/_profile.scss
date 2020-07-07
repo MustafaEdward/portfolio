@@ -9,12 +9,19 @@
 
 }
 
-.secondary-title {
-  
-}
+
+.more-text,
+.more-text-projects, 
+.more-text-interactions, 
+.more-text-contact{
+  position: relative;
+  left:20rem;
+} 
+
 .more-text, 
 .more-text-interactions,
-.more-text-projects {
+.more-text-projects, 
+.more-text-contact {
     font-size: 25rem;
     margin: 25rem 0;
     display: inline-block;
@@ -25,6 +32,10 @@
 .more-text-interactions {
     margin-top: 20rem;
 }
+.u-padding {
+    margin: 5rem 0 !important;
+}
+
 
 .second-about-me{
     max-width: 72rem;

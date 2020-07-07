@@ -1,0 +1,22 @@
+.contact {
+    background-color: $color-black;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 135vh;
+    background-size: cover;
+    margin-top: 40rem;
+    color: #fafafa;
+    &__details {
+     color: inherit;
+     font-size: 2rem;
+     opacity: 70%;
+     width: 60%;
+     margin-top: 10rem;
+     margin-bottom: 10rem;
+    }
+    &__email {
+        color: inherit;
+        font-size: 3.7rem;
+        font-style: italic;
+    }
+}

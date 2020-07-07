@@ -185,6 +185,26 @@ body {
   padding-top: 20rem;
   background-color: #fafafa; }
 
+.contact {
+  background-color: #000;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 135vh;
+  background-size: cover;
+  margin-top: 40rem;
+  color: #fafafa; }
+  .contact__details {
+    color: inherit;
+    font-size: 2rem;
+    opacity: 70%;
+    width: 60%;
+    margin-top: 10rem;
+    margin-bottom: 10rem; }
+  .contact__email {
+    color: inherit;
+    font-size: 3.7rem;
+    font-style: italic; }
+
 .profile {
   margin-top: 16rem; }
   .profile__first-about-me {
@@ -192,8 +212,16 @@ body {
     margin-top: 40rem; }
 
 .more-text,
+.more-text-projects,
 .more-text-interactions,
-.more-text-projects {
+.more-text-contact {
+  position: relative;
+  left: 20rem; }
+
+.more-text,
+.more-text-interactions,
+.more-text-projects,
+.more-text-contact {
   font-size: 25rem;
   margin: 25rem 0;
   display: inline-block;
@@ -203,6 +231,9 @@ body {
 
 .more-text-interactions {
   margin-top: 20rem; }
+
+.u-padding {
+  margin: 5rem 0 !important; }
 
 .second-about-me {
   max-width: 72rem;
@@ -302,20 +333,25 @@ body {
 
 .role {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: 10rem;
   flex-wrap: wrap; }
   .role__part {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    text-align: left; }
     .role__part-title {
       font-size: 2rem;
       color: inherit;
-      margin-bottom: 2rem; }
+      margin-bottom: 2rem;
+      text-align: left; }
     .role__part-description {
       font-size: 2rem;
       color: inherit;
       opacity: 60%; }
+
+.u-margin {
+  margin-bottom: 3rem; }
 
 .description {
   display: flex;
@@ -480,12 +516,6 @@ body {
   .welcome__nav {
     color: #fff;
     padding-top: 7rem; }
-
-.more-text,
-.more-text-projects,
-.more-text-interactions {
-  position: relative;
-  left: 20rem; }
 
 .navigation {
   display: flex;

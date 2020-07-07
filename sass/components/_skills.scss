@@ -104,17 +104,19 @@
 
 .role {
    display: flex;
-   justify-content: space-between;
+   justify-content: space-around;
    margin-top: 10rem;
    flex-wrap: wrap;
 
   &__part {
     display: flex;
     flex-direction: column;
+    text-align: left;
     &-title {
      font-size: 2rem;
      color: inherit; 
-     margin-bottom: 2rem;    
+     margin-bottom: 2rem;   
+     text-align: left; 
     }
 
     &-description {
@@ -125,7 +127,9 @@
   }
 }
 
-
+.u-margin {
+  margin-bottom: 3rem;
+}
 
 
 
