@@ -59,7 +59,7 @@
                         My goal as a designer is to create digital products that are enjoyable, engaging and centred around users.
                     </p>
              </div>
-             <div class="container">
+             <!-- <div class="container">
                 <div class="project-preview"></div>
                     <section class="number">
                         <div class="number__container">
@@ -91,7 +91,31 @@
                         </div>   
                     </section>
                     <div class="progressbar"></div>
-             </div>
+             </div> -->
+
+
+                <div class="project-preview"></div>
+                    <section class="number-new u-margin-top ">
+                        <div class="number__container">
+                            <p class="number-new__container-one">03</p>
+                            <p class="number-new__container-two">Years coding</p>
+                        </div>
+                        <div class="number-new-container">
+                            <p class="number-new-container__one">01</p>
+                            <p class="number-new-container__two">Design degree</p>
+                        </div>
+                       
+                        <div class="number-new-container-1">
+                            <p class="number-new-container-1__one">01</p>
+                            <p class="number-new-container-1__two">Design degree</p>
+                        </div>
+                        
+                          
+                    </section>
+                    <div class="progressbar"></div>
+
+
+
 
             <section class="experience">
                 <div class="container">
@@ -393,6 +417,116 @@ $(document).ready(function() {
       $(".number__container").hover(function() {
         $(".project-preview").css({ "background-image": "url(../../img/three.jpg)" });
       });
+
+
+
+
+
+      $(document).ready(function() {
+        TweenMax.set(".project-preview", { width: 0 });
+
+        var tl = new TimelineLite();
+
+        $(document)
+          .on("mouseover", ".number__container", function(evt) {
+            tl = new TimelineLite();
+            tl.to($(".project-preview"), 1, {
+              width: "600px",
+              ease: Expo.easeInOut
+            });
+          })
+          .on("mouseout", ".number__container", function(evt) {
+            tl = new TimelineLite();
+            tl.to($(".project-preview"), 0.5, {
+              width: 0,
+              ease: Expo.easeInOut
+            });
+          });
+      });
+
+      $(".number__container").hover(function() {
+        $(".project-preview").css({ "background-image": "url(../../img/flower.png)" });
+      });
+
+
+
+
+
+      $(document).ready(function() {
+        TweenMax.set(".project-preview", { width: 0 });
+
+        var tl = new TimelineLite();
+
+        $(document)
+          .on("mouseover", ".number-new-container", function(evt) {
+            tl = new TimelineLite();
+            tl.to($(".project-preview"), 1, {
+              width: "600px",
+              ease: Expo.easeInOut
+            });
+          })
+          .on("mouseout", ".number-new-container", function(evt) {
+            tl = new TimelineLite();
+            tl.to($(".project-preview"), 0.5, {
+              width: 0,
+              ease: Expo.easeInOut
+            });
+          });
+      });
+
+      $(".number-new-container").hover(function() {
+        $(".project-preview").css({ "background-image": "url(../../img/black.png)" });
+      });
+
+
+
+
+
+
+      $(document).ready(function() {
+        TweenMax.set(".project-preview", { width: 0 });
+
+        var tl = new TimelineLite();
+
+        $(document)
+          .on("mouseover", ".number-new-container-1", function(evt) {
+            tl = new TimelineLite();
+            tl.to($(".project-preview"), 1, {
+              width: "600px",
+              ease: Expo.easeInOut
+            });
+          })
+          .on("mouseout", ".number-new-container-1", function(evt) {
+            tl = new TimelineLite();
+            tl.to($(".project-preview"), 0.5, {
+              width: 0,
+              ease: Expo.easeInOut
+            });
+          });
+      });
+
+      $(".number-new-container-1").hover(function() {
+        $(".project-preview").css({ "background-image": "url(../../img/glasses.png)" });
+      });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
       $(window).scroll(function() {
         var scroll = $(window).scrollTop(),

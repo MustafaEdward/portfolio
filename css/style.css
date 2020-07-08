@@ -205,6 +205,95 @@ body {
     font-size: 3.7rem;
     font-style: italic; }
 
+.u-margin-top {
+  margin-top: 30rem; }
+
+.number {
+  margin: 25rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  text-align: left;
+  position: relative; }
+  .number__container {
+    display: inline-block;
+    display: block; }
+    .number__container-one {
+      font-size: 10rem; }
+    .number__container-two {
+      font-size: 2rem;
+      opacity: 60%; }
+
+.experience {
+  background-color: #000;
+  color: #fafafa;
+  font-weight: 400; }
+  .experience__heading {
+    font-size: 8rem;
+    text-align: left;
+    padding: 22rem 0;
+    line-height: 1.2; }
+
+.experience-date {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 7rem; }
+
+.project-preview {
+  position: fixed;
+  top: 12%;
+  left: 50%;
+  width: 0px;
+  height: 400px;
+  background-size: cover;
+  overflow: hidden; }
+
+.number-new {
+  text-align: center; }
+  .number-new__container-one {
+    font-size: 7rem;
+    opacity: 70%; }
+  .number-new__container-two {
+    font-size: 5rem;
+    margin-bottom: 25rem; }
+    .number-new__container-two::after {
+      content: "";
+      border-bottom: .1px solid black;
+      display: block;
+      margin-bottom: 6rem;
+      width: 100%; }
+
+.number-new-container {
+  text-align: center; }
+  .number-new-container__one {
+    font-size: 7rem;
+    opacity: 70%; }
+  .number-new-container__two {
+    font-size: 5rem;
+    margin-bottom: 20rem; }
+    .number-new-container__two::after {
+      content: "";
+      border-bottom: .1px solid black;
+      display: block;
+      margin-bottom: 10rem;
+      width: 100%; }
+
+.number-new-container-1 {
+  text-align: center; }
+  .number-new-container-1__one {
+    font-size: 7rem;
+    opacity: 60%; }
+  .number-new-container-1__two {
+    font-size: 5rem;
+    margin-bottom: 30rem; }
+    .number-new-container-1__two::after {
+      content: "";
+      border-bottom: .1px solid black;
+      display: block;
+      margin-bottom: 10rem;
+      width: 100%; }
+
 .profile {
   margin-top: 16rem; }
   .profile__first-about-me {
@@ -257,48 +346,6 @@ body {
   width: 100%;
   height: auto;
   margin-top: -2rem !important; }
-
-.number {
-  margin: 25rem 0;
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: space-between;
-  text-align: left;
-  position: relative; }
-  .number__container {
-    display: inline-block;
-    display: block; }
-    .number__container-one {
-      font-size: 10rem; }
-    .number__container-two {
-      font-size: 2rem;
-      opacity: 60%; }
-
-.experience {
-  background-color: #000;
-  color: #fafafa;
-  font-weight: 400; }
-  .experience__heading {
-    font-size: 8rem;
-    text-align: left;
-    padding: 22rem 0;
-    line-height: 1.2; }
-
-.experience-date {
-  font-size: 2rem;
-  display: block;
-  margin-bottom: 7rem; }
-
-.project-preview {
-  position: fixed;
-  top: 12%;
-  left: 50%;
-  width: 0px;
-  height: 400px;
-  background: url(../../img/three.jpg) no-repeat 50% 50%;
-  background-size: cover;
-  overflow: hidden; }
 
 .video,
 .video-mobile {

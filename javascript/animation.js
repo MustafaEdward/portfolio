@@ -55,15 +55,11 @@ $(document).on('scroll', function(){
 })
 
 $(document).on('scroll', function(){
-    $('.more-text-projects').css("left", Math.max(2150 - 0.35*window.scrollY) + "px")
+    $('.more-text-projects').css("left", Math.max(2400 - 0.35*window.scrollY) + "px")
 })
 
 $(document).on('scroll', function(){
-    $('.more-text-interactions').css("left", Math.max(3000 - 0.35*window.scrollY) + "px")
-})
-
-$(document).on('scroll', function(){
-    $('.more-text-contact').css("left", Math.max(4500 - 0.35*window.scrollY) + "px")
+    $('.more-text-contact').css("left", Math.max(4900 - 0.35*window.scrollY) + "px")
 })
 
 
