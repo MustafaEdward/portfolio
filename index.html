@@ -6,7 +6,7 @@
         <meta name="description" content="Mustafa Alabdullah is a UX designer based in Toronto, Canada."/>
         <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="icon" type="image/png" href="./img/favicon.png"/>
+        <link rel="icon" type="image/png" href="./img/heart.png"/>
         <script src="https://kit.fontawesome.com/b8ce70bdd1.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -14,21 +14,12 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r99/three.min.js" integrity="sha256-V0EyXecXmQqSk1QW7iej2g+pzqX02oz78cnceES2ZCs=" crossorigin="anonymous"></script>
-
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
         <title>Mustafa Alabdullah</title>
     </head>
    
     <body data-barba="wrapper">
-        <div class="welcome">
-            <div class="container">
-                <p class="navigation__name welcome__nav">Mustafa</p>
-                <p class="welcome__title">
-                    Product Designer
-                </p>
-            </div>
-        </div>
-        <div class="cover">
             <header class="header" id="home" data-barba="container" data-barba-namespace="home">
                 <div class="container">
                    <nav class="nav-none" role="navigation">
@@ -41,7 +32,7 @@
                         </div>
                     </nav>
                     <div class="header__box">
-                        <p class="header__title">Product Designer</p>
+                        <p data-scroll class="header__title anim">Product Designer</p>
                         <div class="header__box-img distortion">
                           <!-- <img src="./img/profile.png" alt="profile picture" class="header__box-img_photo thumbnail"> -->
                         </div>
@@ -49,6 +40,8 @@
                 </div>
             </header>
            <main>
+
+              
              <div class="container">
                <div class="profile">
                     <p data-scroll class="profile__first-about-me"> 
@@ -59,6 +52,7 @@
             <div class="secondary-title ">
                <p class="more-text " id="scroll-to">Tell me more</p>
             </div>
+            
             <div class="container">
                      <p data-scroll class="second-about-me"> 
                         Ok, I recently graduated from the Brainstation UX design diploma in Toronto, transitioning from Front-end development. I call myself a UX engineer who can do User research, apply design thinking methodologies, design, and communicate effectively with developers. 
@@ -213,7 +207,7 @@
 
             <section class="video">
                 <div class="bg-video">
-                    <video class="bg-video__content haha" autoplay muted loop>
+                    <video class="bg-video__content" autoplay muted loop>
                         <source src="./img/figo.mp4" type="video/mp4">
                         Your browser is not supported!
                     </video>
@@ -261,11 +255,12 @@
            
             <div class="contact">
                 <div class="secondary-title">
-                    <p class="more-text-contact u-padding">Contact me</p>
+                    <p class="more-text-contact u-padding">Get in touch</p>
                  </div>
                 <div class="container">
-                     <p class="contact__details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus tempora voluptatum at sunt cum. Obcaecati nisi odio suscipit vel neque.</p>
-                     <p class="contact__email" >mustafa.edward24@gmail.com</p>
+                     <p class="contact__details">See what happens when great projects meet great design.
+                    </p>
+                     <p class="contact__email" >mustafaa.design@gmail.com</p>
                 </div>
             </div>
         
@@ -305,7 +300,8 @@
           <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
           <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
           <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js" integrity="sha256-hBMojZuWKocCflyaG8T19KBq9OlTlK39CTxb8AUWKhY=" crossorigin="anonymous"></script>
-        
+          <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
   
           <script>
 
@@ -322,7 +318,7 @@
         
     
             ScrollOut();
-
+            AOS.init();
 
             var cursor = $(".cursor"),
                 follower = $(".cursor-follower");
@@ -405,7 +401,19 @@ $(document).ready(function() {
         scrollPercent = (scroll / (dh - wh)) * 100;
         $(".progressbar").css("height", scrollPercent + "%");
       });
+      
 
+    //  const title = document.querySelector(".anim");
+    //  observer= new IntersectionObserver((entries) => {
+    //      console.log(entries);
+    //      if(entries[0].intersectionRatio > 0) {
+    //          entries[0].target.style.animation = `anim1 2s forwards ease-out`;
+    //      } else {
+    //         entries[0].target.style.animation = `none`;
+    //      }
+    //  });
+
+    //  observer.observe(title)
         
         </script>
     <script src="./javascript/hover.js"></script>
@@ -413,7 +421,6 @@ $(document).ready(function() {
     <script src="./javascript/animation.js"></script>
 
 
-</div>
     </body>
 
 </html>
