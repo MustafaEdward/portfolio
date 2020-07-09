@@ -52,46 +52,16 @@
             <div class="secondary-title ">
                <p class="more-text " id="scroll-to">Tell me more</p>
             </div>
-            
+            <div class="secondary-title">
+                <p class="more-text-tablet " id="scroll-to">Tell me more</p>
+             </div>
             <div class="container">
                      <p data-scroll class="second-about-me"> 
                         Ok, I recently graduated from the Brainstation UX design diploma in Toronto, transitioning from Front-end development. I call myself a UX engineer who can do User research, apply design thinking methodologies, design, and communicate effectively with developers. 
                         My goal as a designer is to create digital products that are enjoyable, engaging and centred around users.
                     </p>
              </div>
-             <!-- <div class="container">
-                <div class="project-preview"></div>
-                    <section class="number">
-                        <div class="number__container">
-                            <p class="number__container-one">01</p>
-                            <p class="number__container-two">Design degree</p>
-                        </div>
-                        <div class="number__container">
-                            <p class="number__container-one">03</p>
-                            <p class="number__container-two">Years coding</p>
-                        </div>
-                        <div class="number__container">
-                            <p class="number__container-one">01</p>
-                            <p class="number__container-two">Coding degree</p>
-                        </div>    
-                    </section>
-                    <section class="number">
-                        <div class=" number__container">
-                            <p class="number__container-one">01</p>
-                            <p class=" number__container-two">Instgram</p>
-
-                        </div>
-                        <div class="number__container">
-                            <p class="number__container-one">05</p>
-                            <p class="number__container-two">Projects done</p>
-                        </div> 
-                        <div class="number__container">
-                            <p class="number__container-one">29</p>
-                            <p class="number__container-two">Years lived</p>
-                        </div>   
-                    </section>
-                    <div class="progressbar"></div>
-             </div> -->
+             
             <div id="cricle" class="circle">
                 designer - developer-
             </div>
@@ -99,17 +69,17 @@
                 <div class="project-preview"></div>
                     <section class="number-new u-margin-top ">
                         <div class="number__container">
-                            <p class="number-new__container-one">03</p>
-                            <p class="number-new__container-two">Years coding</p>
+                            <p class="number-new__container-one">01</p>
+                            <p class="number-new__container-two">Design degree</p>
                         </div>
                         <div class="number-new-container">
-                            <p class="number-new-container__one">01</p>
-                            <p class="number-new-container__two">Design degree</p>
+                            <p class="number-new-container__one">03</p>
+                            <p class="number-new-container__two"> Years coding</p>
                         </div>
                        
                         <div class="number-new-container-1">
                             <p class="number-new-container-1__one">01</p>
-                            <p class="number-new-container-1__two">Design degree</p>
+                            <p class="number-new-container-1__two">Coding degree</p>
                         </div>
                         
                           
@@ -162,7 +132,9 @@
             <div class="secondary-title">
                 <p class="more-text-projects">My projects</p>
              </div>
-
+             <div class="secondary-title">
+                <p class="more-text-tablet " id="scroll-to">My projects</p>
+             </div>
 
 
              <section  class="description container">
@@ -194,7 +166,6 @@
                 <div class="btn-c">
                     <a href="https://medium.com/@mustafa.edward24/test-a0c2af592e7d?source=friends_link&sk=c8508d44c4bfbd8965e7505e55aa2fe9" class="projects__btn" target="_blank"> View case study</a>
                     <a href="https://cloud.protopie.io/p/9e8362bffa/24?ui=true&mockup=true&touchHint=true&scaleToFit=true&cursorType=touch" class="projects__btn" target="_blank"> Prototype</a>
-
                </div>
              </section>
             <!-- video -->
@@ -283,9 +254,13 @@
                 <div class="secondary-title">
                     <p class="more-text-contact u-padding">Get in touch</p>
                  </div>
+                 <div class="secondary-title">
+                    <p class="more-text-tablet " id="scroll-to">Get in touch</p>
+                 </div>
+    
+
                 <div class="container">
-                     <p class="contact__details">See what happens when great projects meet great design.
-                    </p>
+                     <p class="contact__details">See what happens when great projects meet great design.</p>
                      <p class="contact__email" >mustafaa.design@gmail.com</p>
                 </div>
             </div>
@@ -298,7 +273,7 @@
 
             <section class="social"> 
                 <ul  data-scroll class="social__list">
-                    <li class="social__item"><a class="social__link" href="https://www.linkedin.com/in/uxmustafa/" target="_blank">Linkden</a></li>
+                    <li class="social__item"><a class="social__link" href="https://www.linkedin.com/in/uxmustafa/" target="_blank">LinkedIn </a></li>
                     <li class="social__item" ><a class="social__link" href="https://twitter.com/MustafaUX" target="_blank">Twitter</a></li>
                     <li class="social__item"><a class="social__link" href="https://www.instagram.com/uxmustafa/" target="_blank">Instgram</a></li>
                 </ul>       
@@ -403,7 +378,7 @@ $(document).ready(function() {
           .on("mouseover", ".number__container", function(evt) {
             tl = new TimelineLite();
             tl.to($(".project-preview"), 1, {
-              width: "600px",
+              width: "00px",
               ease: Expo.easeInOut
             });
           })
@@ -510,22 +485,6 @@ $(document).ready(function() {
       $(".number-new-container-1").hover(function() {
         $(".project-preview").css({ "background-image": "url(../../img/glasses.png)" });
       });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

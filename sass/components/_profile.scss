@@ -16,6 +16,7 @@
 .more-text-contact{
   position: relative;
   left:20rem;
+
 } 
 
 .more-text, 
@@ -28,7 +29,24 @@
     width: 100%;
     text-align: right;
     overflow: hidden;
+    @include respond(tablet) {
+        display: none;
+     }
 }
+
+.more-text-tablet {
+    font-size: 20rem;
+    text-align: center;
+    display: none;
+    @include respond(tablet) {
+        display: block;
+        margin: 10rem 0;
+     }
+}
+
+
+
+
 .more-text-interactions {
     margin-top: 20rem;
 }
@@ -45,6 +63,9 @@
     line-height: 2.8;
     display: block;
     margin: 0 auto;
+    @include respond(tablet) {
+        margin-top: 33rem;
+     }
 
 }
 
@@ -70,13 +91,3 @@
     margin-top: -2rem !important;
 }
 
-
-// @keyframes anim1 {
-//     from {
-//       transform: translateY(-100px);
-
-//     }
-//     to  {
-//       transform: translateY(200);
-//     }
-//   }

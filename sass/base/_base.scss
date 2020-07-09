@@ -13,10 +13,11 @@ html {
     font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
     min-height: 100%;
 
-      @include respond(tab-port) {
-          
-       font-size: 55%;
-
+      @include respond(tab-land) {  
+       font-size: 50%;
+    }
+    @include respond(tablet) {
+       font-size: 45%;
     }
 }
 body {
@@ -32,15 +33,24 @@ body {
     padding-bottom: 20px !important;
     min-height: 100%;
     overflow-x: hidden;
+  
+
+   
 }
 .container {
     width: 110rem;
     margin: 0 auto;
-    // @include respond(tablet) {
-    //     width: 100%;
-    //     padding: 0 2rem;
-    //     overflow: hidden;
-    // }
+    @include respond(tablet) {
+        width: 100%;
+        padding: 0 2rem;
+        overflow: hidden;
+    }
+
+    @include respond(tab-land) {
+        width: 100%;
+        padding: 0 5rem;
+        overflow: hidden;
+    }
 }
 ::selection {
     background-color: $color-white;

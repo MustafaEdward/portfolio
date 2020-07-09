@@ -17,6 +17,12 @@
   margin-top: 40rem;
   margin: 0 auto;
   padding-top: 15rem;
+
+  @include respond(tablet) {
+      height: 70vh;
+      padding-top: 20rem;
+      margin-top: 5rem;
+ }
 }
 .video-mobile {
   margin-top: 5rem;

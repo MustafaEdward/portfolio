@@ -50,6 +50,9 @@
 display: flex;
 justify-content: space-between;
 
+@include respond(tablet) {
+    margin-top: -10rem;
+}
 }
 
 
