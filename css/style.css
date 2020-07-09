@@ -130,6 +130,9 @@ html {
   @media only screen and (max-width: 53.75em) {
     html {
       font-size: 45%; } }
+  @media only screen and (max-width: 32em) {
+    html {
+      font-size: 40%; } }
 
 body {
   font-family: 'Questrial', sans-serif;
@@ -182,6 +185,9 @@ body {
   font-size: 5rem;
   width: 100%;
   color: #fafafa; }
+  @media only screen and (max-width: 53.75em) {
+    .carousel-heading {
+      font-size: 3rem; } }
 
 .carousel-d {
   font-size: 2.4rem;
@@ -189,6 +195,9 @@ body {
   width: 50%;
   color: #fafafa;
   opacity: 70%; }
+  @media only screen and (max-width: 53.75em) {
+    .carousel-d {
+      font-size: 1.7rem; } }
 
 .project__carousel-cell {
   width: 100%;
@@ -208,7 +217,10 @@ body {
   color: #fafafa; }
   @media only screen and (max-width: 53.75em) {
     .contact {
-      height: 80vh; } }
+      height: 80vh;
+      margin-top: 15rem;
+      padding-top: 5rem;
+      padding-bottom: 5rem; } }
   .contact__details {
     color: inherit;
     font-size: 2rem;
@@ -251,6 +263,9 @@ body {
   background-color: #000;
   color: #fafafa;
   font-weight: 400; }
+  @media only screen and (max-width: 53.75em) {
+    .experience {
+      height: 70vh; } }
   .experience__heading {
     font-size: 8rem;
     text-align: left;
@@ -258,12 +273,17 @@ body {
     line-height: 1.2; }
     @media only screen and (max-width: 53.75em) {
       .experience__heading {
-        padding: 15rem 0; } }
+        padding: 15rem 0;
+        font-size: 5rem; } }
 
 .experience-date {
   font-size: 2rem;
   display: block;
   margin-bottom: 7rem; }
+  @media only screen and (max-width: 53.75em) {
+    .experience-date {
+      font-size: 1.6rem;
+      margin-bottom: 4rem; } }
 
 .project-preview {
   position: fixed;
@@ -337,6 +357,12 @@ body {
   .profile__first-about-me {
     font-size: 8.5rem;
     margin-top: 40rem; }
+    @media only screen and (max-width: 53.75em) {
+      .profile__first-about-me {
+        font-size: 6rem; } }
+    @media only screen and (max-width: 32em) {
+      .profile__first-about-me {
+        font-size: 4rem; } }
 
 .more-text,
 .more-text-projects,
@@ -363,13 +389,17 @@ body {
       display: none; } }
 
 .more-text-tablet {
-  font-size: 20rem;
+  font-size: 15rem;
   text-align: center;
   display: none; }
   @media only screen and (max-width: 53.75em) {
     .more-text-tablet {
       display: block;
-      margin: 10rem 0; } }
+      margin: 5rem 0; } }
+  @media only screen and (max-width: 32em) {
+    .more-text-tablet {
+      font-size: 10rem;
+      margin: 3rem 0; } }
 
 .more-text-interactions {
   margin-top: 20rem; }
@@ -427,6 +457,11 @@ body {
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover; }
+  @media only screen and (max-width: 53.75em) {
+    .video-mobile {
+      height: 70vh;
+      padding-top: 20rem;
+      margin-top: 5rem; } }
 
 .bg-video {
   background-color: #FCFBFC; }
@@ -465,6 +500,12 @@ body {
 .description {
   display: flex;
   justify-content: space-between; }
+  @media only screen and (max-width: 53.75em) {
+    .description {
+      margin-bottom: 0rem; } }
+  @media only screen and (max-width: 32em) {
+    .description {
+      margin-bottom: 7rem; } }
   .description__heading {
     font-size: 5rem;
     margin-right: 7rem; }
@@ -505,7 +546,7 @@ body {
   justify-content: space-between; }
   @media only screen and (max-width: 53.75em) {
     .btn-c {
-      margin-top: -10rem; } }
+      margin-top: -30rem; } }
 
 .cursor {
   position: absolute;
@@ -569,6 +610,9 @@ body {
     font-weight: 500;
     text-align: center;
     transition: all .2s; }
+    @media only screen and (max-width: 53.75em) {
+      .social__item {
+        font-size: 12rem; } }
     .social__item:hover {
       opacity: 60%; }
   .social__link {
@@ -614,6 +658,12 @@ body {
     z-index: 1;
     text-align: center;
     margin-bottom: -15rem; }
+    @media only screen and (max-width: 53.75em) {
+      .header__title {
+        font-size: 18rem; } }
+    @media only screen and (max-width: 32em) {
+      .header__title {
+        font-size: 15rem; } }
 
 .navigation {
   display: flex;
@@ -633,12 +683,6 @@ body {
     font-size: 3rem; }
     .navigation__item:not(:last-child) {
       margin-right: 4rem; }
-      @media only screen and (max-width: 32em) {
-        .navigation__item:not(:last-child) {
-          margin-right: 1rem; } }
-    @media only screen and (max-width: 32em) {
-      .navigation__item {
-        font-size: .9rem; } }
   .navigation__link {
     text-decoration: none;
     color: #000;

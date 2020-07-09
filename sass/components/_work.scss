@@ -2,6 +2,13 @@
   display: flex;
   justify-content: space-between;
 
+    @include respond(tablet) {
+            margin-bottom: 0rem;
+          }
+
+          @include respond(phone) {
+           margin-bottom: 7rem;
+          }
   &__heading {
      font-size: 5rem;
      margin-right: 7rem;
@@ -13,7 +20,6 @@
     line-height: 2.7;
   }
 }
-
 
 .projects {
   text-align: center;
@@ -51,7 +57,7 @@ display: flex;
 justify-content: space-between;
 
 @include respond(tablet) {
-    margin-top: -10rem;
+    margin-top: -30rem;
 }
 }
 

@@ -19,6 +19,9 @@ html {
     @include respond(tablet) {
        font-size: 45%;
     }
+    @include respond(phone) {
+        font-size: 40%;
+    }
 }
 body {
     font-family: 'Questrial', sans-serif;
@@ -33,7 +36,6 @@ body {
     padding-bottom: 20px !important;
     min-height: 100%;
     overflow-x: hidden;
-  
 
    
 }
