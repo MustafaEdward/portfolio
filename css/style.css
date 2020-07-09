@@ -294,6 +294,19 @@ body {
       margin-bottom: 10rem;
       width: 100%; }
 
+.circle {
+  font-size: 3rem;
+  font-weight: bold;
+  animation: text-animation 15s infinite linear;
+  margin-top: 5rem;
+  text-transform: uppercase; }
+
+@keyframes text-animation {
+  0% {
+    transform: rotate(360deg); }
+  100% {
+    transform: rotate(0deg); } }
+
 .profile {
   margin-top: 16rem; }
   .profile__first-about-me {
