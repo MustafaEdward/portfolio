@@ -255,6 +255,9 @@ body {
     @media only screen and (max-width: 53.75em) {
       .contact__email {
         margin-left: 5rem; } }
+  .contact__link {
+    text-decoration: none;
+    color: #fafafa; }
 
 .u-margin-top {
   margin-top: 30rem; }
