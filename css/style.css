@@ -170,7 +170,7 @@ body {
   position: fixed;
   display: flex;
   flex-direction: column;
-  background: #848484;
+  background: #909090;
   height: 140px;
   width: 1px;
   margin: -60px 0 0 40px; }
@@ -700,6 +700,16 @@ body {
     font-size: 3rem; }
     .navigation__item:not(:last-child) {
       margin-right: 4rem; }
+    .navigation__item::after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 2px;
+      background: #000;
+      transition: width .3s; }
+    .navigation__item:hover::after {
+      width: 100%;
+      transition: width .3s; }
   .navigation__link {
     text-decoration: none;
     color: #000;
