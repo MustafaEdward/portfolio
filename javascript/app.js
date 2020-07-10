@@ -49,3 +49,25 @@ new hoverEffect({
 // $(document).ready(function() {
 //     $('.body').removeClass('fade-out').addClass('fade-in');
 //   });
+
+
+
+//change text 
+
+$(document).ready(function() {
+    $(document).on('mouseover', '#message', function(event) {
+      event.preventDefault();
+      $("#message").text("mustafaa.design@gmail.com");
+  }).on('mouseleave', '#message', function(event) {
+      event.preventDefault();
+      $("#message").text("Mustafa");
+  });
+});
+
+
+
+
+
+
+
+
