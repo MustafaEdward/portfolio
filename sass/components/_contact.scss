@@ -118,7 +118,6 @@
     display: flex;
     justify-content: space-between;
     margin-top: 33rem;
-
     &__heading {
         font-size: 5rem;
     } 
@@ -128,7 +127,7 @@
         justify-content: space-between;
         flex-direction: column;
         margin-bottom: 10rem;
-       
+               
 
         &-section {
           font-size: 3rem;
@@ -137,8 +136,13 @@
           border-bottom: 1px solid $color-black;
           padding: 3rem 0;
           position: relative;
+          opacity: 60%;
           &:first-of-type {
               border-top: 1px solid $color-black;
+          }
+
+          &:hover {
+              opacity: 100%;
           }
 
         &:first-child:hover::before {
