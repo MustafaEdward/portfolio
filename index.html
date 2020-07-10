@@ -15,11 +15,11 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r99/three.min.js" integrity="sha256-V0EyXecXmQqSk1QW7iej2g+pzqX02oz78cnceES2ZCs=" crossorigin="anonymous"></script>
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
         <title>Mustafa Alabdullah</title>
     </head>
    
-    <body data-barba="wrapper">
+    <body data-barba="wrapper" class="smooth-scroll-wrapper">
+     
         <div class="percent">
             <div class="fill"></div>
             <div class="counter"><h1></h1></div>
@@ -28,10 +28,10 @@
                 <div class="container">
                    <nav class="nav-none" role="navigation">
                         <div class="navigation container">
-                            <p class="navigation__name">mustafa</p>
+                            <p class="navigation__name animate-this">mustafa</p>
                             <ul class="navigation__list">
-                                <li class="navigation__item" id="work"><a href="#work" class="navigation__link">work<a></li>
-                                <li class="navigation__item" id="contact"><a href="#contact" class="navigation__link">contact</a></li>
+                                <li class="navigation__item animate-this" id="work"><a href="#work" class="navigation__link">work<a></li>
+                                <li class="navigation__item animate-this" id="contact"><a href="#contact" class="navigation__link">contact</a></li>
                             </ul>
                         </div>
                     </nav>
@@ -70,23 +70,27 @@
                 designer - developer-
             </div>
 
-                <div class="project-preview"></div>
-                    <section class="number-new u-margin-top ">
-                        <div class="number__container">
-                            <p class="number-new__container-one">01</p>
-                            <p class="number-new__container-two">Design degree</p>
+                    <div class="project-preview"></div>
+                    <section class="container unicorn u-margin-top">
+                        <h4 class="unicorn__heading">Unicorn designer </h4>
+                        <div class="unicorn__numbers">
+                            <div class="unicorn__numbers-section img-hover">
+                                <p>Design degree</p>
+                                <p>One</p>
+                            </div>
+                            <div class="unicorn__numbers-section">
+                                <p class="u-margin-right">Years coding</p>
+                                <p>Three</p>
+                            </div>
+                            <div class="unicorn__numbers-section">
+                                <p>Coding degree</p>
+                                <p>One</p>
+                            </div>
+                            <div class="unicorn__numbers-section">
+                                <p>Projects done</p>
+                                <p>Five</p>
+                            </div>
                         </div>
-                        <div class="number-new-container">
-                            <p class="number-new-container__one">03</p>
-                            <p class="number-new-container__two"> Years coding</p>
-                        </div>
-                       
-                        <div class="number-new-container-1">
-                            <p class="number-new-container-1__one">01</p>
-                            <p class="number-new-container-1__two">Coding degree</p>
-                        </div>
-                        
-                          
                     </section>
                     <div class="progressbar"></div>
 
@@ -269,6 +273,13 @@
              <div class="cursor-follower"></div>  
              <div class="portfolio-item"></div>
 
+             <section class="video-thanks-c">
+                    <video class="video-thanks" autoplay muted loop>
+                        <source src="./img/thanks.mp4" type="video/mp4">
+                        Your browser is not supported!
+                    </video>
+            </section>
+
             <section class="social"> 
                 <ul  data-scroll class="social__list">
                     <li class="social__item"><a class="social__link" href="https://www.linkedin.com/in/uxmustafa/" target="_blank">LinkedIn </a></li>
@@ -301,8 +312,11 @@
           <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js" integrity="sha256-hBMojZuWKocCflyaG8T19KBq9OlTlK39CTxb8AUWKhY=" crossorigin="anonymous"></script>
           <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
           <script src="./javascript/circletype.min.js"></script>
-  
+
           <script>
+              
+
+
 
 
             const image = document.getElementsByClassName('thumbnail');
@@ -367,123 +381,72 @@
 
 
 // Hover effect 
-$(document).ready(function() {
-        TweenMax.set(".project-preview", { width: 0 });
+// $(document).ready(function() {
+//         TweenMax.set(".project-preview", { width: 0 });
 
-        var tl = new TimelineLite();
+//         var tl = new TimelineLite();
 
-        $(document)
-          .on("mouseover", ".number__container", function(evt) {
-            tl = new TimelineLite();
-            tl.to($(".project-preview"), 1, {
-              width: "00px",
-              ease: Expo.easeInOut
-            });
-          })
-          .on("mouseout", ".number__container", function(evt) {
-            tl = new TimelineLite();
-            tl.to($(".project-preview"), 0.5, {
-              width: 0,
-              ease: Expo.easeInOut
-            });
-          });
-      });
+//         $(document)
+//           .on("mouseover", ".img-hover", function(evt) {
+//             tl = new TimelineLite();
+//             tl.to($(".project-preview"), 1, {
+//               width: "00px",
+//               ease: Expo.easeInOut
+//             });
+//           })
+//           .on("mouseout", ".img-hover", function(evt) {
+//             tl = new TimelineLite();
+//             tl.to($(".project-preview"), 0.5, {
+//               width: 0,
+//               ease: Expo.easeInOut
+//             });
+//           });
+//       });
 
-      $(".number__container").hover(function() {
-        $(".project-preview").css({ "background-image": "url(../../img/three.jpg)" });
-      });
-
-
-
-
-
-      $(document).ready(function() {
-        TweenMax.set(".project-preview", { width: 0 });
-
-        var tl = new TimelineLite();
-
-        $(document)
-          .on("mouseover", ".number__container", function(evt) {
-            tl = new TimelineLite();
-            tl.to($(".project-preview"), 1, {
-              width: "600px",
-              ease: Expo.easeInOut
-            });
-          })
-          .on("mouseout", ".number__container", function(evt) {
-            tl = new TimelineLite();
-            tl.to($(".project-preview"), 0.5, {
-              width: 0,
-              ease: Expo.easeInOut
-            });
-          });
-      });
-
-      $(".number__container").hover(function() {
-        $(".project-preview").css({ "background-image": "url(../../img/flower.png)" });
-      });
-
-
-
-
-
-      $(document).ready(function() {
-        TweenMax.set(".project-preview", { width: 0 });
-
-        var tl = new TimelineLite();
-
-        $(document)
-          .on("mouseover", ".number-new-container", function(evt) {
-            tl = new TimelineLite();
-            tl.to($(".project-preview"), 1, {
-              width: "600px",
-              ease: Expo.easeInOut
-            });
-          })
-          .on("mouseout", ".number-new-container", function(evt) {
-            tl = new TimelineLite();
-            tl.to($(".project-preview"), 0.5, {
-              width: 0,
-              ease: Expo.easeInOut
-            });
-          });
-      });
-
-      $(".number-new-container").hover(function() {
-        $(".project-preview").css({ "background-image": "url(../../img/black.png)" });
-      });
+//       $(".img-hover").hover(function() {
+//         $(".project-preview").css({ "background-image": "url(../../img/three.jpg)" });
+//       });
 
 
 
 
 
 
-      $(document).ready(function() {
-        TweenMax.set(".project-preview", { width: 0 });
+    //   $(document).ready(function() {
+    //     TweenMax.set(".project-preview", { width: 0 });
 
-        var tl = new TimelineLite();
+    //     var tl = new TimelineLite();
 
-        $(document)
-          .on("mouseover", ".number-new-container-1", function(evt) {
-            tl = new TimelineLite();
-            tl.to($(".project-preview"), 1, {
-              width: "600px",
-              ease: Expo.easeInOut
-            });
-          })
-          .on("mouseout", ".number-new-container-1", function(evt) {
-            tl = new TimelineLite();
-            tl.to($(".project-preview"), 0.5, {
-              width: 0,
-              ease: Expo.easeInOut
-            });
-          });
-      });
+    //     $(document)
+    //       .on("mouseover", ".unicorn__numbers-section", function(evt) {
+    //         tl = new TimelineLite();
+    //         tl.to($(".project-preview"), 1, {
+    //           width: "600px",
+    //           ease: Expo.easeInOut
+    //         });
+    //       })
+    //       .on("mouseout", ".unicorn__numbers-section", function(evt) {
+    //         tl = new TimelineLite();
+    //         tl.to($(".project-preview"), 0.5, {
+    //           width: 0,
+    //           ease: Expo.easeInOut
+    //         });
+    //       });
+    //   });
 
-      $(".number-new-container-1").hover(function() {
-        $(".project-preview").css({ "background-image": "url(../../img/glasses.png)" });
-      });
+    //   $(".unicorn__numbers-section").hover(function() {
+    //     $(".project-preview").css({ "background-image": "url(../../img/flower.png)" });
+    //   });
 
+
+
+
+
+
+
+
+
+     
 
 
     
@@ -573,6 +536,10 @@ $(document).on("scroll", progress);
             duration: 3000,
         })
     });
+
+
+
+
 
 
 </script>

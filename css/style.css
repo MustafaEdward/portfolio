@@ -262,23 +262,6 @@ body {
 .u-margin-top {
   margin-top: 30rem; }
 
-.number {
-  margin: 25rem 0;
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: space-between;
-  text-align: left;
-  position: relative; }
-  .number__container {
-    display: inline-block;
-    display: block; }
-    .number__container-one {
-      font-size: 10rem; }
-    .number__container-two {
-      font-size: 2rem;
-      opacity: 60%; }
-
 .experience {
   background-color: #000;
   color: #fafafa;
@@ -314,51 +297,6 @@ body {
   background-size: cover;
   overflow: hidden; }
 
-.number-new {
-  text-align: center; }
-  .number-new__container-one {
-    font-size: 7rem;
-    opacity: 70%; }
-  .number-new__container-two {
-    font-size: 5rem;
-    margin-bottom: 25rem; }
-    .number-new__container-two::after {
-      content: "";
-      border-bottom: .1px solid black;
-      display: block;
-      margin-bottom: 6rem;
-      width: 100%; }
-
-.number-new-container {
-  text-align: center; }
-  .number-new-container__one {
-    font-size: 7rem;
-    opacity: 70%; }
-  .number-new-container__two {
-    font-size: 5rem;
-    margin-bottom: 20rem; }
-    .number-new-container__two::after {
-      content: "";
-      border-bottom: .1px solid black;
-      display: block;
-      margin-bottom: 10rem;
-      width: 100%; }
-
-.number-new-container-1 {
-  text-align: center; }
-  .number-new-container-1__one {
-    font-size: 7rem;
-    opacity: 60%; }
-  .number-new-container-1__two {
-    font-size: 5rem;
-    margin-bottom: 30rem; }
-    .number-new-container-1__two::after {
-      content: "";
-      border-bottom: .1px solid black;
-      display: block;
-      margin-bottom: 10rem;
-      width: 100%; }
-
 .circle {
   font-size: 3rem;
   font-weight: bold;
@@ -371,6 +309,107 @@ body {
     transform: rotate(360deg); }
   100% {
     transform: rotate(0deg); } }
+
+.unicorn {
+  display: flex;
+  justify-content: space-between; }
+  .unicorn__heading {
+    font-size: 5rem; }
+  .unicorn__numbers {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 10rem; }
+    .unicorn__numbers-section {
+      font-size: 3rem;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #000;
+      padding: 3rem 0;
+      position: relative; }
+      .unicorn__numbers-section:first-of-type {
+        border-top: 1px solid #000; }
+      .unicorn__numbers-section:first-child:hover::before {
+        content: "";
+        z-index: -1;
+        width: 500px;
+        height: 300px;
+        display: block;
+        position: absolute;
+        bottom: 50%;
+        left: 20rem;
+        background: url(../../img/two.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: 1s;
+        animation: fade-in 2s ease-in-out; }
+      .unicorn__numbers-section:nth-child(2):hover::before {
+        content: "";
+        z-index: -1;
+        width: 500px;
+        height: 300px;
+        display: block;
+        position: absolute;
+        bottom: 50%;
+        left: 20rem;
+        background: url(../../img/one.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: 1s;
+        animation: fade-in 2s ease-in-out; }
+      .unicorn__numbers-section:nth-child(3):hover::before {
+        content: "";
+        z-index: -1;
+        width: 500px;
+        height: 300px;
+        display: block;
+        position: absolute;
+        bottom: 50%;
+        left: 20rem;
+        background: url(../../img/one.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: 1s;
+        animation: fade-in 2s ease-in-out; }
+      .unicorn__numbers-section:nth-child(4):hover::before {
+        content: "";
+        z-index: -1;
+        width: 500px;
+        height: 300px;
+        display: block;
+        position: absolute;
+        bottom: 50%;
+        left: 20rem;
+        background: url(../../img/two.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: 1s;
+        animation: fade-in 2s ease-in-out; }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0%;
+    top: -160px; }
+  50% {
+    opacity: 1;
+    top: -180px; }
+  100% {
+    opacity: 1;
+    top: -180px; } }
+
+.u-margin-right {
+  margin-right: 35rem; }
+
+.video-thanks {
+  width: 20%;
+  height: 50%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30rem; }
 
 .profile {
   margin-top: 16rem; }
