@@ -312,7 +312,8 @@ body {
 
 .unicorn {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-top: 33rem; }
   .unicorn__heading {
     font-size: 5rem; }
   .unicorn__numbers {
@@ -337,8 +338,8 @@ body {
         display: block;
         position: absolute;
         bottom: 50%;
-        left: 20rem;
-        background: url(../../img/two.png);
+        left: 10rem;
+        background: url(../../img/juno.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -351,9 +352,9 @@ body {
         height: 300px;
         display: block;
         position: absolute;
-        bottom: 50%;
-        left: 20rem;
-        background: url(../../img/one.png);
+        bottom: 40%;
+        left: -10rem;
+        background: url(../../img/doctalk.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -366,9 +367,9 @@ body {
         height: 300px;
         display: block;
         position: absolute;
-        bottom: 50%;
-        left: 20rem;
-        background: url(../../img/one.png);
+        bottom: 30%;
+        left: -30rem;
+        background: url(../../img/speaking.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -376,14 +377,14 @@ body {
         animation: fade-in 2s ease-in-out; }
       .unicorn__numbers-section:nth-child(4):hover::before {
         content: "";
-        z-index: -1;
+        z-index: -100;
         width: 500px;
         height: 300px;
         display: block;
         position: absolute;
-        bottom: 50%;
-        left: 20rem;
-        background: url(../../img/two.png);
+        bottom: 0%;
+        left: 10rem;
+        background: url(../../img/wa.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;

@@ -11,12 +11,11 @@ new hoverEffect({
 //onload 
 
 // const body = document.querySelector('body');
-const cover = document.querySelector('.start')
 
 // const fade = () => {
 //     setTimeout(()=> {
-//         body.classList.toggle('fade-out');
-//     }, 4000);
+//         body.classList.remove('fade-out');
+//     }, 7000);
   
 // }
 
@@ -47,3 +46,6 @@ const cover = document.querySelector('.start')
 
 //             smoothScroll();
 
+// $(document).ready(function() {
+//     $('.body').removeClass('fade-out').addClass('fade-in');
+//   });
