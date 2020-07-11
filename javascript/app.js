@@ -68,6 +68,22 @@ $(document).ready(function() {
 
 
 
+//logo scroll
 
+const circletype = new CircleType(
+    document.getElementById("rotated")
+).radius(0);
+$(window).scroll(function() {
+    var offset= $(window).scrollTop();
+    offset = offset * 1
+
+    $(".circular-text").css({
+       "moz-transform" : "rotate(" + offset / 25 + "deg)",
+       "-webkit-transform" : "rotate(" + offset / 25 + "deg)",
+       "-o-transform" : "rotate(" + offset / 25 + "deg)",
+       "-ms-transform" : "rotate(" + offset / 25 + "deg)",
+       "transform" : "rotate(" + offset / 25 + "deg)",
+    });
+});
 
 

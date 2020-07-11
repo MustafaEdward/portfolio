@@ -418,13 +418,6 @@ body {
 .u-margin-right {
   margin-right: 35rem; }
 
-.video-thanks {
-  width: 20%;
-  height: 50%;
-  display: block;
-  margin: 0 auto;
-  margin-top: 30rem; }
-
 .profile {
   margin-top: 16rem; }
   .profile__first-about-me {
@@ -740,15 +733,15 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 7rem; }
-  .navigation__name {
-    font-size: 3rem;
-    text-transform: uppercase;
-    letter-spacing: .2rem; }
+  padding-top: 1rem;
+  position: fixed;
+  top: 1rem;
+  z-index: 8888; }
   .navigation__list {
     display: flex;
     align-items: center;
-    margin: 2rem; }
+    margin: 2rem;
+    opacity: 70%; }
   .navigation__item {
     list-style-type: none;
     font-size: 3rem; }
@@ -769,5 +762,14 @@ body {
     color: #000;
     text-transform: capitalize;
     transition: color .2s; }
-    .navigation__link:hover {
-      color: #718093; }
+
+.circular-text {
+  color: black;
+  font-size: 1.2rem;
+  transition: 3s ease-out;
+  transform: translate(-50%, -20%);
+  text-transform: uppercase;
+  font-weight: bolder;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.6);
+  font-family: "monument extended";
+  opacity: 100% !important; }
