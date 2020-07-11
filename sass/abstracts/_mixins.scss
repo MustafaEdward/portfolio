@@ -30,16 +30,4 @@ ORDER: Base + typography > general layout + grid > page layout > components
         @media only screen and (max-width: 75em) { @content };    //1200px
     }
 }
-@mixin heading {
-    font-size: 4rem;
-    font-weight: 400;
-    text-transform: capitalize;
-    letter-spacing: 1px;
-    margin-bottom: 3rem;
-    text-align: left;
-    @include respond(tablet) {
-        font-size: 2.8rem;
-        margin-bottom: 1.5rem;
-    }
-   
-}
+

@@ -35,8 +35,8 @@
                                 <span id="rotated">Mustafa &#8226; Alabdullah &#8226;</span>
                             </div>
                             <ul class="navigation__list">
-                                <li class="navigation__item animate-this" id="work"><a href="#work" class="navigation__link">work<a></li>
-                                <li class="navigation__item animate-this" id="contact"><a href="#contact" class="navigation__link">contact</a></li>
+                                <li class="navigation__item animate-this" ><a href="#work" class="navigation__link">work<a></li>
+                                <li class="navigation__item animate-this" ><a href="#contact" class="navigation__link">contact</a></li>
                             </ul>
                         </div>
                     </nav>
@@ -147,7 +147,7 @@
             </section>
 
             <div class="secondary-title ">
-                <p class="more-text-projects target-work">My projects</p>
+                <p class="more-text-projects" id="work">My projects</p>
              </div>
              <div class="secondary-title">
                 <p class="more-text-tablet " id="scroll-to">My projects</p>
@@ -180,13 +180,21 @@
                </div>
              </section>
             <!-- video -->
-            <section class="video-mobile">
+            <!-- <section class="video-mobile">
                 <div class="container">
                     <video class="bg-video__content" autoplay muted loop>
-                        <source src="./img/mobile-haven.mp4" type="video/mp4">
+                        <source src="./img/haven-mbile.mp4" type="video/mp4">
                         Your browser is not supported!
                     </video>
                 </div>
+            </section> -->
+            <section class="video">
+                <div class="bg-video">
+                    <video class="bg-video__content" autoplay muted loop>
+                        <source src="./img/haven-mbile.mp4" type="video/mp4">
+                        Your browser is not supported!
+                    </video>
+                </div> 
             </section>
             <section class="video">
                 <div class="bg-video">
@@ -259,7 +267,7 @@
                     </div>
             </div>
            
-            <div class="contact target-contact">
+            <div class="contact" id="contact">
                 <div class="secondary-title">
                     <p class="more-text-contact u-padding">Get in touch</p>
                  </div>
@@ -526,25 +534,6 @@ $(document).on("scroll", progress);
    
         
         </script>
-
-<!-- Smooth scroll -->
-<script type="module">
-    import jump from './node_modules/jump.js/dist/jump.module.js';
-
-    var work = document.getElementById('work');
-
-    work.addEventListener('click', function (event) { 
-        jump('.target-work', {
-            duration: 3000,
-        })
-    });
-
-    contact.addEventListener('click', function (event) { 
-        jump('.target-contact', {
-            duration: 3000,
-        })
-    });
-
 
 
 

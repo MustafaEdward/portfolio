@@ -78,12 +78,25 @@ $(window).scroll(function() {
     offset = offset * 1
 
     $(".circular-text").css({
-       "moz-transform" : "rotate(" + offset / 25 + "deg)",
-       "-webkit-transform" : "rotate(" + offset / 25 + "deg)",
-       "-o-transform" : "rotate(" + offset / 25 + "deg)",
-       "-ms-transform" : "rotate(" + offset / 25 + "deg)",
-       "transform" : "rotate(" + offset / 25 + "deg)",
+       "moz-transform" : "rotate(" + offset / 20 + "deg)",
+       "-webkit-transform" : "rotate(" + offset / 20 + "deg)",
+       "-o-transform" : "rotate(" + offset / 20 + "deg)",
+       "-ms-transform" : "rotate(" + offset / 20 + "deg)",
+       "transform" : "rotate(" + offset / 20 + "deg)",
     });
 });
 
 
+
+//smoothscroll
+$("a[href^='#']").click(function(e) {
+	e.preventDefault();
+	
+	var position = $($(this).attr("href")).offset().top;
+
+	$("body, html").animate({
+		scrollTop: position
+	} ,
+    2000,
+    'linear');
+});
