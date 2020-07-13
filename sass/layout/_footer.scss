@@ -1,8 +1,11 @@
 .social {
   margin: 40rem 0 20rem 0;
   @include respond(tablet) {
-    margin: 40rem 0 0 0;
-}
+    margin: 35rem 0 0 0;
+  }
+  @include respond(tablet) {
+    margin: 35rem 0 -25rem 0;
+  }
 
   &__list {
     display: block;
@@ -17,6 +20,9 @@
    transition: all .2s;
    @include respond(tablet) {
     font-size: 12rem;
+   }
+   @include respond(tablet) {
+    font-size: 7rem;
    }
    &:hover {
      opacity: 60%;
@@ -33,13 +39,15 @@
 .heart {
    width: 100px;
    display: block;
-   margin: 0 auto;display: inline-block;
+   margin: 0 auto;
+   display: inline-block;
 }
 
 .copyright {
   font-size: 2rem;
   display: inline-block;
   margin-top: -13rem;
+  
 }
 
 .footer {

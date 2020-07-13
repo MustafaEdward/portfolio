@@ -23,6 +23,13 @@
       padding-top: 20rem;
       margin-top: 5rem;
  }
+  @include respond(phone) {
+  height: 50vh;
+  padding-top: 4rem;
+  margin-top: 1rem;
+
+ }
+
 }
 .video-mobile {
   margin-top: 5rem;
@@ -37,7 +44,11 @@
     height: 70vh;
     padding-top: 20rem;
     margin-top: 5rem;
-}
+  }
+  @include respond(phone) {
+    height: 70vh;
+    margin-top: 1rem;
+  }
 }
 .bg-video {
   background-color: #FCFBFC;
@@ -60,7 +71,9 @@
    justify-content: space-around;
    margin-top: 10rem;
    flex-wrap: wrap;
-
+   @include respond(phone) {
+    display: none;
+  }
 
   &__part {
     display: flex;

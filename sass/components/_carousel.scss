@@ -17,6 +17,11 @@
   background-color: $color-black;
   margin-left: -7rem;
   color: #fafafa;
+
+  @include respond(phone) {
+    width: 100%;
+    padding: 0 0 0 2rem;
+}
 }
 
 
@@ -37,6 +42,9 @@
   @include respond(tablet) {
     font-size: 1.7rem;
  }
+ @include respond(phone) {
+  width: 70%;
+}
 }
 
 //projects carousell 
@@ -48,5 +56,9 @@
   z-index: 100;
   padding-top: 20rem;
   background-color: #fafafa;
+
+  @include respond(phone) {
+    height: 100rem;
+  }
 }
 

@@ -6,13 +6,16 @@
     background-size: cover;
     margin-top: 40rem;
     color: #fafafa;
-
     @include respond(tablet) {
-        height: 80vh;
+        height: 90vh;
         margin-top: 15rem;
         padding-top: 5rem;
         padding-bottom: 5rem;
      }
+    @include respond(phone) {
+       height: 70vh;
+    }
+    
     &__details {
      color: inherit;
      font-size: 2rem;
@@ -22,7 +25,12 @@
      margin-bottom: 10rem;
      @include respond(tablet) {
         margin-left: 5rem;
+        margin-bottom: 4rem;
+        width: 100%;
      }
+     @include respond(phone) {
+        margin-left: 0rem;
+    }
     }
     &__email {
         color: inherit;
@@ -31,6 +39,9 @@
         @include respond(tablet) {
             margin-left: 5rem;
          }
+         @include respond(phone) {
+            margin-left: 0rem;
+        }
     }
     &__link {
         text-decoration: none;
@@ -51,8 +62,11 @@
      font-weight: 400;
 
      @include respond(tablet) {
-          height: 70vh;
+          height: 90vh;
      }
+     @include respond(phone) {
+        height: 70vh;
+    }
      
      &__heading {
        font-size: 8rem;
@@ -65,6 +79,9 @@
         padding: 15rem 0;
         font-size: 5rem;
      }
+     @include respond(phone) {
+        padding: 6rem 0;
+    }
      }
   }
   
@@ -99,7 +116,10 @@
     font-weight: bold;
     animation: text-animation 15s infinite linear;
     margin-top: 5rem;
-    text-transform: uppercase;    
+    text-transform: uppercase;  
+    @include respond(tablet) {
+        font-size: 2rem;
+     }  
 }
 @keyframes text-animation {
     0% {
@@ -118,8 +138,20 @@
     display: flex;
     justify-content: space-between;
     margin-top: 33rem;
+    @include respond(tablet) {
+        margin-top: 45rem;
+    }  
+    @include respond(phone) {
+        flex-direction: column;
+        margin-bottom: -20rem;
+      }
+   
     &__heading {
         font-size: 5rem;
+        @include respond(tablet) {
+            margin-top: 20rem;
+        }  
+      
     } 
 
     &__numbers {
@@ -127,6 +159,9 @@
         justify-content: space-between;
         flex-direction: column;
         margin-bottom: 10rem;
+          @include respond(phone) {
+            margin-top: -10rem;
+          }
                
 
         &-section {
@@ -137,6 +172,10 @@
           padding: 3rem 0;
           position: relative;
           opacity: 60%;
+          @include respond(phone) {
+            font-size: 2.5rem;
+            padding: 2rem 0;
+          }
           &:first-of-type {
               border-top: 1px solid $color-black;
           }
@@ -160,6 +199,9 @@
             background-repeat: no-repeat;
             transition: 1s;
             animation: fade-in 2s ease-in-out;
+            @include respond(phone) {
+                display: none;
+               }
         }
         &:nth-child(2):hover::before {
             content: "";
@@ -176,6 +218,9 @@
             background-repeat: no-repeat;
             transition: 1s;
             animation: fade-in 2s ease-in-out;
+            @include respond(phone) {
+                display: none;
+               }
         }
         &:nth-child(3):hover::before {
             content: "";
@@ -192,6 +237,9 @@
             background-repeat: no-repeat;
             transition: 1s;
             animation: fade-in 2s ease-in-out;
+            @include respond(phone) {
+                display: none;
+               }
         }
         &:nth-child(4):hover::before {
             content: "";
@@ -208,6 +256,9 @@
             background-repeat: no-repeat;
             transition: 1s;
             animation: fade-in 2s ease-in-out;
+            @include respond(phone) {
+                display: none;
+               }
         }
 
         }
@@ -232,6 +283,12 @@
 
 .u-margin-right {
     margin-right: 35rem;
+    @include respond(tablet) {
+        margin-right: 10rem;
+       }
+    @include respond(phone) {
+       margin-right: 0rem;
+      }
 }
 
 
