@@ -55,11 +55,11 @@ $(document).on('scroll', function(){
 })
 
 $(document).on('scroll', function(){
-    $('.more-text-projects').css("left", Math.max(2200 - 0.35*window.scrollY) + "px")
+    $('.more-text-projects').css("left", Math.max(2150 - 0.35*window.scrollY) + "px")
 })
 
 $(document).on('scroll', function(){
-    $('.more-text-contact').css("left", Math.max(4600 - 0.35*window.scrollY) + "px")
+    $('.more-text-contact').css("left", Math.max(4350 - 0.35*window.scrollY) + "px")
 })
 
 
