@@ -97,17 +97,23 @@ $("a[href^='#']").click(function(e) {
 	$("body, html").animate({
 		scrollTop: position
 	} ,
-    2000,
+    2600,
     'linear');
 });
-
-
 
 //scroll to top force 
 $(window).on('beforeunload', function(){
     $(window).scrollTop(0);
   });
 
+
+
+
+  $(document).ready(function () {
+    setTimeout(function(){
+        $('body').removeClass("hidding");
+    }, 2000);
+});
 
 
 

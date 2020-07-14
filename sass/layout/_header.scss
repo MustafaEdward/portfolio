@@ -39,7 +39,6 @@
         z-index: 1000000000000;
         animation: colorChange 1s  1.6s;
         -webkit-animation-fill-mode: forwards;
-
           @include respond(tablet) {
             font-size: 18rem;
           }
@@ -54,10 +53,17 @@
 
 
 @keyframes colorChange {
-  0% { color:#fff; }
-  50% { color:#fff; }
-  100% { color: #000; }
+  0% { 
+    color:#fff; 
+  }
+  50% { 
+    color:#fff; 
+  }
+  100% { 
+    color: #000; 
+  }
 }
+
 
 
 
