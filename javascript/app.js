@@ -103,6 +103,10 @@ $("a[href^='#']").click(function(e) {
 
 
 
+//scroll to top force 
+$(window).on('beforeunload', function(){
+    $(window).scrollTop(0);
+  });
 
 
 

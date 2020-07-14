@@ -105,3 +105,33 @@ body {
         margin-top: 36rem !important;
       }
   }
+
+
+
+
+  .intro {
+      background-color: black !important;
+      color: #fff !important;
+      position: fixed !important;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      overflow-y: hidden;
+      animation: slideUp 1s  1.5s cubic-bezier(1.000, -0.060, 0.430, 1.185);
+      z-index: 1000000000000 !important;
+      -webkit-animation-fill-mode: forwards;
+  }
+
+
+
+  @keyframes slideUp {
+      from {
+       top: 0px;
+      }
+      to{ 
+        top: -100%;
+      }
+    }
+
+    

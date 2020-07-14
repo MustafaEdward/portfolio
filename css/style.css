@@ -204,6 +204,25 @@ body {
     .haven {
       margin-top: 36rem !important; } }
 
+.intro {
+  background-color: black !important;
+  color: #fff !important;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow-y: hidden;
+  animation: slideUp 1s 1.5s cubic-bezier(1, -0.06, 0.43, 1.185);
+  z-index: 1000000000000 !important;
+  -webkit-animation-fill-mode: forwards; }
+
+@keyframes slideUp {
+  from {
+    top: 0px; }
+  to {
+    top: -100%; } }
+
 .carousel {
   min-height: 50rem;
   width: 100%;
@@ -842,9 +861,13 @@ body {
     line-height: 20rem;
     z-index: 1;
     text-align: center;
-    margin-bottom: -15rem;
+    margin-bottom: -2rem;
+    margin-top: -15rem;
     font-family: 'Schnyder L', sans-serif;
-    color: #000; }
+    color: #fff;
+    z-index: 1000000000000;
+    animation: colorChange 1s  1.6s;
+    -webkit-animation-fill-mode: forwards; }
     @media only screen and (max-width: 53.75em) {
       .header__title {
         font-size: 18rem; } }
@@ -852,6 +875,14 @@ body {
       .header__title {
         font-size: 10rem;
         line-height: 10rem; } }
+
+@keyframes colorChange {
+  0% {
+    color: #fff; }
+  50% {
+    color: #fff; }
+  100% {
+    color: #000; } }
 
 .navigation {
   display: flex;
