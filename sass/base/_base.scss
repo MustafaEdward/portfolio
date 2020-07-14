@@ -8,6 +8,11 @@
     box-sizing: inherit;
 }
 
+@font-face { font-family: 'Schnyder L'; src: url('../../assets/SchnyderWideL-Bold.otf'); } 
+@font-face { font-family: 'SCTO'; src: url('../../assets/Scto\ Grotesk\ A\ Regular.otf'); } 
+
+
+
 html {
     box-sizing: border-box;
     font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
@@ -24,8 +29,7 @@ html {
     }
 }
 body {
-    font-family: 'Questrial', sans-serif;
-    font-weight: 400;
+    font-family: 'SCTO', sans-serif;
     line-height: 1.6;
     color: $color-black;
     background-size: cover;

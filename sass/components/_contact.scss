@@ -33,9 +33,9 @@
     }
     }
     &__email {
+        font-family: 'Schnyder L', sans-serif;
         color: inherit;
         font-size: 3.7rem;
-        font-style: italic;
         @include respond(tablet) {
             margin-left: 5rem;
          }
@@ -59,7 +59,6 @@
   .experience {
      background-color: $color-black;
      color: #fafafa;
-     font-weight: 400;
 
      @include respond(tablet) {
           height: 90vh;
@@ -112,8 +111,8 @@
 
 
 .circle {
+    font-family: 'Schnyder L', sans-serif;
     font-size: 3rem;
-    font-weight: bold;
     animation: text-animation 15s infinite linear;
     margin-top: 5rem;
     text-transform: uppercase;  
@@ -148,6 +147,7 @@
    
     &__heading {
         font-size: 5rem;
+        font-family: 'Schnyder L', sans-serif;
         @include respond(tablet) {
             margin-top: 20rem;
         }  
