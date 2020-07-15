@@ -41,6 +41,8 @@
         -webkit-animation-fill-mode: forwards;
           @include respond(tablet) {
             font-size: 18rem;
+            animation: none !important;
+            color: $color-black;
           }
 
           @include respond(phone) {

@@ -216,6 +216,9 @@ body {
   animation: slideUp 1s 1.5s cubic-bezier(1, -0.065, 0.42, 1.175);
   z-index: 1000000000000 !important;
   -webkit-animation-fill-mode: forwards; }
+  @media only screen and (max-width: 53.75em) {
+    .intro {
+      display: none; } }
 
 @keyframes slideUp {
   from {
@@ -882,7 +885,9 @@ body {
     -webkit-animation-fill-mode: forwards; }
     @media only screen and (max-width: 53.75em) {
       .header__title {
-        font-size: 18rem; } }
+        font-size: 18rem;
+        animation: none !important;
+        color: #000; } }
     @media only screen and (max-width: 40em) {
       .header__title {
         font-size: 10rem;
