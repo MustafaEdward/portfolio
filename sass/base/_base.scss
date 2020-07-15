@@ -39,12 +39,7 @@ body {
     text-align: left;
     padding-bottom: 20px !important;
     min-height: 100%;
-    overflow-x: hidden;
-    @include respond(phone) {
-        background-color: lightcoral;
-     }
-
-   
+    overflow-x: hidden; 
 }
 .container {
     width: 110rem;
@@ -97,18 +92,15 @@ body {
 .figo {
     margin-top: 40rem !important;
     margin-bottom: -20rem;
-    @include respond(phone) {
-        margin-top: 5rem !important;
-        margin-bottom: -25rem;
-      }
+   
   }
 
   .haven {
     margin-bottom: 20rem !important;
     margin-top: 20rem !important;
     @include respond(phone) {
-        margin-top: 5rem !important;
-        margin-bottom: 5rem;
+        margin-top: 10rem !important;
+        margin-bottom: 0rem;
       }
   }
 

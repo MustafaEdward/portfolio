@@ -63,6 +63,11 @@
   font-size: 2rem;
  text-transform: uppercase;
  float: right;
+ @include respond(phone) {
+  margin-top: 10rem;
+  float: none;
+  text-align: center;
+}
   &__link {
     text-decoration: none;
     color: $color-black;

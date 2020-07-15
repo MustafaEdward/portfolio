@@ -43,6 +43,7 @@
           @include respond(phone) {
             font-size: 10rem;
             line-height: 10rem;
+            margin-bottom: 0rem;
           }
     } 
 

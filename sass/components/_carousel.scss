@@ -58,7 +58,8 @@
   background-color: #fafafa;
 
   @include respond(phone) {
-    height: 100rem;
+    height: 50rem;
+    padding-top: 5rem;
   }
 }
 

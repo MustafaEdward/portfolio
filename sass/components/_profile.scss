@@ -13,6 +13,11 @@
         margin-top: 10rem;
         margin-bottom: 10rem;
       }
+      @include respond(tablet) {
+        font-size: 3.2rem;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+      }
 }
 
 }
@@ -52,6 +57,11 @@
         display: block;
         margin-top: 10rem;
      }
+     @include respond(phone) {
+        margin-top: 5rem;
+        font-size: 9rem;
+        line-height: 1.6;
+     }
 }
 
 
@@ -77,6 +87,10 @@
         padding-left: 0rem;
         line-height: 1.7;
      }
+     @include respond(tablet) {
+        margin-top: 5rem;
+        line-height: 1.9;
+     }
 }
 
 [data-scroll] {
@@ -101,5 +115,6 @@
     width: 100%;
     height: auto;
     margin-top: -2rem !important;
+  
 }
 

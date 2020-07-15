@@ -74,6 +74,9 @@
        @include respond(tablet) {
         font-size: 6rem;
      }
+     @include respond(tablet) {
+        padding-bottom: 10rem;
+     }
      }
   }
   
@@ -120,11 +123,16 @@
     @include respond(tablet) {
         margin-top: 0rem;
     }  
+    @include respond(phone) {
+        flex-direction: column;
+    }  
    
     &__heading {
         font-size: 5rem;
         font-family: 'Schnyder L', sans-serif;
-
+        @include respond(phone) {
+            margin-bottom: 5rem;
+        }  
     } 
    
 

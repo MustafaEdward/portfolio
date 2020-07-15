@@ -23,6 +23,9 @@
       padding-top: 20rem;
       margin-top: 5rem;
  }
+  @include respond(phone) {
+    height: 50vh;
+  }
 
 }
 .video-mobile {

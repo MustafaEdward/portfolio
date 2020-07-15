@@ -92,9 +92,6 @@ body {
   padding-bottom: 20px !important;
   min-height: 100%;
   overflow-x: hidden; }
-  @media only screen and (max-width: 40em) {
-    body {
-      background-color: lightcoral; } }
 
 .container {
   width: 110rem;
@@ -134,18 +131,14 @@ body {
 .figo {
   margin-top: 40rem !important;
   margin-bottom: -20rem; }
-  @media only screen and (max-width: 40em) {
-    .figo {
-      margin-top: 5rem !important;
-      margin-bottom: -25rem; } }
 
 .haven {
   margin-bottom: 20rem !important;
   margin-top: 20rem !important; }
   @media only screen and (max-width: 40em) {
     .haven {
-      margin-top: 5rem !important;
-      margin-bottom: 5rem; } }
+      margin-top: 10rem !important;
+      margin-bottom: 0rem; } }
 
 .intro {
   background-color: black !important;
@@ -213,7 +206,8 @@ body {
   background-color: #fafafa; }
   @media only screen and (max-width: 40em) {
     .project__carousel-cell {
-      height: 100rem; } }
+      height: 50rem;
+      padding-top: 5rem; } }
 
 .contact {
   background-color: #000;
@@ -279,6 +273,9 @@ body {
     @media only screen and (max-width: 53.75em) {
       .experience__heading {
         font-size: 6rem; } }
+    @media only screen and (max-width: 53.75em) {
+      .experience__heading {
+        padding-bottom: 10rem; } }
 
 .experience-date {
   font-size: 2rem;
@@ -312,9 +309,15 @@ body {
   @media only screen and (max-width: 53.75em) {
     .unicorn {
       margin-top: 0rem; } }
+  @media only screen and (max-width: 40em) {
+    .unicorn {
+      flex-direction: column; } }
   .unicorn__heading {
     font-size: 5rem;
     font-family: 'Schnyder L', sans-serif; }
+    @media only screen and (max-width: 40em) {
+      .unicorn__heading {
+        margin-bottom: 5rem; } }
   .unicorn__numbers {
     display: flex;
     justify-content: space-between;
@@ -428,6 +431,11 @@ body {
         font-size: 6rem;
         margin-top: 10rem;
         margin-bottom: 10rem; } }
+    @media only screen and (max-width: 53.75em) {
+      .profile__first-about-me {
+        font-size: 3.2rem;
+        margin-top: 5rem;
+        margin-bottom: 5rem; } }
 
 .more-text,
 .more-text-projects,
@@ -464,6 +472,11 @@ body {
     .more-text-tablet {
       display: block;
       margin-top: 10rem; } }
+  @media only screen and (max-width: 40em) {
+    .more-text-tablet {
+      margin-top: 5rem;
+      font-size: 9rem;
+      line-height: 1.6; } }
 
 .more-text-interactions {
   margin-top: 20rem; }
@@ -483,6 +496,10 @@ body {
       margin-top: 10rem;
       padding-left: 0rem;
       line-height: 1.7; } }
+  @media only screen and (max-width: 53.75em) {
+    .second-about-me {
+      margin-top: 5rem;
+      line-height: 1.9; } }
 
 [data-scroll] {
   transition: all 2s; }
@@ -518,6 +535,10 @@ body {
       height: 70vh;
       padding-top: 20rem;
       margin-top: 5rem; } }
+  @media only screen and (max-width: 40em) {
+    .video,
+    .video-mobile {
+      height: 50vh; } }
 
 .video-mobile {
   margin-top: 5rem;
@@ -593,6 +614,11 @@ body {
         width: 60%;
         font-size: 2.5rem;
         line-height: 1.9; } }
+    @media only screen and (max-width: 40em) {
+      .description__copy {
+        width: 100%;
+        font-size: 2.5rem;
+        line-height: 1.8; } }
 
 .projects {
   text-align: center;
@@ -626,6 +652,9 @@ body {
 .btn-c {
   display: flex;
   justify-content: space-between; }
+  @media only screen and (max-width: 40em) {
+    .btn-c {
+      margin-top: 10rem !important; } }
 
 .cursor {
   position: absolute;
@@ -726,6 +755,11 @@ body {
   font-size: 2rem;
   text-transform: uppercase;
   float: right; }
+  @media only screen and (max-width: 40em) {
+    .top {
+      margin-top: 10rem;
+      float: none;
+      text-align: center; } }
   .top__link {
     text-decoration: none;
     color: #000; }
@@ -768,7 +802,8 @@ body {
     @media only screen and (max-width: 40em) {
       .header__title {
         font-size: 10rem;
-        line-height: 10rem; } }
+        line-height: 10rem;
+        margin-bottom: 0rem; } }
 
 .navigation {
   display: flex;
