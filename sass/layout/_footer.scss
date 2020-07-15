@@ -1,10 +1,7 @@
 .social {
   margin: 40rem 0 20rem 0;
   @include respond(tablet) {
-    margin: 35rem 0 0 0;
-  }
-  @include respond(tablet) {
-    margin: 35rem 0 -25rem 0;
+    margin: 10rem 0 0 0;
   }
 
   &__list {
@@ -48,6 +45,9 @@
   font-size: 2rem;
   display: inline-block;
   margin-top: -13rem;
+  @include respond(tablet) {
+    margin-top: -16rem;
+  }
   
 }
 

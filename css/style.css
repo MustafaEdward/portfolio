@@ -15,101 +15,39 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 1em = 16px
 */
-@-webkit-keyframes slide-up {
+@keyframes slideUp {
+  from {
+    top: 0px; }
+  to {
+    top: -100%; } }
+
+.hidding {
+  overflow: hidden; }
+
+@keyframes fade-in {
   0% {
-    opacity: 0;
-    -webkit-transform: translateY(100%); }
+    opacity: 0%;
+    top: -160px; }
+  50% {
+    opacity: 1;
+    top: -180px; }
   100% {
     opacity: 1;
-    -webkit-transform: translateY(0); } }
+    top: -180px; } }
 
-@-moz-keyframes slide-up {
+@keyframes colorChange {
   0% {
-    opacity: 0;
-    -moz-transform: translateY(100%); }
+    color: #fff; }
+  50% {
+    color: #fff; }
   100% {
-    opacity: 1;
-    -moz-transform: translateY(0); } }
+    color: #000; } }
 
-@keyframes slide-up {
+@keyframes text-animation {
   0% {
-    opacity: 0;
-    transform: translateY(100%); }
+    transform: rotate(360deg); }
   100% {
-    opacity: 1;
-    transform: translateY(0); } }
-
-@-webkit-keyframes slide-down {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-100%); }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0); } }
-
-@-moz-keyframes slide-down {
-  0% {
-    opacity: 0;
-    -moz-transform: translateY(-100%); }
-  100% {
-    opacity: 1;
-    -moz-transform: translateY(0); } }
-
-@keyframes slide-down {
-  0% {
-    opacity: 0;
-    transform: translateY(-100%); }
-  100% {
-    opacity: 1;
-    transform: translateY(0); } }
-
-@-webkit-keyframes divider-mask {
-  0%,
-  100% {
-    transform: scaleX(0); }
-  40%,
-  60% {
-    -webkit-transform: scaleX(1); } }
-
-@-moz-keyframes divider-mask {
-  0%,
-  100% {
-    transform: scaleX(0); }
-  40%,
-  60% {
-    -moz-transform: scaleX(1); } }
-
-@keyframes divider-mask {
-  0%,
-  100% {
-    transform: scaleX(0); }
-  40%,
-  60% {
-    transform: scaleX(1); } }
-
-@-webkit-keyframes sdb10 {
-  0% {
-    -webkit-transform: translate(0, 0);
-    opacity: 0; }
-  40% {
-    opacity: 1; }
-  80% {
-    -webkit-transform: translate(0, 20px);
-    opacity: 0; }
-  100% {
-    opacity: 0; } }
-
-@keyframes sdb10 {
-  0% {
-    transform: translate(0, 0);
-    opacity: 0; }
-  40% {
-    opacity: 1; }
-  80% {
-    transform: translate(0, 20px);
-    opacity: 0; }
-  100% {
-    opacity: 0; } }
+    transform: rotate(0deg); } }
 
 * {
   margin: 0;
@@ -154,6 +92,9 @@ body {
   padding-bottom: 20px !important;
   min-height: 100%;
   overflow-x: hidden; }
+  @media only screen and (max-width: 40em) {
+    body {
+      background-color: lightcoral; } }
 
 .container {
   width: 110rem;
@@ -195,14 +136,16 @@ body {
   margin-bottom: -20rem; }
   @media only screen and (max-width: 40em) {
     .figo {
-      margin-top: 25rem !important; } }
+      margin-top: 5rem !important;
+      margin-bottom: -25rem; } }
 
 .haven {
   margin-bottom: 20rem !important;
   margin-top: 20rem !important; }
   @media only screen and (max-width: 40em) {
     .haven {
-      margin-top: 36rem !important; } }
+      margin-top: 5rem !important;
+      margin-bottom: 5rem; } }
 
 .intro {
   background-color: black !important;
@@ -219,15 +162,6 @@ body {
   @media only screen and (max-width: 53.75em) {
     .intro {
       display: none; } }
-
-@keyframes slideUp {
-  from {
-    top: 0px; }
-  to {
-    top: -100%; } }
-
-.hidding {
-  overflow: hidden; }
 
 .carousel {
   min-height: 50rem;
@@ -262,10 +196,10 @@ body {
   line-height: 1.6;
   width: 50%;
   color: #fafafa;
-  opacity: 70%; }
+  opacity: 75%; }
   @media only screen and (max-width: 53.75em) {
     .carousel-d {
-      font-size: 1.7rem; } }
+      font-size: 2rem; } }
   @media only screen and (max-width: 40em) {
     .carousel-d {
       width: 70%; } }
@@ -336,9 +270,6 @@ body {
   @media only screen and (max-width: 53.75em) {
     .experience {
       height: 90vh; } }
-  @media only screen and (max-width: 40em) {
-    .experience {
-      height: 70vh; } }
   .experience__heading {
     font-size: 8rem;
     text-align: left;
@@ -347,20 +278,12 @@ body {
     margin-bottom: 30rem; }
     @media only screen and (max-width: 53.75em) {
       .experience__heading {
-        padding: 15rem 0;
-        font-size: 5rem; } }
-    @media only screen and (max-width: 40em) {
-      .experience__heading {
-        padding: 6rem 0; } }
+        font-size: 6rem; } }
 
 .experience-date {
   font-size: 2rem;
   display: block;
   margin-bottom: 7rem; }
-  @media only screen and (max-width: 53.75em) {
-    .experience-date {
-      font-size: 1.6rem;
-      margin-bottom: 4rem; } }
 
 .project-preview {
   position: fixed;
@@ -379,13 +302,8 @@ body {
   text-transform: uppercase; }
   @media only screen and (max-width: 53.75em) {
     .circle {
-      font-size: 2rem; } }
-
-@keyframes text-animation {
-  0% {
-    transform: rotate(360deg); }
-  100% {
-    transform: rotate(0deg); } }
+      font-size: 2rem;
+      margin-bottom: 10rem; } }
 
 .unicorn {
   display: flex;
@@ -393,25 +311,15 @@ body {
   margin-top: 33rem; }
   @media only screen and (max-width: 53.75em) {
     .unicorn {
-      margin-top: 45rem; } }
-  @media only screen and (max-width: 40em) {
-    .unicorn {
-      flex-direction: column;
-      margin-bottom: -20rem; } }
+      margin-top: 0rem; } }
   .unicorn__heading {
     font-size: 5rem;
     font-family: 'Schnyder L', sans-serif; }
-    @media only screen and (max-width: 53.75em) {
-      .unicorn__heading {
-        margin-top: 20rem; } }
   .unicorn__numbers {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     margin-bottom: 10rem; }
-    @media only screen and (max-width: 40em) {
-      .unicorn__numbers {
-        margin-top: -10rem; } }
     .unicorn__numbers-section {
       font-size: 3rem;
       display: flex;
@@ -420,10 +328,6 @@ body {
       padding: 3rem 0;
       position: relative;
       opacity: 60%; }
-      @media only screen and (max-width: 40em) {
-        .unicorn__numbers-section {
-          font-size: 2.5rem;
-          padding: 2rem 0; } }
       .unicorn__numbers-section:first-of-type {
         border-top: 1px solid #000; }
       .unicorn__numbers-section:hover {
@@ -443,7 +347,7 @@ body {
         background-repeat: no-repeat;
         transition: 1s;
         animation: fade-in 2s ease-in-out; }
-        @media only screen and (max-width: 40em) {
+        @media only screen and (max-width: 53.75em) {
           .unicorn__numbers-section:first-child:hover::before {
             display: none; } }
       .unicorn__numbers-section:nth-child(2):hover::before {
@@ -461,7 +365,7 @@ body {
         background-repeat: no-repeat;
         transition: 1s;
         animation: fade-in 2s ease-in-out; }
-        @media only screen and (max-width: 40em) {
+        @media only screen and (max-width: 53.75em) {
           .unicorn__numbers-section:nth-child(2):hover::before {
             display: none; } }
       .unicorn__numbers-section:nth-child(3):hover::before {
@@ -479,7 +383,7 @@ body {
         background-repeat: no-repeat;
         transition: 1s;
         animation: fade-in 2s ease-in-out; }
-        @media only screen and (max-width: 40em) {
+        @media only screen and (max-width: 53.75em) {
           .unicorn__numbers-section:nth-child(3):hover::before {
             display: none; } }
       .unicorn__numbers-section:nth-child(4):hover::before {
@@ -497,20 +401,9 @@ body {
         background-repeat: no-repeat;
         transition: 1s;
         animation: fade-in 2s ease-in-out; }
-        @media only screen and (max-width: 40em) {
+        @media only screen and (max-width: 53.75em) {
           .unicorn__numbers-section:nth-child(4):hover::before {
             display: none; } }
-
-@keyframes fade-in {
-  0% {
-    opacity: 0%;
-    top: -160px; }
-  50% {
-    opacity: 1;
-    top: -180px; }
-  100% {
-    opacity: 1;
-    top: -180px; } }
 
 .u-margin-right {
   margin-right: 35rem; }
@@ -523,17 +416,18 @@ body {
 
 .profile {
   margin-top: 16rem; }
+  @media only screen and (max-width: 40em) {
+    .profile {
+      margin-top: 7rem; } }
   .profile__first-about-me {
     font-size: 10rem;
     margin-top: 40rem;
     line-height: 1.3; }
     @media only screen and (max-width: 53.75em) {
       .profile__first-about-me {
-        font-size: 6rem; } }
-    @media only screen and (max-width: 40em) {
-      .profile__first-about-me {
-        font-size: 4rem;
-        margin-top: 30rem; } }
+        font-size: 6rem;
+        margin-top: 10rem;
+        margin-bottom: 10rem; } }
 
 .more-text,
 .more-text-projects,
@@ -569,11 +463,7 @@ body {
   @media only screen and (max-width: 53.75em) {
     .more-text-tablet {
       display: block;
-      margin: 5rem 0 1rem 0; } }
-  @media only screen and (max-width: 40em) {
-    .more-text-tablet {
-      font-size: 10rem;
-      margin: 2rem 0; } }
+      margin-top: 10rem; } }
 
 .more-text-interactions {
   margin-top: 20rem; }
@@ -590,21 +480,24 @@ body {
   margin: 0 auto; }
   @media only screen and (max-width: 53.75em) {
     .second-about-me {
-      margin-top: 33rem;
-      padding-left: 0rem; } }
-  @media only screen and (max-width: 40em) {
-    .second-about-me {
-      line-height: 2;
-      padding-left: 0rem; } }
+      margin-top: 10rem;
+      padding-left: 0rem;
+      line-height: 1.7; } }
 
 [data-scroll] {
   transition: all 2s; }
 
 [data-scroll="in"] {
   transform: translateY(-140px); }
+  @media only screen and (max-width: 53.75em) {
+    [data-scroll="in"] {
+      transform: none !important; } }
 
 [data-scroll="out"] {
   transform: translateY(0px); }
+  @media only screen and (max-width: 53.75em) {
+    [data-scroll="out"] {
+      transform: none !important; } }
 
 .distortion {
   width: 100%;
@@ -625,12 +518,6 @@ body {
       height: 70vh;
       padding-top: 20rem;
       margin-top: 5rem; } }
-  @media only screen and (max-width: 40em) {
-    .video,
-    .video-mobile {
-      height: 50vh;
-      padding-top: 4rem;
-      margin-top: 1rem; } }
 
 .video-mobile {
   margin-top: 5rem;
@@ -696,19 +583,15 @@ body {
     font-size: 5rem;
     margin-right: 7rem;
     font-family: 'Schnyder L', sans-serif; }
-    @media only screen and (max-width: 53.75em) {
-      .description__heading {
-        margin-top: 20rem;
-        margin-bottom: -20rem; } }
   .description__copy {
     font-size: 2rem;
     opacity: 70%;
     width: 55%;
     line-height: 2.7; }
-    @media only screen and (max-width: 40em) {
+    @media only screen and (max-width: 53.75em) {
       .description__copy {
-        width: 100%;
-        font-size: 3rem;
+        width: 60%;
+        font-size: 2.5rem;
         line-height: 1.9; } }
 
 .projects {
@@ -719,7 +602,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 13rem 0; }
-  @media only screen and (max-width: 40em) {
+  @media only screen and (max-width: 53.75em) {
     .projects {
       margin: 0rem !important; } }
   .projects__mockup {
@@ -743,12 +626,6 @@ body {
 .btn-c {
   display: flex;
   justify-content: space-between; }
-  @media only screen and (max-width: 53.75em) {
-    .btn-c {
-      margin-top: -30rem; } }
-  @media only screen and (max-width: 40em) {
-    .btn-c {
-      margin-top: -50rem; } }
 
 .cursor {
   position: absolute;
@@ -803,10 +680,7 @@ body {
   margin: 40rem 0 20rem 0; }
   @media only screen and (max-width: 53.75em) {
     .social {
-      margin: 35rem 0 0 0; } }
-  @media only screen and (max-width: 53.75em) {
-    .social {
-      margin: 35rem 0 -25rem 0; } }
+      margin: 10rem 0 0 0; } }
   .social__list {
     display: block; }
   .social__item {
@@ -838,6 +712,9 @@ body {
   font-size: 2rem;
   display: inline-block;
   margin-top: -13rem; }
+  @media only screen and (max-width: 53.75em) {
+    .copyright {
+      margin-top: -16rem; } }
 
 .footer {
   display: flex;
@@ -885,21 +762,13 @@ body {
     -webkit-animation-fill-mode: forwards; }
     @media only screen and (max-width: 53.75em) {
       .header__title {
-        font-size: 18rem;
+        font-size: 16rem;
         animation: none !important;
         color: #000; } }
     @media only screen and (max-width: 40em) {
       .header__title {
         font-size: 10rem;
         line-height: 10rem; } }
-
-@keyframes colorChange {
-  0% {
-    color: #fff; }
-  50% {
-    color: #fff; }
-  100% {
-    color: #000; } }
 
 .navigation {
   display: flex;

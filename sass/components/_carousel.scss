@@ -38,9 +38,9 @@
   line-height: 1.6;
   width: 50%;
   color: #fafafa;
-  opacity: 70%;
+  opacity: 75%;
   @include respond(tablet) {
-    font-size: 1.7rem;
+    font-size: 2rem;
  }
  @include respond(phone) {
   width: 70%;

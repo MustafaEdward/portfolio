@@ -20,11 +20,7 @@
     }
     &__heading {
         font-size: 6rem;
-        letter-spacing: 2px;
-        // @include respond(tablet) {
-        //     font-size: 4rem;
-        //   }
-         
+        letter-spacing: 2px;   
     }
     &__title {
         font-size: 20rem;
@@ -40,11 +36,10 @@
         animation: colorChange 1s  1.6s;
         -webkit-animation-fill-mode: forwards;
           @include respond(tablet) {
-            font-size: 18rem;
+            font-size: 16rem;
             animation: none !important;
             color: $color-black;
           }
-
           @include respond(phone) {
             font-size: 10rem;
             line-height: 10rem;
@@ -54,17 +49,7 @@
 }
 
 
-@keyframes colorChange {
-  0% { 
-    color:#fff; 
-  }
-  50% { 
-    color:#fff; 
-  }
-  100% { 
-    color: #000; 
-  }
-}
+
 
 
 

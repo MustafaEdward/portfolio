@@ -40,6 +40,10 @@ body {
     padding-bottom: 20px !important;
     min-height: 100%;
     overflow-x: hidden;
+    @include respond(phone) {
+        background-color: lightcoral;
+     }
+
    
 }
 .container {
@@ -94,7 +98,8 @@ body {
     margin-top: 40rem !important;
     margin-bottom: -20rem;
     @include respond(phone) {
-        margin-top: 25rem !important;
+        margin-top: 5rem !important;
+        margin-bottom: -25rem;
       }
   }
 
@@ -102,7 +107,8 @@ body {
     margin-bottom: 20rem !important;
     margin-top: 20rem !important;
     @include respond(phone) {
-        margin-top: 36rem !important;
+        margin-top: 5rem !important;
+        margin-bottom: 5rem;
       }
   }
 
@@ -111,7 +117,7 @@ body {
 
   .intro {
       background-color: black !important;
-      color: #fff !important;
+      color: $color-white !important;
       position: fixed !important;
       top: 0;
       left: 0;
@@ -129,16 +135,4 @@ body {
 
 
 
-  @keyframes slideUp {
-      from {
-       top: 0px;
-      }
-      to{ 
-        top: -100%;
-      }
-    }
-
-    .hidding {
-        overflow: hidden;
-    }
-    
+ 
