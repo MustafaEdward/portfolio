@@ -24,16 +24,17 @@
 
 
 .more-text,
-.more-text-projects, 
-.more-text-interactions, 
-.more-text-contact{
+.more-text-projects,
+.more-text-contact, 
+.more-text-port,
+.more-text-projects-port,
+.more-text-contact-port {
   font-family: 'Schnyder L', sans-serif;
   position: relative;
   left:20rem;
 } 
 
 .more-text, 
-.more-text-interactions,
 .more-text-projects, 
 .more-text-contact {
     font-family: 'Schnyder L', sans-serif;
@@ -43,9 +44,31 @@
     width: 100%;
     text-align: right;
     overflow: hidden;
-    @include respond(tablet) {
-        display: none;
+    @include respond(tab-land) {
+       display: none;
+    }
+    // @include respond(tablet) {
+    //     display: none;
+    //  }
+}
+    
+.more-text-port,
+.more-text-projects-port,
+.more-text-contact-port {
+    display: none;
+    font-size: 22rem;
+    margin: 20rem 0 15rem 0;
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    overflow: hidden;
+    display: none;
+    @include respond(tab-land) {
+       display: block;
      }
+     @include respond(tablet) {
+        display: none;
+      }
 }
 
 .more-text-tablet {
@@ -58,22 +81,15 @@
         margin-top: 10rem;
      }
      @include respond(phone) {
-        margin-top: 5rem;
+        margin-top: 10rem;
         font-size: 9rem;
         line-height: 1.6;
      }
 }
 
-
-
-
-.more-text-interactions {
-    margin-top: 20rem;
-}
 .u-padding {
     margin: 5rem 0 !important;
 }
-
 
 .second-about-me{
     max-width: 72rem;

@@ -70,7 +70,7 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
   min-height: 100%; }
-  @media only screen and (max-width: 75em) {
+  @media only screen and (max-width: 80em) {
     html {
       font-size: 50%; } }
   @media only screen and (max-width: 53.75em) {
@@ -101,7 +101,7 @@ body {
       width: 100%;
       padding: 0 2rem;
       overflow: hidden; } }
-  @media only screen and (max-width: 75em) {
+  @media only screen and (max-width: 80em) {
     .container {
       width: 100%;
       padding: 0 5rem;
@@ -331,6 +331,9 @@ body {
       padding: 3rem 0;
       position: relative;
       opacity: 60%; }
+      @media only screen and (max-width: 53.75em) {
+        .unicorn__numbers-section {
+          opacity: 100%; } }
       .unicorn__numbers-section:first-of-type {
         border-top: 1px solid #000; }
       .unicorn__numbers-section:hover {
@@ -439,14 +442,15 @@ body {
 
 .more-text,
 .more-text-projects,
-.more-text-interactions,
-.more-text-contact {
+.more-text-contact,
+.more-text-port,
+.more-text-projects-port,
+.more-text-contact-port {
   font-family: 'Schnyder L', sans-serif;
   position: relative;
   left: 20rem; }
 
 .more-text,
-.more-text-interactions,
 .more-text-projects,
 .more-text-contact {
   font-family: 'Schnyder L', sans-serif;
@@ -456,11 +460,32 @@ body {
   width: 100%;
   text-align: right;
   overflow: hidden; }
-  @media only screen and (max-width: 53.75em) {
+  @media only screen and (max-width: 80em) {
     .more-text,
-    .more-text-interactions,
     .more-text-projects,
     .more-text-contact {
+      display: none; } }
+
+.more-text-port,
+.more-text-projects-port,
+.more-text-contact-port {
+  display: none;
+  font-size: 22rem;
+  margin: 20rem 0 15rem 0;
+  display: inline-block;
+  width: 100%;
+  text-align: right;
+  overflow: hidden;
+  display: none; }
+  @media only screen and (max-width: 80em) {
+    .more-text-port,
+    .more-text-projects-port,
+    .more-text-contact-port {
+      display: block; } }
+  @media only screen and (max-width: 53.75em) {
+    .more-text-port,
+    .more-text-projects-port,
+    .more-text-contact-port {
       display: none; } }
 
 .more-text-tablet {
@@ -474,12 +499,9 @@ body {
       margin-top: 10rem; } }
   @media only screen and (max-width: 40em) {
     .more-text-tablet {
-      margin-top: 5rem;
+      margin-top: 10rem;
       font-size: 9rem;
       line-height: 1.6; } }
-
-.more-text-interactions {
-  margin-top: 20rem; }
 
 .u-padding {
   margin: 5rem 0 !important; }
@@ -744,6 +766,9 @@ body {
   @media only screen and (max-width: 53.75em) {
     .copyright {
       margin-top: -16rem; } }
+  @media only screen and (max-width: 53.75em) {
+    .copyright {
+      margin-top: -13rem; } }
 
 .footer {
   display: flex;

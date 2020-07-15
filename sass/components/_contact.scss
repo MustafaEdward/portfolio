@@ -150,6 +150,10 @@
           padding: 3rem 0;
           position: relative;
           opacity: 60%;
+
+          @include respond(tablet) {
+            opacity: 100%;
+         }
     
           &:first-of-type {
               border-top: 1px solid $color-black;

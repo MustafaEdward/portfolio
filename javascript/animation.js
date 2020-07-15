@@ -63,3 +63,18 @@ $(document).on('scroll', function(){
 })
 
 
+
+//smaller screens
+$(document).on('scroll', function(){
+    $('.more-text-port').css("left", Math.max(500 - 0.35*window.scrollY) + "px")
+})
+
+$(document).on('scroll', function(){
+    $('.more-text-projects-port').css("left", Math.max(1500 - 0.35*window.scrollY) + "px")
+})
+
+$(document).on('scroll', function(){
+    $('.more-text-contact-port').css("left", Math.max(3500 - 0.35*window.scrollY) + "px")
+})
+
+

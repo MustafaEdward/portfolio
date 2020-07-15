@@ -48,6 +48,9 @@
   @include respond(tablet) {
     margin-top: -16rem;
   }
+  @include respond(tablet) {
+    margin-top: -13rem;
+  }
   
 }
 
