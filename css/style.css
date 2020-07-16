@@ -889,7 +889,8 @@ body {
       .header__title {
         font-size: 16rem;
         animation: none !important;
-        color: #000; } }
+        color: #000;
+        line-height: .9; } }
     @media only screen and (max-width: 40em) {
       .header__title {
         font-size: 10rem;

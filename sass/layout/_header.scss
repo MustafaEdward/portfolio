@@ -39,6 +39,7 @@
             font-size: 16rem;
             animation: none !important;
             color: $color-black;
+            line-height: .9;
           }
           @include respond(phone) {
             font-size: 10rem;
