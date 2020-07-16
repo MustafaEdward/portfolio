@@ -65,6 +65,12 @@
    justify-content: space-around;
    margin-top: 10rem;
    flex-wrap: wrap;
+   @include respond(tab-land) {
+    margin-top: 0rem;
+  }
+  @include respond(tablet) {
+    margin-top: 10rem;
+  }
    @include respond(phone) {
     display: none;
   }
@@ -73,6 +79,9 @@
     display: flex;
     flex-direction: column;
     text-align: left;
+    @include respond(tab-land) {
+      margin-bottom: 5rem;
+    }
     &-title {
      font-size: 2rem;
      color: inherit; 
@@ -90,6 +99,10 @@
 
 .u-margin {
   margin-bottom: 3rem;
+
+  @include respond(tab-land) {
+    margin-bottom: 0rem;
+  }
 }
 
 

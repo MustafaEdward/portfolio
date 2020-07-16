@@ -54,8 +54,13 @@
   padding-top: 20rem;
   background-color: #fafafa;
 
+  @include respond(tab-land) {
+    height: 80rem;
+  }
+
   @include respond(tablet) {
     padding-top: 0rem;
+    height: 100rem;
   }
   @include respond(phone) {
     height: 50rem;

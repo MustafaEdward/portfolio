@@ -40,6 +40,15 @@ body {
     padding-bottom: 20px !important;
     min-height: 100%;
     overflow-x: hidden; 
+    // @include respond(big-screen) {
+    //    background-color: coral;
+    // }
+    // @include respond(tab-land) {
+    //    background-color: cornflowerblue;
+    // }
+    // @include respond(tablet) {
+    //     background-color: red;
+    //  }
 }
 .container {
     width: 110rem;
@@ -98,6 +107,10 @@ body {
 .figo {
     margin-top: 40rem !important;
     margin-bottom: -20rem;
+
+    @include respond(tab-land) {
+       margin-bottom: -30rem !important;
+      }
     @include respond(phone) {
         margin-top: 15rem !important;
         margin-bottom: -15rem !important;

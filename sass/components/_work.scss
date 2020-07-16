@@ -71,8 +71,12 @@
 .btn-c {
   display: flex;
   justify-content: space-between;
+
+  @include respond(tab-land) {
+   margin-top: 7rem;
+  }
   @include respond(tablet) {
-    margin-top: -40rem;
+    margin-top: -35rem;
   }
   @include respond(phone) {
     margin: 5rem;
