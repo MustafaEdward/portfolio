@@ -112,7 +112,7 @@ $(window).on('beforeunload', function(){
   $(document).ready(function () {
     setTimeout(function(){
         $('body').removeClass("hidding");
-    }, 2000);
+    }, 3400);
 });
 
 
