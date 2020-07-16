@@ -75,6 +75,9 @@ body {
     height: 140px;
     width: 1px;
     margin: -100px 0 0 0px;
+    @include respond(phone) {
+        display: none;
+      }
 }
 
 
@@ -85,6 +88,9 @@ body {
     height: 100%;
     background: #000;
     transition: background 0.15s ease;
+    @include respond(phone) {
+        display: none;
+      }
 }
 
 
@@ -92,7 +98,10 @@ body {
 .figo {
     margin-top: 40rem !important;
     margin-bottom: -20rem;
-   
+    @include respond(phone) {
+        margin-top: 15rem !important;
+        margin-bottom: -15rem !important;
+      }
   }
 
   .haven {
@@ -100,7 +109,7 @@ body {
     margin-top: 20rem !important;
     @include respond(phone) {
         margin-top: 10rem !important;
-        margin-bottom: 0rem;
+        margin-bottom: 10rem !important;
       }
      
   }

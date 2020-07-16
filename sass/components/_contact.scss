@@ -130,10 +130,18 @@
     &__heading {
         font-size: 5rem;
         font-family: 'Schnyder L', sans-serif;
+        @include respond(tab-land) {
+            margin-top: 20rem;
+        }
+        @include respond(tablet) {
+                margin-top: 0rem;
+        }
         @include respond(phone) {
+            margin-top: 0rem;
             margin-bottom: 5rem;
         }  
-    } 
+    }
+
    
 
     &__numbers {

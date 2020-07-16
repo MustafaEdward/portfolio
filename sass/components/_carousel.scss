@@ -5,11 +5,9 @@
   overflow: hidden;
   color: #fafafa;
   margin-top: -20rem;
-
 }
 .flickity-viewport {
   overflow: visible !important;
-
 }
 
 .carousel-cell {
@@ -17,7 +15,6 @@
   background-color: $color-black;
   margin-left: -7rem;
   color: #fafafa;
-
   @include respond(phone) {
     width: 100%;
     padding: 0 0 0 2rem;
@@ -57,6 +54,9 @@
   padding-top: 20rem;
   background-color: #fafafa;
 
+  @include respond(tablet) {
+    padding-top: 0rem;
+  }
   @include respond(phone) {
     height: 50rem;
     padding-top: 5rem;

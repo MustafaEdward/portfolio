@@ -24,7 +24,7 @@
       margin-top: 5rem;
  }
   @include respond(phone) {
-    height: 50vh;
+    display: none;
   }
 
 }
@@ -42,10 +42,7 @@
     padding-top: 20rem;
     margin-top: 5rem;
   }
-  @include respond(phone) {
-    height: 70vh;
-    margin-top: 1rem;
-  }
+ 
 }
 .bg-video {
   background-color: #FCFBFC;
@@ -98,5 +95,23 @@
 
 
 
+.figo-mobile {
+  display: none;
 
+
+
+  @include respond(phone) {
+    display: block;
+    width: 100%;
+    height: auto;  
+    &__img {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+  
+    }
+  }
+
+
+}
 
