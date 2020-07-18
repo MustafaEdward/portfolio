@@ -91,7 +91,8 @@ body {
   text-align: left;
   padding-bottom: 20px !important;
   min-height: 100%;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  transition: background 1s ease; }
 
 .container {
   width: 110rem;
@@ -328,48 +329,37 @@ body {
       margin-bottom: 10rem; } }
 
 .unicorn {
-  display: flex;
+  display: block;
   justify-content: space-between;
-  margin-top: 33rem; }
+  margin: 0 auto;
+  margin-top: 33rem;
+  text-align: center;
+  transition: transform 0.25s;
+  will-change: transform; }
   @media only screen and (max-width: 53.75em) {
     .unicorn {
       margin-top: 0rem; } }
   @media only screen and (max-width: 40em) {
     .unicorn {
       flex-direction: column; } }
-  .unicorn__heading {
-    font-size: 5rem;
-    font-family: 'Schnyder L', sans-serif; }
-    @media only screen and (max-width: 80em) {
-      .unicorn__heading {
-        margin-top: 20rem; } }
-    @media only screen and (max-width: 53.75em) {
-      .unicorn__heading {
-        margin-top: 0rem; } }
-    @media only screen and (max-width: 40em) {
-      .unicorn__heading {
-        margin-top: 0rem;
-        margin-bottom: 5rem; } }
   .unicorn__numbers {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    margin-bottom: 10rem; }
+    margin-bottom: 10rem;
+    transition: all .2s; }
     .unicorn__numbers-section {
-      font-size: 3rem;
-      display: flex;
-      justify-content: space-between;
-      border-bottom: 1px solid #000;
-      padding: 3rem 0;
+      font-family: 'Schnyder L';
+      font-size: 10rem;
       position: relative;
-      opacity: 60%; }
+      margin-bottom: -2rem;
+      transition: all .3s; }
       @media only screen and (max-width: 53.75em) {
         .unicorn__numbers-section {
           opacity: 100%; } }
-      .unicorn__numbers-section:first-of-type {
-        border-top: 1px solid #000; }
       .unicorn__numbers-section:hover {
-        opacity: 100%; }
+        color: #FAFAFA;
+        -webkit-text-stroke: 0.6px #000; }
       .unicorn__numbers-section:first-child:hover::before {
         content: "";
         z-index: -1;
@@ -377,8 +367,8 @@ body {
         height: 300px;
         display: block;
         position: absolute;
-        bottom: 50%;
-        left: 10rem;
+        bottom: 10rem;
+        left: 25%;
         background: url(../../img/juno.jpg);
         background-position: center;
         background-size: cover;
@@ -395,9 +385,9 @@ body {
         height: 300px;
         display: block;
         position: absolute;
-        bottom: 40%;
-        left: -10rem;
-        background: url(../../img/doctalk.jpg);
+        top: 50%;
+        left: 50%;
+        background: url(../../img/flower.png);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -413,9 +403,9 @@ body {
         height: 300px;
         display: block;
         position: absolute;
-        bottom: 30%;
-        left: -30rem;
-        background: url(../../img/speaking.jpg);
+        top: 50%;
+        left: 50%;
+        background: url(../../img/code.jpeg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -431,9 +421,9 @@ body {
         height: 300px;
         display: block;
         position: absolute;
-        bottom: 0%;
-        left: 10rem;
-        background: url(../../img/wa.jpg);
+        top: 50%;
+        left: 50%;
+        background: url(../../img/color.jpeg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -451,6 +441,75 @@ body {
   @media only screen and (max-width: 40em) {
     .u-margin-right {
       margin-right: 0rem; } }
+
+.background {
+  background-color: #000;
+  width: 100%;
+  height: 130vh;
+  margin-top: 20rem; }
+  .background__flex {
+    display: flex;
+    justify-content: space-between; }
+  .background__video {
+    height: 85vh;
+    display: inline-block;
+    margin-top: 25rem; }
+  .background__c {
+    width: 40%;
+    height: auto;
+    margin-top: 5rem; }
+    .background__c-single {
+      width: 100%;
+      height: auto;
+      max-width: 100%; }
+  .background__heading {
+    font-family: 'Schnyder L';
+    font-size: 5rem;
+    color: #fff;
+    margin: 5rem 0 2rem 0; }
+  .background__text {
+    font-size: 2rem;
+    color: #fff;
+    width: 100%; }
+  .background__btn {
+    display: inline-block;
+    margin-top: 8rem;
+    background-color: transparent;
+    padding: 1.5rem 4rem;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 2rem;
+    text-decoration: none;
+    transition: all .2s; }
+    .background__btn:hover {
+      background-color: #fff;
+      color: #000;
+      border: 1px solid transparent; }
+
+.marketing {
+  display: block;
+  margin: 30rem auto; }
+  .marketing__video {
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover; }
+
+.profily {
+  display: block;
+  margin: 70rem auto 20rem;
+  width: 80%; }
+
+.img-valign {
+  vertical-align: middle; }
+
+.text1 {
+  font-size: 7rem;
+  font-family: 'Schnyder L'; }
+
+.img-valign-1 {
+  width: 5rem;
+  height: auto; }
 
 .profile {
   margin-top: 16rem; }
@@ -482,7 +541,7 @@ body {
 .more-text-contact {
   font-family: 'Schnyder L', sans-serif;
   font-size: 24rem;
-  margin: 20rem 0 15rem 0;
+  margin: 0rem 0 0rem 0;
   display: inline-block;
   width: 100%;
   text-align: right;
@@ -546,7 +605,8 @@ body {
   padding-left: 10rem;
   line-height: 2.8;
   display: block;
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-top: -10rem; }
   @media only screen and (max-width: 80em) {
     .second-about-me {
       margin-top: 15rem; } }
@@ -560,7 +620,7 @@ body {
   transition: all 2s; }
 
 [data-scroll="in"] {
-  transform: translateY(-140px); }
+  transform: translateY(-110px); }
   @media only screen and (max-width: 53.75em) {
     [data-scroll="in"] {
       transform: none !important; } }
@@ -856,7 +916,6 @@ body {
     color: #000; }
 
 .header {
-  background-color: #fafafa;
   position: relative; }
   .header__box {
     display: flex;
@@ -1051,3 +1110,6 @@ body {
   -webkit-text-stroke: 1px rgba(255, 255, 255, 0.6);
   font-family: "monument extended";
   opacity: 100% !important; }
+
+.delete {
+  display: none; }

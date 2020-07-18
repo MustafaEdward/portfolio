@@ -34,7 +34,7 @@
 .more-text-contact {
     font-family: 'Schnyder L', sans-serif;
     font-size: 24rem;
-    margin: 20rem 0 15rem 0;
+    margin: 0rem 0 0rem 0;
     display: inline-block;
     width: 100%;
     text-align: right;
@@ -97,6 +97,7 @@
     line-height: 2.8;
     display: block;
     margin: 0 auto;
+    margin-top: -10rem;
     @include respond(tab-land) {
         margin-top: 15rem;
         }
@@ -114,7 +115,7 @@
 
 [data-scroll="in"] {
 
-    transform: translateY(-140px);
+    transform: translateY(-110px);
     @include respond(tablet) {
         transform: none !important;
     }
@@ -129,7 +130,6 @@
 .distortion {
     width: 100%;
     height: auto;
-    margin-top: -2rem !important;
-  
+    margin-top: -2rem !important;  
 }
 

@@ -118,3 +118,42 @@ $(window).on('beforeunload', function(){
 
 
 
+
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 50) {
+        $(".navigation__item").addClass("delete");
+    } else {
+        $(".navigation__item").removeClass("delete");
+    }
+});
+
+
+
+
+
+
+
+
+// color on scroll 
+
+$( window ).ready(function() {
+  
+    var wHeight = $(window).height();
+
+    $('.slide')
+      .height(wHeight)
+      .scrollie({
+        scrollOffset : -50,
+        scrollingInView : function(elem) {
+                   
+          var bgColor = elem.data('background');
+          
+          $('body').css('background-color', bgColor);
+          
+        }
+      });
+
+  });
+

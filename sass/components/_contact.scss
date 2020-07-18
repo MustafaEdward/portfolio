@@ -122,30 +122,19 @@
 
 
 .unicorn {
-    display: flex;
+    display: block;
     justify-content: space-between;
+    margin: 0 auto;
     margin-top: 33rem;
+    text-align: center;
+    transition: transform 0.25s;
+    will-change: transform;
     @include respond(tablet) {
         margin-top: 0rem;
     }  
     @include respond(phone) {
         flex-direction: column;
     }  
-   
-    &__heading {
-        font-size: 5rem;
-        font-family: 'Schnyder L', sans-serif;
-        @include respond(tab-land) {
-            margin-top: 20rem;
-        }
-        @include respond(tablet) {
-                margin-top: 0rem;
-        }
-        @include respond(phone) {
-            margin-top: 0rem;
-            margin-bottom: 5rem;
-        }  
-    }
 
    
 
@@ -153,27 +142,23 @@
         display: flex;
         justify-content: space-between;
         flex-direction: column;
-        margin-bottom: 10rem;      
-
+        margin-bottom: 10rem;     
+        transition: all .2s ;
         &-section {
-          font-size: 3rem;
-          display: flex;
-          justify-content: space-between;
-          border-bottom: 1px solid $color-black;
-          padding: 3rem 0;
+          font-family: 'Schnyder L';
+          font-size: 10rem;
           position: relative;
-          opacity: 60%;
+          margin-bottom: -2rem;
+          transition: all .3s ;
+
 
           @include respond(tablet) {
             opacity: 100%;
          }
-    
-          &:first-of-type {
-              border-top: 1px solid $color-black;
-          }
 
           &:hover {
-              opacity: 100%;
+              color: #FAFAFA;
+            -webkit-text-stroke: .6px $color-black;
           }
 
         &:first-child:hover::before {
@@ -183,8 +168,8 @@
             height: 300px;
             display: block;
             position: absolute;
-            bottom: 50%;
-            left: 10rem;
+            bottom: 10rem;
+            left: 25%;
             background: url(../../img/juno.jpg);
             background-position: center;
             background-size: cover;
@@ -202,9 +187,9 @@
             height: 300px;
             display: block;
             position: absolute;
-            bottom: 40%;
-            left: -10rem;
-            background: url(../../img/doctalk.jpg);
+            top: 50%;
+            left: 50%;
+            background: url(../../img/flower.png);
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
@@ -221,9 +206,9 @@
             height: 300px;
             display: block;
             position: absolute;
-            bottom: 30%;
-            left: -30rem;
-            background: url(../../img/speaking.jpg);
+            top: 50%;
+            left: 50%;
+            background: url(../../img/code.jpeg);
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
@@ -240,9 +225,9 @@
             height: 300px;
             display: block;
             position: absolute;
-            bottom: 0%;
-            left: 10rem;
-            background: url(../../img/wa.jpg);
+            top: 50%;
+            left: 50%;
+            background: url(../../img/color.jpeg);
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
@@ -271,6 +256,109 @@
 }
 
 
+// .number-of-ex {
+//     margin-bottom: -10rem;
+// }
 
 
 
+
+//new 
+.background {
+    background-color: $color-black;
+    width: 100%;
+    height: 130vh;
+    margin-top: 20rem;
+ 
+
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__video {
+        height: 85vh;
+        display: inline-block;
+        margin-top: 25rem;
+
+    }
+    &__c {
+        width: 40%;
+        height: auto;
+        margin-top: 5rem;
+
+    
+        &-single {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+        }
+    }
+    &__heading {
+        font-family: 'Schnyder L';
+        font-size: 5rem;
+        color: $color-white;
+        margin: 5rem 0 2rem 0;
+    }
+
+    &__text {
+        font-size: 2rem;
+        color: $color-white;
+        width: 100%;
+    }
+
+    &__btn {
+        display: inline-block;
+        margin-top: 8rem;
+        background-color: transparent;
+        padding: 1.5rem 4rem;
+        border: 1px solid $color-white;
+        color: $color-white;
+        font-size: 2rem;
+        text-decoration: none;
+        transition: all .2s;
+
+        &:hover {
+            background-color: $color-white;
+            color: $color-black;
+            border: 1px solid transparent;
+        }
+    }
+
+}
+
+.marketing {
+      display: block;
+      margin: 30rem auto;
+    &__video {
+       width: 100%;
+       height: 100vh;
+       background-repeat: no-repeat;
+       background-size: cover;
+    }
+}
+
+
+
+
+
+
+.profily {
+    display: block;
+    margin: 70rem auto 20rem;
+    width: 80%;
+}
+
+.img-valign {
+    vertical-align: middle;
+    // margin-bottom: 0.75em;
+
+  }
+  
+  .text1 {
+    font-size: 7rem;
+    font-family: 'Schnyder L';
+  }
+  .img-valign-1 {
+      width: 5rem;
+      height: auto;
+  }
