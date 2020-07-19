@@ -20,7 +20,7 @@
       font-size: 7rem;
     }
     &:hover {
-      color: #FAFAFA;
+      color: $color-primary;
       -webkit-text-stroke: .6px $color-black;
     }
   }
@@ -83,7 +83,6 @@
       color: $color-black;
     }
   }
-
 }
 
 

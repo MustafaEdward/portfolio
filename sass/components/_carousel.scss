@@ -1,4 +1,3 @@
-
 .carousel {
   min-height: 50rem;
   width: 100%;
@@ -7,22 +6,19 @@
 .flickity-viewport {
   overflow: visible !important;
 }
-
 .carousel-cell {
   width: 70%;
   margin-left: -7rem;
-  color: #000;
+  color: $color-black;
   @include respond(phone) {
     width: 100%;
     padding: 0 0 0 2rem;
 }
 }
-
-
 .carousel-heading {
   font-size: 5rem;
   width: 100%;
-  color: #000;
+  color: $color-black;
   @include respond(tablet) {
     font-size: 3rem;
  }
@@ -31,7 +27,7 @@
   font-size: 2.4rem;
   line-height: 1.6;
   width: 50%;
-  color: #000;
+  color: $color-black;
   opacity: 75%;
   @include respond(tablet) {
     font-size: 2rem;
@@ -39,29 +35,5 @@
  @include respond(phone) {
   width: 70%;
 }
-}
-
-//projects carousell 
-
-.project__carousel-cell {
-  width: 100%;
-  height: 110rem;
-  position: relative;
-  z-index: 100;
-  padding-top: 20rem;
-  background-color: #fafafa;
-
-  @include respond(tab-land) {
-    height: 80rem;
-  }
-
-  @include respond(tablet) {
-    padding-top: 0rem;
-    height: 100rem;
-  }
-  @include respond(phone) {
-    height: 50rem;
-    padding-top: 5rem;
-  }
 }
 

@@ -115,3 +115,20 @@
   animation: blink 0.8s linear 0.9s, blink 0.8s linear 2s;
   opacity: 0;
 }
+.intro {
+  background-color: black !important;
+  color: $color-white !important;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow-y: hidden;
+  animation: slideUp 1s  3s cubic-bezier(1.000, -0.065, 0.420, 1.175);
+  z-index: 1000000000000 !important;
+  -webkit-animation-fill-mode: forwards;
+
+  @include respond(tablet) {
+   display: none;
+}
+}
