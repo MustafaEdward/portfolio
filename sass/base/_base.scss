@@ -70,7 +70,10 @@ body {
     background-color: $color-white;
     color: $color-black;
 }
-
+::-webkit-scrollbar {
+    width: 0;
+  }
+  
 
 
 

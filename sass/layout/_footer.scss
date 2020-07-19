@@ -7,21 +7,22 @@
     display: block;
   }
   &__item {
-   display: block;
-   font-size: 20rem;
-   font-weight: 500;
-   text-align: center;
-   transition: all .2s;
-   font-family: 'Schnyder L', sans-serif;
-   @include respond(tablet) {
-    font-size: 12rem;
-   }
-   @include respond(tablet) {
-    font-size: 7rem;
-   }
-   &:hover {
-     opacity: 60%;
-   }
+    font-family: 'Schnyder L', sans-serif;
+    display: block;
+    font-size: 20rem;
+    font-weight: 500;
+    text-align: center;
+    transition: all .3s ;
+    @include respond(tablet) {
+      font-size: 12rem;
+    }
+    @include respond(tablet) {
+      font-size: 7rem;
+    }
+    &:hover {
+      color: #FAFAFA;
+      -webkit-text-stroke: .6px $color-black;
+    }
   }
   &__link {
     text-decoration: none;
@@ -84,3 +85,10 @@
   }
 
 }
+
+
+
+
+
+
+

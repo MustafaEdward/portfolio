@@ -172,10 +172,16 @@
                 </div>
             </div>
             <section class="social slide" data-background="#fafafa"> 
-                <ul  data-scroll class="social__list" >
-                    <li class="social__item"><a class="social__link" href="https://www.linkedin.com/in/uxmustafa/" target="_blank">LinkedIn </a></li>
-                    <li class="social__item" ><a class="social__link" href="https://twitter.com/MustafaUX" target="_blank">Twitter</a></li>
-                    <li class="social__item"><a class="social__link" href="https://www.instagram.com/uxmustafa/" target="_blank">Instagram</a></li>
+                <div class="project-preview-wrapper">
+                  <div class="project-preview"></div>
+                </div>
+                <div class="project-preview-wrapper">
+                    <div class="project-preview"></div>
+                 </div>
+                <ul data-scroll class="social__list">
+                    <li class="social__item navigation-item"><a class="social__link navigation-link-1" href="https://www.linkedin.com/in/uxmustafa/" target="_blank">LinkedIn </a></li>
+                    <li class="social__item navigation-item"><a class="social__link navigation-link-1" href="https://twitter.com/MustafaUX" target="_blank">Twitter</a></li>
+                    <li class="social__item navigation-item"><a class="social__link navigation-link-1" href="https://www.instagram.com/uxmustafa/" target="_blank">Instagram</a></li>
                 </ul>       
             </section>
         </main>
@@ -187,7 +193,8 @@
                     <div class="sub-footer__credit">
                         <h4 class="sub-footer__credit-p">Credits:</h4>
                         <p class="sub-footer__credit-p">Photography by <a href="https://www.instagram.com/ashkandian/" class="sub-footer__credit-link" target="__blank">Ashkan</a></p>
-                        <p class="sub-footer__credit-p">Project photos by <a href="https://photos.icons8.com/" class="sub-footer__credit-link" target="__blank">Moose</a></p>
+                        <p class="sub-footer__credit-p">Group photo by <a href="https://www.instagram.com/i.am.imah/" class="sub-footer__credit-link" target="__blank">Fatima</a></p>
+                        <p class="sub-footer__credit-p">Project photos by <a href="https://photos.icons8.com/" class="sub-footer__credit-link" target="__blank"><span data-text="Expansions"s></span> Moose</a></p>
                     </div>
                     <p class="sub-footer__top"><a href="#top" class="sub-footer__top-link">Back to top</a></p>
                 </div>
@@ -195,6 +202,13 @@
         <div class="cursor"></div>  
         <div class="cursor-follower"></div>  
         <div class="portfolio-item"></div>
+
+
+
+
+
+
+
 
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
           <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
@@ -313,8 +327,40 @@
         }
         progress();
         $(document).on("scroll", progress);
-   
-        </script>
+
+
+
+
+
+
+        $(document).ready(function() {
+        TweenMax.set(".project-preview", { width: 0 });
+
+        var tl = new TimelineLite();
+
+        $(document)
+          .on("mouseover", ".navigation-item", function(evt) {
+            tl = new TimelineLite();
+            tl.to($(".project-preview"), 1, {
+              width: "600px",
+              ease: Expo.easeInOut
+            });
+          })
+          .on("mouseout", ".navigation-item", function(evt) {
+            tl = new TimelineLite();
+            tl.to($(".project-preview"), 0.5, {
+              width: 0,
+              ease: Expo.easeInOut
+            });
+          });
+      });
+
+      $(".navigation-link-1").hover(function() {
+        $(".project-preview").css({ "background-image": "url(./img/juno.jpg)" });
+      });
+
+
+    </script>
     <script src="./javascript/hover.js"></script>
     <script src="./javascript/app.js"></script>
     <script src="./javascript/animation.js"></script>
