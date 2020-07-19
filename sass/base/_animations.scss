@@ -7,11 +7,6 @@
   }
 }
 
-.hidding {
-    overflow: hidden;
-}
-
-
 @keyframes fade-in {
   0% {
       opacity: 0%;
@@ -47,6 +42,120 @@
       transform: rotate(0deg);
   }
 }
+
+
+@keyframes changeLetter {
+  0% {
+    content: "collaboration";
+  }
+  10% {
+     content: "consultation";
+  }
+  20% {
+     content: "design";
+  }
+  30% {
+      content: "project";
+  }
+  40% {
+      content: "improve your product";
+  }
+  50% {
+      content: "coding";
+  }
+  60% {
+      content: "solving problems";
+  }
+  70% {
+      content: "prototyping";
+  }
+  80% {
+      content: "new project";
+  }
+  90% {
+      content: "research";
+  }
+  100% {
+      content: "build an idea";
+  }
+}
+
+@keyframes slide-out {
+  0% {
+      opacity: 0%;
+  }
+  1% {
+      opacity: 100%;
+  }
+
+  19% {
+      opacity: 100%;
+  }
+  20% {
+      opacity: 0%;
+  }
+
+  39% {
+      opacity: 0%;
+  }
+  40% {
+      opacity: 100%;
+  }
+
+  59% {
+      opacity: 100%;
+  }
+  60% {
+      opacity: 0%;
+  }
+
+  79% {
+      opacity: 0%;
+  }
+  80% {
+      opacity: 100%;
+  }
+
+  100% {
+      opacity: 100%;
+  }
+}
+
+@keyframes slide-out-container {
+  0% {
+      height: 100vh;
+  }
+
+  40% {
+      height: 100vh;
+  }
+
+  100% {
+      height: 0%;
+  }
+}
+
+@keyframes blink {
+  0% {
+      opacity: 0%;
+  }
+  1% {
+      opacity: 100%;
+  }
+  99% {
+      opacity: 100%;
+  }
+  100% {
+      opacity: 0;
+  }
+}
+
+
+
+
+
+
+
 
 
  

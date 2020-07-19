@@ -1,8 +1,4 @@
-
-
-
 //cursor
-
 .cursor {
   position: absolute;
   background-color: #fff;
@@ -15,7 +11,6 @@
   user-select: none;
   pointer-events: none;
   transform: scale(0.8);
-
   &::before {
     content: "";
     width: 100%;
@@ -30,21 +25,15 @@
     background-size: cover;
     border-radius: 100%;
     opacity: 0;
-
   }
-
-
 }
-
 .cursor.active {
   opacity: 1;
   transform: scale(12);
 }
-
 .cursor.active::before {
   opacity: 1;
 }
-
 .cursor-follower {
   position: absolute;
   background: rgba(255, 255, 255, 0.1);
@@ -58,7 +47,6 @@
   pointer-events: none;
   transform: translate(4px, 4px);
 }
-
 .cursor-follower.active {
   opacity: 0.3;
   transform: scale(0);

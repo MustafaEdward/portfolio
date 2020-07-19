@@ -7,51 +7,6 @@ new hoverEffect({
 })
 
 
-
-//onload 
-
-// const body = document.querySelector('body');
-
-// const fade = () => {
-//     setTimeout(()=> {
-//         body.classList.remove('fade-out');
-//     }, 7000);
-  
-// }
-
-// body.addEventListener('load', fade());
-
-
-
-
-
-//Smoothscroll vanila JS
-// const body = document.body,
-// scrollWrap = document.getElementsByClassName("smooth-scroll-wrapper")[0],
-//                 height = scrollWrap.getBoundingClientRect().height - 1,
-//                 speed = 0.04;
-
-//             var offset = 0;
-
-//             body.style.height = Math.floor(height) + "px";
-
-//             function smoothScroll() {
-//                 offset += (window.pageYOffset - offset) * speed;
-
-//                 var scroll = "translateY(-" + offset + "px) translateZ(0)";
-//                 scrollWrap.style.transform = scroll;
-
-//                 callScroll = requestAnimationFrame(smoothScroll);
-//             }
-
-//             smoothScroll();
-
-// $(document).ready(function() {
-//     $('.body').removeClass('fade-out').addClass('fade-in');
-//   });
-
-
-
 //change text 
 
 $(document).ready(function() {
@@ -63,9 +18,6 @@ $(document).ready(function() {
       $("#message").text("Mustafa");
   });
 });
-
-
-
 
 
 //logo scroll
@@ -86,8 +38,6 @@ $(window).scroll(function() {
     });
 });
 
-
-
 //smoothscroll
 $("a[href^='#']").click(function(e) {
 	e.preventDefault();
@@ -107,15 +57,11 @@ $(window).on('beforeunload', function(){
   });
 
 
-
-
   $(document).ready(function () {
     setTimeout(function(){
         $('body').removeClass("hidding");
     }, 3400);
 });
-
-
 
 
 
@@ -128,12 +74,6 @@ $(window).scroll(function() {
         $(".navigation__item").removeClass("delete");
     }
 });
-
-
-
-
-
-
 
 
 // color on scroll 
