@@ -173,18 +173,15 @@ body {
 .carousel {
   min-height: 50rem;
   width: 100%;
-  overflow: hidden;
-  color: #fafafa;
-  margin-top: -20rem; }
+  overflow: hidden; }
 
 .flickity-viewport {
   overflow: visible !important; }
 
 .carousel-cell {
   width: 70%;
-  background-color: #000;
   margin-left: -7rem;
-  color: #fafafa; }
+  color: #000; }
   @media only screen and (max-width: 40em) {
     .carousel-cell {
       width: 100%;
@@ -193,7 +190,7 @@ body {
 .carousel-heading {
   font-size: 5rem;
   width: 100%;
-  color: #fafafa; }
+  color: #000; }
   @media only screen and (max-width: 53.75em) {
     .carousel-heading {
       font-size: 3rem; } }
@@ -202,7 +199,7 @@ body {
   font-size: 2.4rem;
   line-height: 1.6;
   width: 50%;
-  color: #fafafa;
+  color: #000;
   opacity: 75%; }
   @media only screen and (max-width: 53.75em) {
     .carousel-d {
@@ -285,23 +282,7 @@ body {
   margin-top: 30rem; }
 
 .experience {
-  background-color: #000;
-  color: #fafafa; }
-  @media only screen and (max-width: 53.75em) {
-    .experience {
-      height: 90vh; } }
-  .experience__heading {
-    font-size: 8rem;
-    text-align: left;
-    padding: 15rem 0;
-    line-height: 1.2;
-    margin-bottom: 30rem; }
-    @media only screen and (max-width: 53.75em) {
-      .experience__heading {
-        font-size: 6rem; } }
-    @media only screen and (max-width: 53.75em) {
-      .experience__heading {
-        padding-bottom: 10rem; } }
+  color: #000; }
 
 .experience-date {
   font-size: 2rem;
@@ -498,7 +479,7 @@ body {
 .profily {
   display: block;
   margin: 70rem auto 20rem;
-  width: 80%; }
+  width: 70%; }
 
 .img-valign {
   vertical-align: middle; }
@@ -510,6 +491,102 @@ body {
 .img-valign-1 {
   width: 5rem;
   height: auto; }
+
+.img-valign-2 {
+  width: 7rem;
+  height: auto; }
+
+.more-text,
+.more-text-projects,
+.more-text-contact {
+  font-family: 'Schnyder L', sans-serif;
+  font-size: 35rem;
+  display: inline-block;
+  width: 100%;
+  text-align: right;
+  overflow: hidden;
+  position: relative;
+  left: 20rem; }
+
+#spin {
+  color: #000; }
+
+#spin:after {
+  content: "";
+  animation: changeLetter 6s linear infinite; }
+
+@keyframes changeLetter {
+  0% {
+    content: "collaboration"; }
+  10% {
+    content: "consultation"; }
+  20% {
+    content: "design"; }
+  30% {
+    content: "project"; }
+  40% {
+    content: "improve your product"; }
+  50% {
+    content: "coding"; }
+  60% {
+    content: "solving problems"; }
+  70% {
+    content: "prototyping"; }
+  80% {
+    content: "new project"; }
+  90% {
+    content: "research"; }
+  100% {
+    content: "build an idea"; } }
+
+.connect__heading {
+  font-family: 'Schnyder L';
+  font-size: 20rem;
+  line-height: .8; }
+
+.connect__p-1 {
+  display: inline-block;
+  font-size: 3rem;
+  margin-top: 10rem;
+  border: 1.5px solid #000;
+  border-radius: 120px / 55px;
+  padding: 2rem 4rem; }
+
+.connect__p-2 {
+  font-size: 5rem;
+  position: relative;
+  padding-right: 6rem; }
+  .connect__p-2::after {
+    content: '';
+    position: absolute;
+    bottom: 50%;
+    border-bottom: 3px #000 solid;
+    width: 100%;
+    z-index: 0; }
+
+.connect__p-3 {
+  font-size: 5rem;
+  display: inline-block;
+  margin-left: 10rem; }
+
+.connect__email {
+  font-family: 'Schnyder L';
+  font-size: 5rem;
+  display: inline-block;
+  margin-left: 6rem; }
+  .connect__email::after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid #000; }
+
+.connect__link {
+  text-decoration: none;
+  color: #000; }
+
+.text-c {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 10rem; }
 
 .profile {
   margin-top: 16rem; }
@@ -528,20 +605,9 @@ body {
 
 .more-text,
 .more-text-projects,
-.more-text-contact,
-.more-text-port,
-.more-text-projects-port,
-.more-text-contact-port {
-  font-family: 'Schnyder L', sans-serif;
-  position: relative;
-  left: 20rem; }
-
-.more-text,
-.more-text-projects,
 .more-text-contact {
   font-family: 'Schnyder L', sans-serif;
   font-size: 24rem;
-  margin: 0rem 0 0rem 0;
   display: inline-block;
   width: 100%;
   text-align: right;
@@ -557,6 +623,10 @@ body {
     .more-text-projects,
     .more-text-contact {
       display: none; } }
+
+.more-text-projects {
+  margin-top: 20rem;
+  margin-bottom: 20rem; }
 
 .more-text-port,
 .more-text-projects-port,
@@ -886,7 +956,7 @@ body {
   display: inline-block; }
 
 .copyright {
-  font-size: 2rem;
+  font-size: 1.5rem;
   display: inline-block;
   margin-top: -13rem; }
   @media only screen and (max-width: 53.75em) {
@@ -902,18 +972,31 @@ body {
   flex-direction: column;
   justify-content: center; }
 
-.top {
-  font-size: 2rem;
-  text-transform: uppercase;
-  float: right; }
-  @media only screen and (max-width: 40em) {
-    .top {
-      margin-top: 10rem;
-      float: none;
-      text-align: center; } }
-  .top__link {
-    text-decoration: none;
-    color: #000; }
+.sub-footer {
+  display: flex;
+  justify-content: space-between; }
+  .sub-footer__credit {
+    display: flex;
+    flex-direction: column;
+    text-align: left; }
+    .sub-footer__credit-p {
+      font-size: 1rem;
+      margin-bottom: -0.5rem; }
+    .sub-footer__credit-link {
+      text-decoration: none;
+      color: #000; }
+  .sub-footer__top {
+    font-size: 2rem;
+    text-transform: uppercase;
+    float: right; }
+    @media only screen and (max-width: 40em) {
+      .sub-footer__top {
+        margin-top: 10rem;
+        float: none;
+        text-align: center; } }
+    .sub-footer__top-link {
+      text-decoration: none;
+      color: #000; }
 
 .header {
   position: relative; }

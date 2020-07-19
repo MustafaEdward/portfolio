@@ -3,8 +3,6 @@
   min-height: 50rem;
   width: 100%;
   overflow: hidden;
-  color: #fafafa;
-  margin-top: -20rem;
 }
 .flickity-viewport {
   overflow: visible !important;
@@ -12,9 +10,8 @@
 
 .carousel-cell {
   width: 70%;
-  background-color: $color-black;
   margin-left: -7rem;
-  color: #fafafa;
+  color: #000;
   @include respond(phone) {
     width: 100%;
     padding: 0 0 0 2rem;
@@ -25,7 +22,7 @@
 .carousel-heading {
   font-size: 5rem;
   width: 100%;
-  color: #fafafa;
+  color: #000;
   @include respond(tablet) {
     font-size: 3rem;
  }
@@ -34,7 +31,7 @@
   font-size: 2.4rem;
   line-height: 1.6;
   width: 50%;
-  color: #fafafa;
+  color: #000;
   opacity: 75%;
   @include respond(tablet) {
     font-size: 2rem;

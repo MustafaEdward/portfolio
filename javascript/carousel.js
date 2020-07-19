@@ -5,3 +5,6 @@ $('.carousel').flickity({
   prevNextButtons: false,
   pageDots: false,
 });
+
+
+

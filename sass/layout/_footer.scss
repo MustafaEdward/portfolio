@@ -42,7 +42,7 @@
 }
 
 .copyright {
-  font-size: 2rem;
+  font-size: 1.5rem;
   display: inline-block;
   margin-top: -13rem;
   @include respond(tablet) {
@@ -62,18 +62,39 @@
 }
 
 
-.top {
-  font-size: 2rem;
- text-transform: uppercase;
- float: right;
- @include respond(phone) {
-  margin-top: 10rem;
-  float: none;
-  text-align: center;
-}
-  &__link {
-    text-decoration: none;
-    color: $color-black;
-   
+
+.sub-footer {
+    display: flex;
+    justify-content: space-between;
+
+  &__credit {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    &-p {
+      font-size: 1rem;
+      margin-bottom: -0.5rem;
+    }
+    &-link {
+       text-decoration: none;
+       color: $color-black;
+    }
   }
+  &__top {
+    font-size: 2rem;
+    text-transform: uppercase;
+    float: right;
+    @include respond(phone) {
+     margin-top: 10rem;
+     float: none;
+     text-align: center;
+   }
+
+    &-link {
+      text-decoration: none;
+      color: $color-black;
+    }
+  }
+
+
 }

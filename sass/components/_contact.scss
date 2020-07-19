@@ -62,27 +62,7 @@
   //carousell
   
   .experience {
-     background-color: $color-black;
-     color: #fafafa;
-
-     @include respond(tablet) {
-          height: 90vh;
-     }
-     
-     &__heading {
-       font-size: 8rem;
-       text-align: left;
-       padding: 15rem 0;
-       line-height: 1.2;
-       margin-bottom: 30rem;
-
-       @include respond(tablet) {
-        font-size: 6rem;
-     }
-     @include respond(tablet) {
-        padding-bottom: 10rem;
-     }
-     }
+     color: $color-black;
   }
   
   .experience-date {
@@ -256,11 +236,6 @@
 }
 
 
-// .number-of-ex {
-//     margin-bottom: -10rem;
-// }
-
-
 
 
 //new 
@@ -345,7 +320,7 @@
 .profily {
     display: block;
     margin: 70rem auto 20rem;
-    width: 80%;
+    width: 70%;
 }
 
 .img-valign {
@@ -361,4 +336,137 @@
   .img-valign-1 {
       width: 5rem;
       height: auto;
+  }
+  .img-valign-2 {
+      width: 7rem;
+      height: auto;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.more-text, 
+.more-text-projects, 
+.more-text-contact {
+    font-family: 'Schnyder L', sans-serif;
+    font-size: 35rem;
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    overflow: hidden;
+    position: relative;
+    left:20rem;   
+}
+
+
+#spin {
+    color:$color-black;
+  }
+  #spin:after {
+    content:"";
+    animation: changeLetter 6s linear infinite;
+  }
+ 
+  @keyframes changeLetter {
+    0% {
+      content: "collaboration";
+    }
+    10% {
+       content: "consultation";
+    }
+    20% {
+       content: "design";
+    }
+    30% {
+        content: "project";
+    }
+    40% {
+        content: "improve your product";
+    }
+    50% {
+        content: "coding";
+    }
+    60% {
+        content: "solving problems";
+    }
+    70% {
+        content: "prototyping";
+    }
+    80% {
+        content: "new project";
+    }
+    90% {
+        content: "research";
+    }
+    100% {
+        content: "build an idea";
+    }
+  }
+
+
+  .connect {
+   
+
+    &__heading {
+        font-family: 'Schnyder L';
+        font-size: 20rem;
+        line-height: .8;
+    }
+    &__p-1 {
+        display: inline-block;
+        font-size: 3rem;
+        margin-top: 10rem;
+        border: 1.5px solid $color-black;
+        border-radius: 120px / 55px;
+        padding: 2rem 4rem;
+        
+
+    }
+    &__p-2 {
+       font-size: 5rem;
+       position: relative;
+       padding-right: 6rem;;
+       &::after{
+        content: '';
+        position: absolute;
+        bottom: 50%;
+        border-bottom: 3px $color-black solid;
+        width: 100%;
+        z-index:0;
+        }
+    }
+    &__p-3 {
+        font-size: 5rem;
+        display: inline-block;
+        margin-left: 10rem;
+    }
+    &__email {
+       font-family: 'Schnyder L';
+       font-size: 5rem;
+       display: inline-block;
+       margin-left: 6rem;
+       &::after {
+            content: "";
+            display: block;
+            border-bottom: 1px solid $color-black;
+       }
+    }
+    &__link {
+      text-decoration: none;
+      color: $color-black;
+    }
+  }
+  .text-c {
+      display: flex;
+      align-items: flex-start;
+      margin-top: 10rem;
   }
