@@ -1,5 +1,9 @@
 .header {
     position: relative;
+    @include respond(phone) {
+      height: 110rem !important;
+    }
+    
     &__box {
       display: flex;
       flex-direction: column;

@@ -38,15 +38,21 @@ body {
     min-height: 100%;
     overflow-x: hidden; 
     transition: background 1s ease;
-    // @include respond(big-screen) {
-    //    background-color: coral;
-    // }
-    // @include respond(tab-land) {
-    //    background-color: cornflowerblue;
-    // }
-    // @include respond(tablet) {
-    //     background-color: red;
-    //  }
+    @include respond(big-screen) {
+       background-color: coral !important;
+    }
+    @include respond(tab-land) {
+       background-color: cornflowerblue !important;
+    }
+    @include respond(tab-port) {
+        background-color: yellow !important;
+     }
+    @include respond(tablet) {
+        background-color: red !important;
+     }
+     @include respond(phone) {
+        background-color: yellowgreen !important;
+     }
 }
 .container {
     width: 110rem;

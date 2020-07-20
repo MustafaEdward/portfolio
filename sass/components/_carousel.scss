@@ -37,3 +37,20 @@
 }
 }
 
+.experience {
+  color: $color-black;
+}
+.experience-date {
+ font-size: 2rem;
+ display: block;
+ margin-bottom: 7rem;
+}
+.project-preview {
+ position: fixed;
+ top: 12%;
+ left: 50%;
+ width: 0px;
+ height: 400px;
+ background-size: cover;
+ overflow: hidden;
+}
