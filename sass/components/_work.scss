@@ -7,7 +7,6 @@
         height: 100vh;
     }
     @include respond(tab-land) {
-        // margin-top: 30rem;
     }
     @include respond(tab-port) {
         height: 90vh;
@@ -92,15 +91,18 @@
 }
 .marketing {
   display: block;
-  margin: 30rem auto;
+  margin: 10rem auto;
   @include respond(big-screen) {
+    margin: -15rem auto;
   }
   @include respond(tab-land) {
-    margin-top: -30rem !important; 
-    display: inline-block;
+    margin: -25rem auto;
   }
-  @include respond(tab-port) {
-    margin-top: -20rem;
+  @include respond(tablet) {
+    margin: -35rem auto;
+  }
+  @include respond(phone) {
+    margin: -50rem auto;
   }
 &__video {
    width: 100%;
@@ -110,34 +112,8 @@
 
 }
 }
-
 .video-1 {
     @include respond(phone) {
         order: -1 !important;
   }
-}
-
-
-.market-pages {
-
-    @include respond(big-screen) {
-      
-     }
-     @include respond(tab-land) {
-        margin-top: 25rem !important;  
-        margin-bottom: -40rem !important;  
-     }
-     @include respond(tab-port) {
-        margin-top: 30rem !important;  
-        margin-bottom: -45rem !important;  
-
-      }
-     @include respond(tablet) {
-        margin-top: -20rem !important;  
-        margin-bottom: -80rem !important; 
-      }
-      @include respond(phone) {
-        margin-top: -30rem !important;  
-        margin-bottom: -90rem !important; 
-      }
 }

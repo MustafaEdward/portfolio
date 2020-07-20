@@ -131,7 +131,6 @@
   animation: slideUp 1s  3s cubic-bezier(1.000, -0.065, 0.420, 1.175);
   z-index: 1000000000000 !important;
   -webkit-animation-fill-mode: forwards;
-  display: none;
 
   @include respond(tablet) {
    display: none;

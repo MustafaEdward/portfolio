@@ -1,8 +1,15 @@
 .social {
   margin: 40rem 0 20rem 0;
-  @include respond(tablet) {
-    margin: 10rem 0 0 0;
+  @include respond(big-screen) {
+    margin: 40rem 0 5rem 0;
   }
+  @include respond(tablet) {
+    margin: 20rem 0 5rem 0;
+  }
+  @include respond(phone) {
+    margin: 15rem 0 5rem 0;
+  }
+
   &__list {
     display: block;
   }
@@ -14,10 +21,10 @@
     text-align: center;
     transition: all .3s ;
     @include respond(tablet) {
-      font-size: 12rem;
+      font-size: 15rem;
     }
-    @include respond(tablet) {
-      font-size: 7rem;
+    @include respond(phone) {
+      font-size: 10rem;
     }
     &:hover {
       color: $color-primary;
@@ -77,13 +84,25 @@
      margin-top: 10rem;
      float: none;
      text-align: center;
-   }
+    }
     &-link {
       text-decoration: none;
       color: $color-black;
     }
   }
 }
+.project-preview {
+  position: fixed;
+  top: 12%;
+  left: 50%;
+  width: 0px;
+  height: 400px;
+  background-size: cover;
+  overflow: hidden;
+  @include respond(phone) {
+   display: none;
+   }
+ }
 
 
 

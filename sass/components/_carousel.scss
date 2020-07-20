@@ -34,23 +34,23 @@
  }
  @include respond(phone) {
   width: 70%;
-}
+ }
 }
 
 .experience {
   color: $color-black;
+  @include respond(big-screen) {
+    margin-top: -10rem;
+   }
+   @include respond(tab-land) {
+    margin-top: 10rem;
+   }
+   @include respond(phone) {
+    margin-top: 0rem;
+  }
 }
 .experience-date {
  font-size: 2rem;
  display: block;
  margin-bottom: 7rem;
-}
-.project-preview {
- position: fixed;
- top: 12%;
- left: 50%;
- width: 0px;
- height: 400px;
- background-size: cover;
- overflow: hidden;
 }
