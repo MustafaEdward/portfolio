@@ -73,7 +73,7 @@
             <div id="cricle" class="circle">
                 designer - developer-
             </div>
-            <div class="project">
+            <div class="project" id="work">
                 <div class="container">
                     <div class="project__flex">
                         <div class="project__c">
@@ -109,7 +109,7 @@
                             <img src="./img/arab.png" alt="" class="project__c-photo">
                             <h3 class="project__heading">Figo app</h3>
                             <p class="project__text">An app that helps young professionals save money responsibly so that they can manage debt while still putting money aside for the things they enjoy.</p>
-                            <a href="https://medium.com/@mustafa.edward24/test-a0c2af592e7d?source=friends_link&sk=c8508d44c4bfbd8965e7505e55aa2fe9" class="project__btn" target="_blank"> Prototype</a>
+                            <a href="https://cloud.protopie.io/p/b4be3d9930/23?ui=false&mockup=false&touchHint=false&scaleToFit=false&cursorType=touch" class="project__btn" target="_blank"> Prototype</a>
                         </div>
                    </div>
                 </div>
@@ -128,38 +128,50 @@
              <section class="experience" >
                  <div class="carousel">
                     <div class="carousel-cell">
+                        <span class="experience-date">2020-2020</span>
+                        <h4 class="company">BrainStation</h4>
+                        <p class="carousel-heading">UX design candidate</h4> 
+                        <p class="carousel-d" >Worked on user research & strategy, information architecture, usability testing, motion design, heuristic evaluation and user interface design. 
+                        </p>
+                    </div>
+                    <div class="carousel-cell">
                         <span class="experience-date">2019-2020</span>
+                        <h4 class="company">MedInfo Response(DMZ)</h4>
                         <p class="carousel-heading">Front-end developer</p> 
-                        <p class="carousel-d" >Improved user interface and built features with React that maximized responsiveness, which helped the startup close a deal with a pharmaceutical company.
+                        <p class="carousel-d" >Improved user interface and built features with React, which helped the startup close a deal with a pharmaceutical company.
                         </p>
                     </div>
                     <div class="carousel-cell">
                         <span class="experience-date">2019-2019</span>
+                        <h4 class="company">Juno College of Technology</h4>
                         <p class="carousel-heading" >Web dev mentor</p> 
                         <p class="carousel-d" >Provided help, inspiration, and constructive criticism to students learning the fundamentals of web development.
                         </p>
                     </div>
                     <div class="carousel-cell">
                         <span class="experience-date">2019-2019</span>
+                        <h4 class="company">Juno College of Technology</h4>
                         <p class="carousel-heading" >Web dev student</p> 
-                        <p class="carousel-d">Learned HTML, CSS, javaScript, react. responsive design and accessibility during an immersive world-class Bootcamp. 
+                        <p class="carousel-d">Learned HTML, CSS, javaScript, react. responsive design and accessibility in an immersive world-class Bootcamp. 
                         </p>
                     </div>
                     <div class="carousel-cell">
                         <span class="experience-date">2018</span>
+                        <h4 class="company">Rendezvous Holdings</h4>
                         <p class="carousel-heading" >Salon Manager</p> 
-                        <p class="carousel-d">Delivered best customer experience by switching payment from manual to Square app and Increased product sales by 50% with Square Online Store.
+                        <p class="carousel-d">Delivered best customer experience by switching payment from manual to Square app and Increased product sales by 40% with Square Online Store.
                         </p>
                     </div>
                     <div class="carousel-cell">
                         <span class="experience-date">2012-2014</span>
+                        <h4 class="company">British Petroleum</h4>
                         <p class="carousel-heading">QA Administrator</p> 
                         <p class="carousel-d">Improved process efficiency by creating quality control plans with FusionLiove and  Maximo software. 
                         </p>
                     </div>
                 </div>
             </section>
-            <div class="container">
+            <div class="container" id="contact">
                 <!-- data-color="#F6EEE3" -->
                 <div class="connect panel" data-color="orange">
                     <h3 class="connect__heading">Let's work together!</h3>
@@ -187,7 +199,7 @@
         <footer class="footer">
             <lottie-player class="heart" src="https://assets3.lottiefiles.com/datafiles/puXrMqSsUPBEG2RPEhKFo1kvJ5WpkjdOD3GeOeQ0/ModernPictogramsForLottie_Heart.json
             " background="transparent"  speed="0.8"  style="width: 300px; height: 300px;" loop  autoplay></lottie-player>
-            <p class="copyright">Designed & Coded by Mustafa </p>
+            <p class="copyright">Coded by Mustafa</p>
                 <div class="container sub-footer">
                     <div class="sub-footer__credit">
                         <h4 class="sub-footer__credit-p">Credits:</h4>
@@ -357,6 +369,52 @@
         $(".project-preview").css({ "background-image": "url(./img/juno.jpg)" });
       });
 
+
+
+      var cursor = $(".cursor"),
+                follower = $(".cursor-follower");
+
+            var posX = 0,
+                posY = 0,
+                mouseX = 0,
+                mouseY = 0;
+
+            TweenMax.to({}, 0.016, {
+                repeat: -1,
+                onRepeat: function() {
+                    posX += (mouseX - posX) / 9;
+                    posY += (mouseY - posY) / 9;
+
+                    TweenMax.set(follower, {
+                        css: {
+                            left: posX - 20,
+                            top: posY - 20
+                        }
+                    });
+
+                    TweenMax.set(cursor, {
+                        css: {
+                            left: mouseX,
+                            top: mouseY
+                        }
+                    });
+                }
+            });
+
+            $(document).on("mousemove", function(e) {
+                mouseX = e.pageX;
+                mouseY = e.pageY;
+            });
+
+            $(".experience").on("mouseenter", function() {
+                cursor.addClass("active");
+                follower.addClass("active");
+            });
+
+            $(".experience").on("mouseleave", function() {
+                cursor.removeClass("active");
+                follower.removeClass("active");
+            });
 
     </script>
     <script src="./javascript/hover.js"></script>

@@ -2,7 +2,7 @@ new hoverEffect({
     parent: document.querySelector('.distortion'),
     intensity: 0.2,
     image1: '../img/one.png',
-    image2: '../img/french.png',
+    image2: '../img/two.png',
     displacementImage: '../img/heightMap.png'
 })
 

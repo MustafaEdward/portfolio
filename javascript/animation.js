@@ -4,7 +4,7 @@ $(document).on('scroll', function(){
 })
 
 $(document).on('scroll', function(){
-    $('.more-text-projects').css("left", Math.max(3100 - 0.35*window.scrollY) + "px")
+    $('.more-text-projects').css("left", Math.max(3000 - 0.35*window.scrollY) + "px")
 })
 
 
