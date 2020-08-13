@@ -62,11 +62,18 @@
 .sub-footer {
     display: flex;
     justify-content: space-between;
-
+    @include respond(phone) {
+      flex-direction: column;
+     }
   &__credit {
     display: flex;
     flex-direction: column;
     text-align: left;
+    @include respond(phone) {
+      text-align: center;
+      margin-top: 3rem;
+     }
+
     &-p {
       font-size: 1.1rem;
       margin-bottom: -0.5rem;

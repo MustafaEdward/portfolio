@@ -292,8 +292,8 @@ body {
       margin-bottom: 30rem; } }
   @media only screen and (max-width: 35em) {
     .connect {
-      margin-top: 10rem;
-      margin-bottom: 20rem; } }
+      margin-top: 5rem;
+      margin-bottom: 5rem; } }
   .connect__heading {
     font-family: 'Schnyder L';
     font-size: 20rem;
@@ -359,6 +359,9 @@ body {
   display: flex;
   align-items: flex-start;
   margin-top: 10rem; }
+  @media only screen and (max-width: 35em) {
+    .text-c {
+      display: none; } }
 
 #spin {
   color: #000; }
@@ -538,7 +541,7 @@ body {
       height: 80vh; } }
   @media only screen and (max-width: 35em) {
     .project {
-      height: 80vh; } }
+      height: 110vh; } }
   .project__flex {
     display: flex;
     justify-content: space-between; }
@@ -621,10 +624,17 @@ body {
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover; }
+  @media only screen and (max-width: 35em) {
+    .marketing {
+      display: none; } }
 
 @media only screen and (max-width: 35em) {
   .video-1 {
     order: -1 !important; } }
+
+@media only screen and (max-width: 35em) {
+  .market-pages {
+    display: none; } }
 
 .social {
   margin: 40rem 0 20rem 0; }
@@ -685,10 +695,17 @@ body {
 .sub-footer {
   display: flex;
   justify-content: space-between; }
+  @media only screen and (max-width: 35em) {
+    .sub-footer {
+      flex-direction: column; } }
   .sub-footer__credit {
     display: flex;
     flex-direction: column;
     text-align: left; }
+    @media only screen and (max-width: 35em) {
+      .sub-footer__credit {
+        text-align: center;
+        margin-top: 3rem; } }
     .sub-footer__credit-p {
       font-size: 1.1rem;
       margin-bottom: -0.5rem; }

@@ -15,7 +15,7 @@
         height: 80vh;
     }
     @include respond(phone) {
-        height: 80vh;
+        height: 110vh;
     }
 
   &__flex {
@@ -111,9 +111,18 @@
    background-size: cover;
 
 }
+@include respond(phone) {
+  display: none;
+}
 }
 .video-1 {
     @include respond(phone) {
         order: -1 !important;
   }
+}
+
+.market-pages {
+  @include respond(phone) {
+  display: none;
+}
 }
