@@ -27,7 +27,7 @@
     "jquery": "^3.4.1",
     "rellax": "^1.12.1",
     "simple-parallax-js": "^5.5.1",
-    "three": "^0.108.0",
+    "three": "^0.125.0",
     "waypoint": "^0.2.8"
   }
 }
